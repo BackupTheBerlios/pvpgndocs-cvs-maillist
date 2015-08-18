@@ -1,0 +1,899 @@
+From nobody at sheep.berlios.de  Mon Oct 25 10:17:35 2004
+From: nobody at sheep.berlios.de (u-238)
+Date: Mon, 25 Oct 2004 10:17:35 +0200
+Subject: [pvpgndocs-cvs] in-progress Introduction.html,1.1.1.1,1.2
+Message-ID: <200410250817.i9P8HZB08507@bat.berlios.de>
+
+Update of /cvsroot/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv23223
+
+Modified Files:
+	Introduction.html 
+Log Message:
+Did some cleanup
+
+Index: Introduction.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/in-progress/Introduction.html,v
+retrieving revision 1.1.1.1
+retrieving revision 1.2
+diff -C2 -d -r1.1.1.1 -r1.2
+*** Introduction.html	25 Oct 2004 07:35:41 -0000	1.1.1.1
+--- Introduction.html	25 Oct 2004 08:17:33 -0000	1.2
+***************
+*** 153,170 ****
+    <br>
+    PvPGN forums:<br>
+!   <a href="http://forums.pvpgn.org">http://forums.pvpgn.org</a></p>
+  <p> The official PvPGN documentation:<br>
+!   <a href="http://pvpgndocs.berlios.de">http://pvpgndocs.berlios.de</a> (under construction) </p>
+  <p> PHP Utilities for PvPGN:<br>
+!   <a href="http://pvpgn-phputils.sourceforge.net">http://pvpgn-phputils.sourceforge.net</a></p>
+  <p> IRC channel:<br>
+    #pvpgn on irc.pvpgn.org</p>
+  <p> Alternative (unofficial) download sites:<br>
+!   <a href="http://www.pvpgn.de">http://www.pvpgn.de</a><br>
+!   <a href="http://pvpgn-files.ath.cx">http://pvpgn-files.ath.cx</a></p>
+! <p>&nbsp;</p>
+  </blockquote>
+  <p><b><a name="legal">Legal</a></b></p>
+  <blockquote>
+    <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+! </blockquote>
+\ No newline at end of file
+--- 153,169 ----
+    <br>
+    PvPGN forums:<br>
+!   <a href="http://forums.pvpgn.org/">http://forums.pvpgn.org</a></p>
+  <p> The official PvPGN documentation:<br>
+!   <a href="http://pvpgndocs.berlios.de/">http://pvpgndocs.berlios.de</a> (under construction) </p>
+  <p> PHP Utilities for PvPGN:<br>
+!   <a href="http://pvpgn-phputils.sourceforge.net/">http://pvpgn-phputils.sourceforge.net</a></p>
+  <p> IRC channel:<br>
+    #pvpgn on irc.pvpgn.org</p>
+  <p> Alternative (unofficial) download sites:<br>
+!   <a href="http://www.pvpgn.de/">http://www.pvpgn.de</a><br>
+!   <a href="http://pvpgn-files.ath.cx/">http://pvpgn-files.ath.cx</a></p>
+  </blockquote>
+  <p><b><a name="legal">Legal</a></b></p>
+  <blockquote>
+    <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+! </blockquote>
+
+
+
+From nobody at sheep.berlios.de  Wed Oct 27 11:45:43 2004
+From: nobody at sheep.berlios.de (dgwilson65)
+Date: Wed, 27 Oct 2004 11:45:43 +0200
+Subject: [pvpgndocs-cvs] pvpgndocs/in-progress linksysguide.pdf,1.1.1.1,NONE MacBnet_1.jpg,1.1.1.1,NONE MacBnet_2.jpg,1.1.1.1,NONE
+Message-ID: <200410270945.i9R9jhB08413@bat.berlios.de>
+
+Update of /cvsroot/pvpgndocs/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv15426
+
+Removed Files:
+	linksysguide.pdf MacBnet_1.jpg MacBnet_2.jpg 
+Log Message:
+Deleting files as not viewable under windows. WIll re-commit as binary files.
+
+--- linksysguide.pdf DELETED ---
+
+--- MacBnet_1.jpg DELETED ---
+
+--- MacBnet_2.jpg DELETED ---
+
+
+
+From nobody at sheep.berlios.de  Wed Oct 27 11:56:06 2004
+From: nobody at sheep.berlios.de (dgwilson65)
+Date: Wed, 27 Oct 2004 11:56:06 +0200
+Subject: [pvpgndocs-cvs] pvpgndocs/in-progress linksysguide.pdf,1.2,1.3 MacBnet_1.jpg,1.2,1.3 MacBnet_2.jpg,1.2,1.3
+Message-ID: <200410270956.i9R9u6B08560@bat.berlios.de>
+
+Update of /cvsroot/pvpgndocs/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv15969
+
+Added Files:
+	linksysguide.pdf MacBnet_1.jpg MacBnet_2.jpg 
+Log Message:
+Upload of replacement binary files.
+
+
+
+
+
+
+From nobody at sheep.berlios.de  Wed Oct 27 12:10:33 2004
+From: nobody at sheep.berlios.de (dgwilson65)
+Date: Wed, 27 Oct 2004 12:10:33 +0200
+Subject: [pvpgndocs-cvs] pvpgndocs/in-progress Introduction.html,NONE,1.1
+Message-ID: <200410271010.i9RAAXB09082@bat.berlios.de>
+
+Update of /cvsroot/pvpgndocs/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv16738
+
+Added Files:
+	Introduction.html 
+Log Message:
+File not in prepository. Have taken from published web site version
+
+--- NEW FILE: Introduction.html ---
+<center>
+    <h2><a name="top">Introduction to PvPGN</a></h2>
+</center>
+<p><b><a name="contents">Table of contents</a></b></p> 
+  <blockquote>
+    <div style="background-color: #DDDDDD; color: #000000; padding: 4px;">
+      <ul>
+        <li><a href="#whatispvpgn">What is PvPGN?</a></li>
+        <li><a href="#about">About this guide</a></li>
+		<li><a href="#sysreq">System requirements</a></li>
+		<li><a href="#download">Downloading PvPGN</a></li>
+		<li><a href="#guide">Guidelines when posting for support</a></li>
+		<li><a href="#links">Places of interest - PvPGN related</a></li>
+		<li><a href="#legal">Legal</a></li>
+      </ul>
+    </div>
+  </blockquote>
+
+<p><b><a name="whatispvpgn">What is PvPGN?</a></b></p>
+<blockquote>
+  <p>PvPGN is software that emulates the Blizzard Battle.net (TM) server. It is a modification 
+  of the bnetd server which aims to provide support for all Blizzard clients. 
+  It gives you the power to run your own server, manage your own users, 
+  run your own tournaments etc. <br>
+  <br>
+  The PvPGN ( or Player versus Player Gaming Network ) is a bnetd based gaming 
+  network server emulation project. It currently supports all Battle.net (TM) clients, 
+  such as StarCraft, Diablo II, and Warcraft III. The list of supported clients 
+  and their minimum verion required is:<br>
+    - Diablo 1 v1.09<br>
+    - Starcraft v1.08<br>
+    - BroodWar v1.08<br>
+    - Warcraft II Battle.net (TM) Edition v2.05<br>
+    - Diablo 2 v1.10<br>
+    - Diablo 2 LOD v1.10<br>
+    - Warcraft III Reign Of Chaos v1.13*<br>
+  - Warcraft III Frozen Throne v1.13*</p>
+  <p>* PvPGN requires the loader for WarCraft III and it must be used without any CD Cracks or Hacks. There is no loader available for WarCraft on Macintosh.</p>
+  <p> A PvPGN Server can be used:</p>
+  <ul>
+    <li> when wanting to host a local tournament with local users and statistics (lots of internet cafe's do that)</li>
+    <li> when wanting to maintain a local community, Battle.net is too big for most of the people; having a local friends community is something better in that case</li>
+    <li> for people who want to play LAN but with battle.net-like statistics</li>
+    <li> for people who want more features than Battle.net (just look at PvPGN's command set to see how is PvPGN better than Battle.Net)</li>
+  </ul>
+  <p> It puts you as a &quot;System Administrator&quot; in control.
+          Use a PvPGN server to host your own LAN parties or put the server online 
+          and on the internet for everyone. You can run Tournaments, have your own 
+          local competition ladders. The power is in your hands.<br><br>
+   The official PvPGN website is at <a href="http://pvpgn.berlios.de/" target="_blank">http://pvpgn.berlios.de</a></p>
+</blockquote>
+<p><b><a name="about">About this guide</a></b></p>
+<blockquote>
+  <p>
+    This guide has been created as part of a documentation project for PvPGN. Our intention 
+    is to bring together the current knowledge on setting up and running a PvPGN 
+    server and to provide details on how the clients can connect.<br>
+    <br>
+    This documentation project is not a commercial venture, nor has it been done 
+    for financial gain (though admitedly that would be nice). It has been put 
+    together by volunteers who are just trying to &quot;do their bit&quot;.<br>
+    <br>
+    Q. Can you help?<br>
+    A. Yes - read this guide<br>
+    <br>
+    If you have encountering an administration issue or your clients are having 
+    operational issues then see if that scenario has been covered in this guide. 
+    If after doing this you still doing have a working solution, then post a 
+    message to the pvpgn forums at http://forums.pvpgn.org<br>
+    <br>
+    If a resolution for your issue has been found, we would appreciate your help 
+    by documenting the issue and the resolution so that this guide can be updated. 
+    Usually the message forum text can be used with some editing, we'd appreciate 
+    you doing this. Don't worry, we'll fix up any bad english or speeling erros.<br>
+    <br>
+    Our intention has been to write this guide relative to PvPGN 1.7, if you have 
+    an earlier release then your question may be answered here. We of course would 
+    prefer that you updated your copy of the software to the latest release.<br>
+    <br>
+    Finally a big thank you to the PvPGN developers and you our supporters.</p>
+</blockquote>
+<p><b><a name="sysreq">System requirements</a></b></p>
+<blockquote>
+<p>The latest list of PvPGN supported platforms can be found in the docs 
+  directory of a PvPGN release docs/PORTS. As of 1.7 the following 
+  platforms are supported:<br><br> <table>
+<tr><td>    <b>Architecture</b> </td><td> <b>Operating System</b> </td><td> <b>Status</b>  </td><td> <b>Comments</b> </td></tr>
+<tr><td>    x86          </td><td> Linux 2.4.x      </td><td> OK      </td><td> main development platform</td></tr>
+<tr><td>    x86          </td><td> Linux 2.6.x      </td><td> OK      </td><td> tested</td></tr>
+<tr><td>    x86          </td><td> WIN32            </td><td> OK      </td><td> tested</td></tr>
+<tr><td>    x86          </td><td> FreeBSD 4.x      </td><td> OK      </td><td> tested</td></tr>
+<tr><td>    x86          </td><td> FreeBSD 5.x      </td><td> OK      </td><td> tested but use 5.2.1 at least</td></tr>
+<tr><td>    x86          </td><td> BeOS R4 /w BONE  </td><td> OK      </td><td> tested</td></tr>
+<tr><td>    x86          </td><td> OpenBSD 3.x      </td><td> OK      </td><td> tested</td></tr>
+<tr><td>    x86_64/AMD64 </td><td> Linux 2.6.x      </td><td> OK      </td><td> tested (pvpgn >= 1.6.3 required)</td></tr>
+<tr><td>    sparc64      </td><td> SunOS 5.9        </td><td> OK      </td><td> tested</td></tr>
+<tr><td>    PowerPC G3   </td><td> Mac OS X 10.2.x  </td><td> OK      </td><td> tested</td></tr>
+<tr><td>    PowerPC G3   </td><td> Mac OS X 10.3.x  </td><td> OK      </td><td> tested</td></tr>
+<tr><td>    PowerPC G4   </td><td> Mac OS X 10.2.x  </td><td> OK      </td><td> tested</td></tr>
+<tr><td>    PowerPC G4   </td><td> Mac OS X 10.3.x  </td><td> OK      </td><td> tested</td></tr>
+</table>
+<br>
+Clearly x86 is the most tested version. The platforms/operating systems not 
+  listed have not been tested or they did not come to the developers attention 
+  however, any POSIX system should work.</p>
+  <p> If you have an operating PvPGN server on a platform/OS not listed above then 
+  please report it to the developers via the forums at <a href="http://forums.pvpgn.org">http://forums.pvpgn.org</a>
+</p>
+</blockquote>
+<p><b><a name="download">Downloading PvPGN</a></b></p>
+<blockquote>
+<p>  The official download site for PvPGN is: 
+  <a href="http://pvpgn.berlios.de">http://pvpgn.berlios.de/</a></p>
+<p> Packages are available for Windows, Mac OS X and a few flavours of Linux. If there is no package available for your operating system, you can download the source and compile it yourself. See the install guide for more
+  information on this.<br>
+  <br>
+  Alternative download sites for PvPGN:<br>
+  <a href="http://www.pvpgn.de/" target="_blank">http://www.pvpgn.de/</a><br>
+  <a href="http://pvpgn-files.ath.cx/" target="_blank">http://pvpgn-files.ath.cx/</a><br><br>
+  Please note that both these sites are unofficial and may not have the latest releases.</p>
+<p>Reporting Problems and or Bugs<br>
+  Sometimes things just don't make sense and are just too hard to nut out. 
+  Perhaps someone else has had the same problems and reported it? One great source 
+  of information and people to help is available at <a href="http://forums.pvpgn.org/" target="_blank">http://forums.pvpgn.org</a> 
+  here you can post questions where there's a good chance your questions will 
+  be answered and you'll be on your way again.<br>
+  <br>
+  HOWEVER - there are some guidelines to using the forums. Most notably is the 
+&quot;don't post questions that have been answered before&quot; and so 
+  you are encouraged to use the search feature of the forums.<br>
+  <br>
+  If you've read this documentation, and searched the forums, and you still 
+  are unable to get resolution for your problem then it's time to post a message 
+  to the forums. Try &quot;Open Tech Support&quot; first.</p>
+</blockquote>
+<p><b><a name="guide">Guidelines when posting for support</a></b></p>
+<blockquote>
+  <p>
+    It is a good idea to provide revalant information for your question like 
+  the following:<br>
+  <br>
+  1. Where is the PvPGN server, internal LAN?<br>
+  2. How many players on internal LAN?<br>
+  3. How many players on external LAN?<br>
+  4. Details from the revalent configuration file (not the whole file)<br>
+  5. Short extracts from the bnetd.log file<br>
+  6. Software versions that are being used, both server and clients</p>
+</blockquote>
+<p><b><a name="links">Places of interest - PvPGN related</a></b></p>
+<blockquote>
+  <p>The PvPGN website:<br>
+    <a href="http://pvpgn.berlios.de/">http://pvpgn.berlios.de</a><br>
+  <br>
+  PvPGN forums:<br>
+  <a href="http://forums.pvpgn.org/">http://forums.pvpgn.org</a></p>
+<p> The official PvPGN documentation:<br>
+  <a href="http://pvpgndocs.berlios.de/">http://pvpgndocs.berlios.de</a> (under construction) </p>
+<p> PHP Utilities for PvPGN:<br>
+  <a href="http://pvpgn-phputils.sourceforge.net/">http://pvpgn-phputils.sourceforge.net</a></p>
+<p> IRC channel:<br>
+  #pvpgn on irc.pvpgn.org</p>
+<p> Alternative (unofficial) download sites:<br>
+  <a href="http://www.pvpgn.de/">http://www.pvpgn.de</a><br>
+  <a href="http://pvpgn-files.ath.cx/">http://pvpgn-files.ath.cx</a></p>
+</blockquote>
+<p><b><a name="legal">Legal</a></b></p>
+<blockquote>
+  <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+</blockquote>
+
+
+
+From nobody at sheep.berlios.de  Wed Oct 27 12:34:46 2004
+From: nobody at sheep.berlios.de (dgwilson65)
+Date: Wed, 27 Oct 2004 12:34:46 +0200
+Subject: [pvpgndocs-cvs] pvpgndocs/in-progress accesspvpgn.html,1.1.1.1,1.2 Admin_for_beginners.htm,1.1.1.1,1.2 banner.html,1.1.1.1,1.2 Installing.html,1.1.1.1,1.2 motdnews.html,1.1.1.1,1.2 NATFirewall.html,1.1.1.1,1.2 Running_a_PvPGN.html,1.1.1.1,1.2
+Message-ID: <200410271034.i9RAU7B09466@bat.berlios.de>
+
+Update of /cvsroot/pvpgndocs/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv17803
+
+Modified Files:
+	accesspvpgn.html Admin_for_beginners.htm banner.html 
+	Installing.html motdnews.html NATFirewall.html 
+	Running_a_PvPGN.html 
+Log Message:
+Updated care of pvpgn published docs. Graphic links for "Banners" and "Installing" are not yet correct. Need to identify specific file location at pvpgndocs.berlios.de
+
+Index: accesspvpgn.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/accesspvpgn.html,v
+retrieving revision 1.1.1.1
+retrieving revision 1.2
+diff -C2 -d -r1.1.1.1 -r1.2
+*** accesspvpgn.html	27 Oct 2004 09:04:46 -0000	1.1.1.1
+--- accesspvpgn.html	27 Oct 2004 10:30:05 -0000	1.2
+***************
+*** 87,92 ****
+    <p>You will need to find MacBNetGatewayEditor v0.4. Earlier versions are available with reduced functionality. Version 0.4 has been compiled with support for Mac OS X 10.2 and Mac OS X 10.3. </p>
+    <p>This software can be obtained from <a href="http://pvpgn-files.ath.cx">http://pvpgn-files.ath.cx</a></p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/MacBnet_1.jpg" width="549" height="336"></p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/MacBnet_2.jpg" width="549" height="336"></p>
+    <p>&nbsp;</p>
+  </blockquote>
+--- 87,92 ----
+    <p>You will need to find MacBNetGatewayEditor v0.4. Earlier versions are available with reduced functionality. Version 0.4 has been compiled with support for Mac OS X 10.2 and Mac OS X 10.3. </p>
+    <p>This software can be obtained from <a href="http://pvpgn-files.ath.cx">http://pvpgn-files.ath.cx</a></p>
+!   <p><img src="http://pvpgndocs.berlios.de/MacBnet_1.jpg" width="549" height="336"></p>
+!   <p><img src="http://pvpgndocs.berlios.de/MacBnet_2.jpg" width="549" height="336"></p>
+    <p>&nbsp;</p>
+  </blockquote>
+***************
+*** 98,102 ****
+  <ol>
+    <li>Using ResEdit or ResFool open the file &quot;users/&lt;your username&gt;/Library/Preferences/Battle.net Battle.net Preferences&quot;</li>
+!   <li>Add a new HKEY resource with the name "HKEY_CURRENT_USER\Software\Battle.net\Configuration\Game Data Port" and the decimal port number as the value(insert as ascii)</li>
+  </ol>
+  <blockquote>
+--- 98,102 ----
+  <ol>
+    <li>Using ResEdit or ResFool open the file &quot;users/&lt;your username&gt;/Library/Preferences/Battle.net Battle.net Preferences&quot;</li>
+!   <li>Add a new HKEY resource with the name "HKEY_CURRENT_USER\Software\Battle.net\Configuration\Game Data Port". The data values you add need to go in as per the following example: &quot;0000 0004 0000 3F48&quot; where 3F48 is a hex value of the decimal port number. </li>
+  </ol>
+  <blockquote>
+***************
+*** 177,179 ****
+    <p>&nbsp;</p>
+  </blockquote>
+! <blockquote>&nbsp;</blockquote>
+--- 177,179 ----
+    <p>&nbsp;</p>
+  </blockquote>
+! <blockquote>&nbsp;</blockquote>
+\ No newline at end of file
+
+Index: Admin_for_beginners.htm
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/Admin_for_beginners.htm,v
+retrieving revision 1.1.1.1
+retrieving revision 1.2
+diff -C2 -d -r1.1.1.1 -r1.2
+*** Admin_for_beginners.htm	27 Oct 2004 09:04:49 -0000	1.1.1.1
+--- Admin_for_beginners.htm	27 Oct 2004 10:30:05 -0000	1.2
+***************
+*** 799,801 ****
+  </blockquote>
+  </body>
+! </html>
+--- 799,801 ----
+  </blockquote>
+  </body>
+! </html>
+\ No newline at end of file
+
+Index: banner.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/banner.html,v
+retrieving revision 1.1.1.1
+retrieving revision 1.2
+diff -C2 -d -r1.1.1.1 -r1.2
+*** banner.html	27 Oct 2004 09:04:49 -0000	1.1.1.1
+--- banner.html	27 Oct 2004 10:30:05 -0000	1.2
+***************
+*** 112,118 ****
+      <p>Take a look at these screenshots to help you:<br>
+        <br>
+!       <img src="http://pvpgndocs.sourceforge.net/Old_smacker_1.jpg"><br>
+        <br>
+!       <img src="http://pvpgndocs.sourceforge.net/Old_smacker_2.jpg">
+        <br>
+        <br>
+--- 112,118 ----
+      <p>Take a look at these screenshots to help you:<br>
+        <br>
+!       <img src="http://pvpgndocs.berlios.de/Old_smacker_1.jpg"><br>
+        <br>
+!       <img src="http://pvpgndocs.berlios.de/Old_smacker_2.jpg">
+        <br>
+        <br>
+***************
+*** 130,136 ****
+    </ol>
+    <blockquote>
+!     <p><img src="http://pvpgndocs.sourceforge.net/Old_smacker_3.jpg"></p>
+      <p>      Convert the *.flc file into a *.smk file. (refer screen shot) and you're done. <br>
+!     <img src="http://pvpgndocs.sourceforge.net/Old_smacker_4.jpg">    </p>
+      <p>Oh, want to add sound? You need some WAV files. Then use the Mixer tab and add the sound.<br> 
+      </p>
+--- 130,136 ----
+    </ol>
+    <blockquote>
+!     <p><img src="http://pvpgndocs.berlios.de/Old_smacker_3.jpg"></p>
+      <p>      Convert the *.flc file into a *.smk file. (refer screen shot) and you're done. <br>
+!     <img src="http://pvpgndocs.berlios.de/Old_smacker_4.jpg">    </p>
+      <p>Oh, want to add sound? You need some WAV files. Then use the Mixer tab and add the sound.<br> 
+      </p>
+***************
+*** 185,187 ****
+    <blockquote>
+      <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+!   </blockquote>
+--- 185,187 ----
+    <blockquote>
+      <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+!   </blockquote>
+\ No newline at end of file
+
+Index: Installing.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/Installing.html,v
+retrieving revision 1.1.1.1
+retrieving revision 1.2
+diff -C2 -d -r1.1.1.1 -r1.2
+*** Installing.html	27 Oct 2004 09:05:27 -0000	1.1.1.1
+--- Installing.html	27 Oct 2004 10:30:05 -0000	1.2
+***************
+*** 46,50 ****
+  <blockquote>
+    <p>Before you install PvPGN, you must decide what storage mode you are going to use. &quot;Storage&quot; is what we call in PvPGN the method used to save user account data (usernames, passwords, win/loss records and lots more). Thus it is a very important part of PvPGN and can drastically increase or decrease speed of the server depending on the chosen method. Because we wanted it to be easy to add new storage types we designed a modular solution, something like this:</p>
+!   <p align="left"><img src="http://pvpgndocs.sourceforge.net/storage.png" width="350" height="250"></p>
+    <p align="left">PvPGN can be compiled with support for more than one storage type but (of course) at runtime it will only use one (as chosen by the server admin from the configuration file).</p>
+    <p align="left"><strong>File mode</strong></p>
+--- 46,50 ----
+  <blockquote>
+    <p>Before you install PvPGN, you must decide what storage mode you are going to use. &quot;Storage&quot; is what we call in PvPGN the method used to save user account data (usernames, passwords, win/loss records and lots more). Thus it is a very important part of PvPGN and can drastically increase or decrease speed of the server depending on the chosen method. Because we wanted it to be easy to add new storage types we designed a modular solution, something like this:</p>
+!   <p align="left"><img src="http://pvpgndocs.berlios.de/storage.png" width="350" height="250"></p>
+    <p align="left">PvPGN can be compiled with support for more than one storage type but (of course) at runtime it will only use one (as chosen by the server admin from the configuration file).</p>
+    <p align="left"><strong>File mode</strong></p>
+***************
+*** 456,479 ****
+    <p>Using the Windows installer is the easiest installation method and it includes all the support files necessary for your server to start work right away. The screen shots below illistrate just how simple the install is. It even updates the configuration files for you. Though you would do well to understand them in some detail later as you may want to make changes. </p>
+    <p align="center"><em>The folder shown below contains both the Windows installer from <a href="http://www.pvpgn.de">http://www.pvpgn.de</a> and the release from <a href="http://sourceforge.net/projects/pvpgn">http://sourceforge.net/projects/pvpgn</a> along with the &quot;support files&quot;. </em></p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/win_inst-01.jpg" width="830" height="244"></p>
+      <p align="center"><em>A look inside the release from <a href="http://sourceforge.net/projects/pvpgn">http://sourceforge.net/projects/pvpgn</a> after it has been decompressed. For installation you would need to copy the entire folder to your c:\Program Files directory. Decompress the support files (shown above) and copy them into the &quot;files&quot; directory of the PvPGN release. Next you would edit the bnetd.conf file as required paying particular attention to the storage mode. You can run the server in windows GUI mode by double clicking on PvPGN.exe or read on for installing PvPGN as a Windows service.</em></p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/win_inst-02.jpg" width="822" height="519"></p>
+      <p align="center"><em>The support files decompressed. The contents of this folder should reside in the &quot;Files&quot; folder of the PvPGN release.  </em></p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/win_inst-03.jpg" width="836" height="377"></p>
+      <p align="center"><em>Want to run PvPGN as a service? Running this script will install the required services. </em></p>
+    <p><img src="http://pvpgndocs.sourceforge.net/win_inst-04.jpg" width="352" height="151"></p>
+    <p>&nbsp;</p>
+    <p align="center"><em>The Windows Installer for PvPGN. Much easier and includes automatic configuration. </em></p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/win_inst-05.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/win_inst-06.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/win_inst-07.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/win_inst-08.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/win_inst-09.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/win_inst-10.jpg" width="503" height="394"></p>
+      <p align="center"><em>Once the installation has been completed the following program groups folder is created and appears in your START Programs menu. </em></p>
+      <p><img src="http://pvpgndocs.sourceforge.net/win_inst-11.jpg" width="825" height="306"></p>
+--- 456,479 ----
+    <p>Using the Windows installer is the easiest installation method and it includes all the support files necessary for your server to start work right away. The screen shots below illistrate just how simple the install is. It even updates the configuration files for you. Though you would do well to understand them in some detail later as you may want to make changes. </p>
+    <p align="center"><em>The folder shown below contains both the Windows installer from <a href="http://www.pvpgn.de">http://www.pvpgn.de</a> and the release from <a href="http://sourceforge.net/projects/pvpgn">http://sourceforge.net/projects/pvpgn</a> along with the &quot;support files&quot;. </em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-01.jpg" width="830" height="244"></p>
+      <p align="center"><em>A look inside the release from <a href="http://sourceforge.net/projects/pvpgn">http://sourceforge.net/projects/pvpgn</a> after it has been decompressed. For installation you would need to copy the entire folder to your c:\Program Files directory. Decompress the support files (shown above) and copy them into the &quot;files&quot; directory of the PvPGN release. Next you would edit the bnetd.conf file as required paying particular attention to the storage mode. You can run the server in windows GUI mode by double clicking on PvPGN.exe or read on for installing PvPGN as a Windows service.</em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-02.jpg" width="822" height="519"></p>
+      <p align="center"><em>The support files decompressed. The contents of this folder should reside in the &quot;Files&quot; folder of the PvPGN release.  </em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-03.jpg" width="836" height="377"></p>
+      <p align="center"><em>Want to run PvPGN as a service? Running this script will install the required services. </em></p>
+    <p><img src="http://pvpgndocs.sourceforge.net/win_inst-04.jpg" width="352" height="151"></p>
+    <p>&nbsp;</p>
+    <p align="center"><em>The Windows Installer for PvPGN. Much easier and includes automatic configuration. </em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-05.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-06.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-07.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-08.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-09.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-10.jpg" width="503" height="394"></p>
+      <p align="center"><em>Once the installation has been completed the following program groups folder is created and appears in your START Programs menu. </em></p>
+      <p><img src="http://pvpgndocs.sourceforge.net/win_inst-11.jpg" width="825" height="306"></p>
+***************
+*** 502,504 ****
+  <blockquote>
+    <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+! </blockquote>
+--- 502,504 ----
+  <blockquote>
+    <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+! </blockquote>
+\ No newline at end of file
+
+Index: motdnews.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/motdnews.html,v
+retrieving revision 1.1.1.1
+retrieving revision 1.2
+diff -C2 -d -r1.1.1.1 -r1.2
+*** motdnews.html	27 Oct 2004 09:06:49 -0000	1.1.1.1
+--- motdnews.html	27 Oct 2004 10:30:05 -0000	1.2
+***************
+*** 84,86 ****
+  <blockquote>
+    <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+! </blockquote>
+--- 84,86 ----
+  <blockquote>
+    <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+! </blockquote>
+\ No newline at end of file
+
+Index: NATFirewall.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/NATFirewall.html,v
+retrieving revision 1.1.1.1
+retrieving revision 1.2
+diff -C2 -d -r1.1.1.1 -r1.2
+*** NATFirewall.html	27 Oct 2004 09:06:51 -0000	1.1.1.1
+--- NATFirewall.html	27 Oct 2004 10:30:05 -0000	1.2
+***************
+*** 344,346 ****
+    <p>&nbsp;</p>
+  </blockquote>
+! <blockquote>&nbsp;</blockquote>
+--- 344,346 ----
+    <p>&nbsp;</p>
+  </blockquote>
+! <blockquote>&nbsp;</blockquote>
+\ No newline at end of file
+
+Index: Running_a_PvPGN.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/Running_a_PvPGN.html,v
+retrieving revision 1.1.1.1
+retrieving revision 1.2
+diff -C2 -d -r1.1.1.1 -r1.2
+*** Running_a_PvPGN.html	27 Oct 2004 09:07:23 -0000	1.1.1.1
+--- Running_a_PvPGN.html	27 Oct 2004 10:30:05 -0000	1.2
+***************
+*** 1376,1378 ****
+  <blockquote>
+    <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+! </blockquote>
+--- 1376,1378 ----
+  <blockquote>
+    <p>Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. </p>
+! </blockquote>
+\ No newline at end of file
+
+
+
+From nobody at sheep.berlios.de  Wed Oct 27 12:41:14 2004
+From: nobody at sheep.berlios.de (dgwilson65)
+Date: Wed, 27 Oct 2004 12:41:14 +0200
+Subject: [pvpgndocs-cvs] pvpgndocs/in-progress CHANGELOG.TXT,1.1.1.1,1.2
+Message-ID: <200410271041.i9RAfEB10658@bat.berlios.de>
+
+Update of /cvsroot/pvpgndocs/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv14345
+
+Modified Files:
+	CHANGELOG.TXT 
+Log Message:
+Details of updates tonight
+
+Index: CHANGELOG.TXT
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/CHANGELOG.TXT,v
+retrieving revision 1.1.1.1
+retrieving revision 1.2
+diff -C2 -d -r1.1.1.1 -r1.2
+*** CHANGELOG.TXT	27 Oct 2004 09:04:50 -0000	1.1.1.1
+--- CHANGELOG.TXT	27 Oct 2004 10:41:08 -0000	1.2
+***************
+*** 80,82 ****
+  - Added Mac gameport edit for starcraft
+  - Added MacBnetGatewayEditor doc with Pictures
+! - Updated doc on RUnning a PvPGN server - specifically for recent changes to bnetd.conf file
+\ No newline at end of file
+--- 80,88 ----
+  - Added Mac gameport edit for starcraft
+  - Added MacBnetGatewayEditor doc with Pictures
+! - Updated doc on RUnning a PvPGN server - specifically for recent changes to bnetd.conf file
+! 
+! dgwilson65 - 27 October 2004
+! - Updated html documents in pvpgndocs.berlios.de CVS (took clean versions from the pvpgn docs web site)
+! - Links to images have been updated though this has been unsuccessful. Specifically the documents for 
+!   installation and banner ads need updating and/or the images need uploading to the specified location.
+! - changed some file types to binary (not necessarily a upload problem, maybe user issue at my end!)
+\ No newline at end of file
+
+
+
+From nobody at sheep.berlios.de  Thu Oct 28 09:19:33 2004
+From: nobody at sheep.berlios.de (dgwilson65)
+Date: Thu, 28 Oct 2004 09:19:33 +0200
+Subject: [pvpgndocs-cvs] pvpgndocs/in-progress accesspvpgn.html,1.2,1.3 banner.html,1.2,1.3 Installing.html,1.2,1.3
+Message-ID: <200410280719.i9S7JXB05521@bat.berlios.de>
+
+Update of /cvsroot/pvpgndocs/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv2808
+
+Modified Files:
+	accesspvpgn.html banner.html Installing.html 
+Log Message:
+Fixes previously broken graphic links after the move to berlios.de
+
+Index: accesspvpgn.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/accesspvpgn.html,v
+retrieving revision 1.2
+retrieving revision 1.3
+diff -C2 -d -r1.2 -r1.3
+*** accesspvpgn.html	27 Oct 2004 10:30:05 -0000	1.2
+--- accesspvpgn.html	28 Oct 2004 07:19:30 -0000	1.3
+***************
+*** 87,92 ****
+    <p>You will need to find MacBNetGatewayEditor v0.4. Earlier versions are available with reduced functionality. Version 0.4 has been compiled with support for Mac OS X 10.2 and Mac OS X 10.3. </p>
+    <p>This software can be obtained from <a href="http://pvpgn-files.ath.cx">http://pvpgn-files.ath.cx</a></p>
+!   <p><img src="http://pvpgndocs.berlios.de/MacBnet_1.jpg" width="549" height="336"></p>
+!   <p><img src="http://pvpgndocs.berlios.de/MacBnet_2.jpg" width="549" height="336"></p>
+    <p>&nbsp;</p>
+  </blockquote>
+--- 87,92 ----
+    <p>You will need to find MacBNetGatewayEditor v0.4. Earlier versions are available with reduced functionality. Version 0.4 has been compiled with support for Mac OS X 10.2 and Mac OS X 10.3. </p>
+    <p>This software can be obtained from <a href="http://pvpgn-files.ath.cx">http://pvpgn-files.ath.cx</a></p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/MacBNetGatewayEditor/01.jpg" width="549" height="336"></p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/MacBNetGatewayEditor/02.jpg" width="549" height="336"></p>
+    <p>&nbsp;</p>
+  </blockquote>
+
+Index: banner.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/banner.html,v
+retrieving revision 1.2
+retrieving revision 1.3
+diff -C2 -d -r1.2 -r1.3
+*** banner.html	27 Oct 2004 10:30:05 -0000	1.2
+--- banner.html	28 Oct 2004 07:19:30 -0000	1.3
+***************
+*** 112,118 ****
+      <p>Take a look at these screenshots to help you:<br>
+        <br>
+!       <img src="http://pvpgndocs.berlios.de/Old_smacker_1.jpg"><br>
+        <br>
+!       <img src="http://pvpgndocs.berlios.de/Old_smacker_2.jpg">
+        <br>
+        <br>
+--- 112,118 ----
+      <p>Take a look at these screenshots to help you:<br>
+        <br>
+!       <img src="http://pvpgndocs.berlios.de/images/SmackerTools/01.jpg"><br>
+        <br>
+!       <img src="http://pvpgndocs.berlios.de/images/SmackerTools//02.jpg">
+        <br>
+        <br>
+***************
+*** 120,124 ****
+  	      converting multiple files into a single smacker file. I'll leave you to 
+          figure out how to do that.</p>
+-     <p>&nbsp;</p>
+      <p><strong>Creating your banner with multiple frames</strong></p>
+    </blockquote>
+--- 120,123 ----
+***************
+*** 130,136 ****
+    </ol>
+    <blockquote>
+!     <p><img src="http://pvpgndocs.berlios.de/Old_smacker_3.jpg"></p>
+      <p>      Convert the *.flc file into a *.smk file. (refer screen shot) and you're done. <br>
+!     <img src="http://pvpgndocs.berlios.de/Old_smacker_4.jpg">    </p>
+      <p>Oh, want to add sound? You need some WAV files. Then use the Mixer tab and add the sound.<br> 
+      </p>
+--- 129,135 ----
+    </ol>
+    <blockquote>
+!     <p><img src="http://pvpgndocs.berlios.de/images/SmackerTools/03.jpg"></p>
+      <p>      Convert the *.flc file into a *.smk file. (refer screen shot) and you're done. <br>
+!     <img src="http://pvpgndocs.berlios.de/images/SmackerTools/04.jpg">    </p>
+      <p>Oh, want to add sound? You need some WAV files. Then use the Mixer tab and add the sound.<br> 
+      </p>
+***************
+*** 179,184 ****
+  <p><b><a name="references">References</a></b></p>
+    <blockquote>
+! 	<p><a href="http://pvpgndocs.sourceforge.net/README.adbanner.txt" target="_blank">README.adbanner</a> (from the original bnetd project)</p>
+! 	<p>&nbsp;</p>
+    </blockquote>
+    <p><strong>Legal</strong></p>
+--- 178,182 ----
+  <p><b><a name="references">References</a></b></p>
+    <blockquote>
+! 	<p><a href="http://pvpgndocs.berlios.de/misc/README.adbanner.txt" target="_blank">README.adbanner</a> (from the original bnetd project)</p>
+    </blockquote>
+    <p><strong>Legal</strong></p>
+
+Index: Installing.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/Installing.html,v
+retrieving revision 1.2
+retrieving revision 1.3
+diff -C2 -d -r1.2 -r1.3
+*** Installing.html	27 Oct 2004 10:30:05 -0000	1.2
+--- Installing.html	28 Oct 2004 07:19:30 -0000	1.3
+***************
+*** 46,50 ****
+  <blockquote>
+    <p>Before you install PvPGN, you must decide what storage mode you are going to use. &quot;Storage&quot; is what we call in PvPGN the method used to save user account data (usernames, passwords, win/loss records and lots more). Thus it is a very important part of PvPGN and can drastically increase or decrease speed of the server depending on the chosen method. Because we wanted it to be easy to add new storage types we designed a modular solution, something like this:</p>
+!   <p align="left"><img src="http://pvpgndocs.berlios.de/storage.png" width="350" height="250"></p>
+    <p align="left">PvPGN can be compiled with support for more than one storage type but (of course) at runtime it will only use one (as chosen by the server admin from the configuration file).</p>
+    <p align="left"><strong>File mode</strong></p>
+--- 46,50 ----
+  <blockquote>
+    <p>Before you install PvPGN, you must decide what storage mode you are going to use. &quot;Storage&quot; is what we call in PvPGN the method used to save user account data (usernames, passwords, win/loss records and lots more). Thus it is a very important part of PvPGN and can drastically increase or decrease speed of the server depending on the chosen method. Because we wanted it to be easy to add new storage types we designed a modular solution, something like this:</p>
+!   <p align="left"><img src="http://pvpgndocs.berlios.de/images/install/storage.png" width="350" height="250"></p>
+    <p align="left">PvPGN can be compiled with support for more than one storage type but (of course) at runtime it will only use one (as chosen by the server admin from the configuration file).</p>
+    <p align="left"><strong>File mode</strong></p>
+***************
+*** 157,161 ****
+    <p>Download the PvPGN support files from:<br>
+        <a href="http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz">http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz</a><br>
+!   or get <strong>pvpgn-support-1.0.tar.gz</strong> from <a href="http://sourceforge.net/projects/pvpgn/">http://sourceforge.net/projects/pvpgn/</a></p>
+    <p>Unpack the tarball and put the files into <strong>PREFIX/var/files/</strong>, replacing PREFIX with the prefix you specified during installation (<strong>/usr/local</strong> by default).</p>
+    <p>Now it&rsquo;s time to configure and start your server. See <a href="#config">Configuring your server</a> below.</p>
+--- 157,161 ----
+    <p>Download the PvPGN support files from:<br>
+        <a href="http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz">http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz</a><br>
+!   or get <strong>pvpgn-support-1.0.tar.gz</strong> from <a href="http://pvpgn.berlios.de">http://pvpgn.berlios.de</a></p>
+    <p>Unpack the tarball and put the files into <strong>PREFIX/var/files/</strong>, replacing PREFIX with the prefix you specified during installation (<strong>/usr/local</strong> by default).</p>
+    <p>Now it&rsquo;s time to configure and start your server. See <a href="#config">Configuring your server</a> below.</p>
+***************
+*** 172,176 ****
+    <p>Download the PvPGN support files from:<br>
+        <a href="http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz">http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz</a><br>
+!   or get <strong>pvpgn-support-1.0.tar.gz</strong> from <a href="http://www.sourceforge.net/projects/pvpgn/">http://www.sourceforge.net/projects/pvpgn/</a></p>
+    <p>Unpack the tarball and put the files into<strong> /var/files/</strong></p>
+    <p>The next step is to configure your server:</p>
+--- 172,176 ----
+    <p>Download the PvPGN support files from:<br>
+        <a href="http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz">http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz</a><br>
+!   or get <strong>pvpgn-support-1.0.tar.gz</strong> from <a href="http://pvpgn.berlios.de">http://pvpgn.berlios.de</a></p>
+    <p>Unpack the tarball and put the files into<strong> /var/files/</strong></p>
+    <p>The next step is to configure your server:</p>
+***************
+*** 222,226 ****
+        <td>11.22.33.44:6200</td>
+      </tr>
+!     </table>
+    <p>This will display the w3routaddr as being 192.168.0.2 to users on the local network, and it will display 11.22.33.44 to users from the outside world.</p>
+    <p>Your bitmask can be determined from your server&rsquo;s subnet mask. Here&rsquo;s a simple conversion table:</p>
+--- 222,226 ----
+        <td>11.22.33.44:6200</td>
+      </tr>
+!   </table>
+    <p>This will display the w3routaddr as being 192.168.0.2 to users on the local network, and it will display 11.22.33.44 to users from the outside world.</p>
+    <p>Your bitmask can be determined from your server&rsquo;s subnet mask. Here&rsquo;s a simple conversion table:</p>
+***************
+*** 242,246 ****
+        <td>32</td>
+      </tr>
+!     </table>
+    <p class="style3"><a name="start"></a>Starting your server</p>
+    <p>Your server is now configured. To start the server, type:</p>
+--- 242,246 ----
+        <td>32</td>
+      </tr>
+!   </table>
+    <p class="style3"><a name="start"></a>Starting your server</p>
+    <p>Your server is now configured. To start the server, type:</p>
+***************
+*** 260,264 ****
+    <p align="left"> The Mac installer package can be downloaded from any of the sites listed below. It usually has a name like: <em>pvpgn-1.7.0-1.macos.ppc32.dmg</em> or something similar. The source distribution usually has a name like <em>pvpgn-1.7.0.tar.gz</em></p>
+    <p align="left"><a href="http://pvpgn-files.ath.cx/releases/mac/">http://pvpgn-files.ath.cx/releases/mac/<br>
+!     </a><a href="http://sourceforge.net/projects/pvpgn/">http://sourceforge.net/projects/pvpgn/</a></p>
+    <p align="left">If you downloaded the installer, see the instructions below. If you downloaded the source distribution, see the instructions <a href="#installfromsource">here</a>.</p>
+    <p align="left" class="style3"><a name="usinginstaller"></a>Installing PvPGN using the installer </p>
+--- 260,264 ----
+    <p align="left"> The Mac installer package can be downloaded from any of the sites listed below. It usually has a name like: <em>pvpgn-1.7.0-1.macos.ppc32.dmg</em> or something similar. The source distribution usually has a name like <em>pvpgn-1.7.0.tar.gz</em></p>
+    <p align="left"><a href="http://pvpgn-files.ath.cx/releases/mac/">http://pvpgn-files.ath.cx/releases/mac/<br>
+!     </a><a href="http://pvpgn.berlios.de">http://pvpgn.berlios.de</a></p>
+    <p align="left">If you downloaded the installer, see the instructions below. If you downloaded the source distribution, see the instructions <a href="#installfromsource">here</a>.</p>
+    <p align="left" class="style3"><a name="usinginstaller"></a>Installing PvPGN using the installer </p>
+***************
+*** 331,335 ****
+    <p>Download the PvPGN support files from:<br>
+      <a href="http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz">http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz</a><br>
+!   or get <strong>pvpgn-support-1.0.tar.gz</strong> from <a href="http://sourceforge.net/projects/pvpgn/">http://sourceforge.net/projects/pvpgn/</a></p>
+    <p>Unpack the tarball and put the files into <strong>PREFIX/var/files/</strong>, replacing PREFIX with the prefix you specified during installation (<strong>/usr/local</strong> by default).</p>
+    <p>Now it&rsquo;s time to configure and start your server. See Configuring your server below.</p>
+--- 331,335 ----
+    <p>Download the PvPGN support files from:<br>
+      <a href="http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz">http://pvpgn-files.ath.cx/pvpgn-support-1.0.tar.gz</a><br>
+!   or get <strong>pvpgn-support-1.0.tar.gz</strong> from <a href="http://pvpgn.berlios.de">http://pvpgn.berlios.de</a></p>
+    <p>Unpack the tarball and put the files into <strong>PREFIX/var/files/</strong>, replacing PREFIX with the prefix you specified during installation (<strong>/usr/local</strong> by default).</p>
+    <p>Now it&rsquo;s time to configure and start your server. See Configuring your server below.</p>
+***************
+*** 386,390 ****
+          <td>11.22.33.44:6200</td>
+        </tr>
+!       </table>
+    </div>
+    <p align="left">This will display the w3routaddr as being 192.168.0.2 to users on the local network, and it will display 11.22.33.44 to users from the outside world.</p>
+--- 386,390 ----
+          <td>11.22.33.44:6200</td>
+        </tr>
+!     </table>
+    </div>
+    <p align="left">This will display the w3routaddr as being 192.168.0.2 to users on the local network, and it will display 11.22.33.44 to users from the outside world.</p>
+***************
+*** 408,412 ****
+          <td>32</td>
+        </tr>
+!       </table>
+    </div>
+    <p align="left" class="style3"><a name="startserver"></a>Starting the server</p>
+--- 408,412 ----
+          <td>32</td>
+        </tr>
+!     </table>
+    </div>
+    <p align="left" class="style3"><a name="startserver"></a>Starting the server</p>
+***************
+*** 455,481 ****
+    <p>To install on Windows there are two different PvPGN distributions available. Firstly in the file section of the PvPGN project st sourceforge. <a href="http://sourceforge.net/projects/pvpgn">http://sourceforge.net/projects/pvpgn</a> and the other from <a href="http://www.pvpgn.de">http://www.pvpgn.de</a> or <a href="http://www.world-of-amadeus.de">http://www.world-of-amadeus.de</a> - make sure you download the release that includes the required support files if this is your first installation or you intend to perform a clean installation..</p>
+    <p>Using the Windows installer is the easiest installation method and it includes all the support files necessary for your server to start work right away. The screen shots below illistrate just how simple the install is. It even updates the configuration files for you. Though you would do well to understand them in some detail later as you may want to make changes. </p>
+!   <p align="center"><em>The folder shown below contains both the Windows installer from <a href="http://www.pvpgn.de">http://www.pvpgn.de</a> and the release from <a href="http://sourceforge.net/projects/pvpgn">http://sourceforge.net/projects/pvpgn</a> along with the &quot;support files&quot;. </em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-01.jpg" width="830" height="244"></p>
+!     <p align="center"><em>A look inside the release from <a href="http://sourceforge.net/projects/pvpgn">http://sourceforge.net/projects/pvpgn</a> after it has been decompressed. For installation you would need to copy the entire folder to your c:\Program Files directory. Decompress the support files (shown above) and copy them into the &quot;files&quot; directory of the PvPGN release. Next you would edit the bnetd.conf file as required paying particular attention to the storage mode. You can run the server in windows GUI mode by double clicking on PvPGN.exe or read on for installing PvPGN as a Windows service.</em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-02.jpg" width="822" height="519"></p>
+      <p align="center"><em>The support files decompressed. The contents of this folder should reside in the &quot;Files&quot; folder of the PvPGN release.  </em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-03.jpg" width="836" height="377"></p>
+      <p align="center"><em>Want to run PvPGN as a service? Running this script will install the required services. </em></p>
+!   <p><img src="http://pvpgndocs.sourceforge.net/win_inst-04.jpg" width="352" height="151"></p>
+    <p>&nbsp;</p>
+    <p align="center"><em>The Windows Installer for PvPGN. Much easier and includes automatic configuration. </em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-05.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-06.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-07.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-08.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-09.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/win_inst-10.jpg" width="503" height="394"></p>
+      <p align="center"><em>Once the installation has been completed the following program groups folder is created and appears in your START Programs menu. </em></p>
+!     <p><img src="http://pvpgndocs.sourceforge.net/win_inst-11.jpg" width="825" height="306"></p>
+    <p>&nbsp; </p>
+    <p>&nbsp; </p>
+--- 455,481 ----
+    <p>To install on Windows there are two different PvPGN distributions available. Firstly in the file section of the PvPGN project st sourceforge. <a href="http://sourceforge.net/projects/pvpgn">http://sourceforge.net/projects/pvpgn</a> and the other from <a href="http://www.pvpgn.de">http://www.pvpgn.de</a> or <a href="http://www.world-of-amadeus.de">http://www.world-of-amadeus.de</a> - make sure you download the release that includes the required support files if this is your first installation or you intend to perform a clean installation..</p>
+    <p>Using the Windows installer is the easiest installation method and it includes all the support files necessary for your server to start work right away. The screen shots below illistrate just how simple the install is. It even updates the configuration files for you. Though you would do well to understand them in some detail later as you may want to make changes. </p>
+!   <p align="center"><em>The folder shown below contains both the Windows installer from <a href="http://www.pvpgn.de">http://www.pvpgn.de</a> and the release from <a href="http://pvpgn.berlios.de">http://pvpgn.berlios.de</a> along with the &quot;support files&quot;. </em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/01.jpg" width="830" height="244"></p>
+!     <p align="center"><em>A look inside the release from <a href="http://pvpgn.berlios.de">http://pvpgn.berlios.de</a> after it has been decompressed. For installation you would need to copy the entire folder to your c:\Program Files directory. Decompress the support files (shown above) and copy them into the &quot;files&quot; directory of the PvPGN release. Next you would edit the bnetd.conf file as required paying particular attention to the storage mode. You can run the server in windows GUI mode by double clicking on PvPGN.exe or read on for installing PvPGN as a Windows service.</em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/02.jpg" width="822" height="519"></p>
+      <p align="center"><em>The support files decompressed. The contents of this folder should reside in the &quot;Files&quot; folder of the PvPGN release.  </em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/03.jpg" width="836" height="377"></p>
+      <p align="center"><em>Want to run PvPGN as a service? Running this script will install the required services. </em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/04.jpg" width="352" height="151"></p>
+    <p>&nbsp;</p>
+    <p align="center"><em>The Windows Installer for PvPGN. Much easier and includes automatic configuration. </em></p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/05.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/06.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/07.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/08.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/09.jpg" width="503" height="394"></p>
+      <p>&nbsp; </p>
+!   <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/10.jpg" width="503" height="394"></p>
+      <p align="center"><em>Once the installation has been completed the following program groups folder is created and appears in your START Programs menu. </em></p>
+!     <p><img src="http://pvpgndocs.berlios.de/images/install/Win32/11.jpg" width="825" height="306"></p>
+    <p>&nbsp; </p>
+    <p>&nbsp; </p>
+
+
+

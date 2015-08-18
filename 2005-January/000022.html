@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [pvpgndocs-cvs] pvpgndocs/in-progress NATFirewall.html,1.3,1.4
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/pvpgndocs-cvs/2005-January/index.html" >
+   <LINK REL="made" HREF="mailto:pvpgndocs-cvs%40lists.berlios.de?Subject=Re%3A%20%5Bpvpgndocs-cvs%5D%20pvpgndocs/in-progress%20NATFirewall.html%2C1.3%2C1.4&In-Reply-To=%3C200501310824.j0V8OgN16988%40bat.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000021.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[pvpgndocs-cvs] pvpgndocs/in-progress NATFirewall.html,1.3,1.4</H1>
+    <B>dgwilson65</B> 
+    <A HREF="mailto:pvpgndocs-cvs%40lists.berlios.de?Subject=Re%3A%20%5Bpvpgndocs-cvs%5D%20pvpgndocs/in-progress%20NATFirewall.html%2C1.3%2C1.4&In-Reply-To=%3C200501310824.j0V8OgN16988%40bat.berlios.de%3E"
+       TITLE="[pvpgndocs-cvs] pvpgndocs/in-progress NATFirewall.html,1.3,1.4">nobody at sheep.berlios.de
+       </A><BR>
+    <I>Mon Jan 31 09:24:42 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000021.html">[pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.2,1.3 NATFirewall.html,1.2,1.3
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#22">[ date ]</a>
+              <a href="thread.html#22">[ thread ]</a>
+              <a href="subject.html#22">[ subject ]</a>
+              <a href="author.html#22">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Update of /cvsroot/pvpgndocs/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv13447
+
+Modified Files:
+	NATFirewall.html 
+Log Message:
+Incorporates user feedback (round 1)
+
+Index: NATFirewall.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/NATFirewall.html,v
+retrieving revision 1.3
+retrieving revision 1.4
+diff -u -d -r1.3 -r1.4
+--- NATFirewall.html	30 Jan 2005 08:45:50 -0000	1.3
++++ NATFirewall.html	31 Jan 2005 08:24:40 -0000	1.4
+@@ -3,10 +3,11 @@
+ .style1 {font-size: x-small}
+ .style3 {font-size: xx-small; font-family: &quot;Courier New&quot;, Courier, mono; }
+ .style4 {font-size: x-small; font-style: italic; }
++.style6 {font-size: x-small; font-weight: bold; }
+ --&gt;
+ &lt;/style&gt;
+ &lt;center&gt;
+-    &lt;h2&gt;&lt;a name=&quot;top&quot;&gt;NAT / Firewall and PvPGN &lt;/a&gt;&lt;/h2&gt;
++    &lt;h2&gt;&lt;a name=&quot;top&quot;&gt;NAT / Firewall or TCP/IP Addressing &lt;/a&gt;&lt;/h2&gt;
+     &lt;p&gt;By dgwilson65 and U-238&lt;/p&gt;
+ &lt;/center&gt;
+ &lt;p&gt;&lt;b&gt;&lt;a name=&quot;contents&quot;&gt;Table of contents&lt;/a&gt;&lt;/b&gt;&lt;/p&gt; 
+@@ -28,16 +29,73 @@
+ &lt;blockquote&gt;
+   &lt;p&gt;  This section takes a look at the TCP/IP ports used by PvPGN and the clients
+   that access it. How to get internet users and local LAN users playing on the
+-  same PvPGN server, and what special configuration you need to have applied to
++  same PvPGN server, and what special configuration you need to have applied to PvPGN and
+   your router/firewall.&lt;/p&gt;
+-  &lt;p&gt;Welcome to an adventure in TCP/IP administration. Sorry I didn't mean it
+-    to sound scary but it can be if you let it. Think of this subject as 
++  &lt;p&gt;This is an adventure in TCP/IP administration. Sorry I didn't mean it
++    to sound scary it can be scary only if you let it. Think of this subject as 
+     plumbing, keep a cool head and you should be OK. Remember that for each
+     TCP/IP address on the internet it can open up to 65535 ports from that
+     address to establish a connection to another server or client. Each port
+     has a number. Some of the numbers are reserved for special things and given
+     names, e-mail, ftp, http (web - port 80). If you're not with the program by
+     now then perhaps its time to skip this section.&lt;/p&gt;
++  &lt;p&gt;On to things PvPGN related. Consider the following three server scenarios:&lt;/p&gt;
++  &lt;table width=&quot;554&quot; border=&quot;0&quot;&gt;
++    &lt;tr&gt;
++      &lt;td width=&quot;153&quot;&gt;Server Outside &lt;/td&gt;
++      &lt;td width=&quot;391&quot;&gt;One client inside LAN (with server) &lt;/td&gt;
++    &lt;/tr&gt;
++    &lt;tr&gt;
++      &lt;td&gt;&nbsp;&lt;/td&gt;
++      &lt;td&gt;Two or more clients inside LAN (with server) with or without external players (having external players in this scenario can introduce the famous StarCraft LAG problem &lt;/td&gt;
++    &lt;/tr&gt;
++    &lt;tr&gt;
++      &lt;td&gt;Server on the Router &lt;/td&gt;
++      &lt;td&gt;One client inside LAN (with server) &lt;/td&gt;
++    &lt;/tr&gt;
++    &lt;tr&gt;
++      &lt;td&gt;&nbsp;&lt;/td&gt;
++      &lt;td&gt;Two or more clients inside LAN (with server) with or without external players (having external players in this scenario can introduce the famous StarCraft LAG problem &lt;/td&gt;
++    &lt;/tr&gt;
++    &lt;tr&gt;
++      &lt;td&gt;Server inside the LAN &lt;/td&gt;
++      &lt;td&gt;One client inside LAN (with server) &lt;/td&gt;
++    &lt;/tr&gt;
++    &lt;tr&gt;
++      &lt;td&gt;&nbsp;&lt;/td&gt;
++      &lt;td&gt;Two or more clients inside LAN (with server) with or without external players (having external players in this scenario can introduce the famous StarCraft LAG problem &lt;/td&gt;
++    &lt;/tr&gt;
++    &lt;tr&gt;
++      &lt;td&gt;&nbsp;&lt;/td&gt;
++      &lt;td&gt;Adding a more complicated scenario where you might have LAN clients in another network then the server but still behind the same router. &lt;/td&gt;
++    &lt;/tr&gt;
++    &lt;tr&gt;
++      &lt;td&gt;&nbsp;&lt;/td&gt;
++      &lt;td&gt;And yet more complicated but fundamentally the same scenario as just above where some &quot;LAN&quot; client on another network are actually across a VPN (Virtual Private Network) &lt;/td&gt;
++    &lt;/tr&gt;
++  &lt;/table&gt;
++  &lt;p&gt;Examining the Clients they fit into three classes. They have been grouped like this because they have different networking configuration needs.&lt;/p&gt;
++  &lt;table width=&quot;424&quot; border=&quot;0&quot;&gt;
++    &lt;tr&gt;
++      &lt;td width=&quot;64&quot; valign=&quot;top&quot;&gt;Class 1 &lt;/td&gt;
++      &lt;td width=&quot;126&quot;&gt;Diablo I*,&lt;br&gt; 
++      StarCraft, BroodWar, WarCraft 2 BattleNet Edition &lt;/td&gt;
++    &lt;/tr&gt;
++    &lt;tr&gt;
++      &lt;td valign=&quot;top&quot;&gt;Class 2 &lt;/td&gt;
++      &lt;td&gt;Diablo II &lt;/td&gt;
++    &lt;/tr&gt;
++    &lt;tr&gt;
++      &lt;td valign=&quot;top&quot;&gt;Class 3 &lt;/td&gt;
++      &lt;td&gt;&lt;p&gt;WarCraft III, &lt;br&gt;
++        WarCraft III - The Frozen Throne &lt;/p&gt;
++      &lt;/td&gt;
++    &lt;/tr&gt;
++  &lt;/table&gt;
++  &lt;p&gt;* Diablo 1 - might be a special class all on it's one. We're actually unsure if it uses port 6112 UDP for game traffic. It possibly uses some TCP port instead. &lt;/p&gt;
++  &lt;p&gt;What's the message here? Well, think about whay you are trying to achieve and why. The set up requirements of the many different scenarios differ and to get them all running will take some careful thought and planning. Our recommendation is to set up one piece, test it, verify everything works, before adding to your configuration. This recommendation applies to both PvPGN and your Firewall/router. &lt;/p&gt;
++  &lt;p&gt;If something doesn't work make sure that you are logging for &quot;TRACE and DEBUG&quot; in your bnetd.conf file. Try to resolve issue first by examining the bnetd.log file and your firewall/router logs. Then and only if you have tried to fix things yourself post a message to the forums or log onto IRC. Make sure you have details about PvPGN versions, log file details, conf file details etc. &lt;/p&gt;
++  &lt;p&gt;As always suggested changes or enhancements to the documentation for the continual cycle of improvement are welcome. We look forward to your feedback and contributoins (even better when you've written them!). &lt;/p&gt;
+ &lt;/blockquote&gt;
+ &lt;p&gt;&lt;br&gt;
+   &lt;strong&gt;What ports does PvPGN use?&lt;a name=&quot;ports&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+@@ -57,7 +115,6 @@
+      6114   UDP      bntrackd        Tracking Daemon for Producing Stats
+      6200   TCP      bnetd           Warcraft III Router
+      6667   TCP      bnetd           IRC Connection Support&lt;/pre&gt;
+-    &lt;pre&gt;&nbsp;&lt;/pre&gt;
+     &lt;p&gt; Here is a break down of what games uses what port on the client side:&lt;/p&gt;
+     &lt;pre&gt;     Game Name                               Port Number(s)
+      Warcraft II Battle.net (TM) Edition (BNE)  6112
+@@ -256,8 +313,10 @@
+     # input (ip:port) output (ip:port) exclude (ip/netmask) include (ip/netmask) #
+     #--------------------- ---------------------- ---------------------------- -------------------------#
+     #192.168.1.100:4000 internetip:4000 192.168.1.0/24 ANY&lt;/pre&gt;
+-&lt;p&gt;The Gametrans file is always read in order and will stop at the first matching rule. So if you want two different rules for the same client, you will need     
+-      to make sure that each rule is unique. &lt;/p&gt;
++&lt;blockquote&gt;
++  &lt;p&gt;The Gametrans file is always read in order and will stop at the first matching rule. So if you want two different rules for the same client, you will need     
++        to make sure that each rule is unique. &lt;/p&gt;
++&lt;/blockquote&gt;
+ &lt;p&gt;&lt;strong&gt; StarCraft and LAG&lt;a name=&quot;Starctaftlag&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;blockquote&gt;
+   &lt;p&gt;There is a situation where StarCraft can become unplayable. It requires a set up with a Local Area Network within which the PvPGN server exists and more than one player within that LAN. Additionally it requires an internet connection with one or more players - the external network or WAN. There are a couple more things to understand:&lt;/p&gt;
+@@ -446,7 +505,7 @@
+     The first ruleset is ment to let your LAN clients connect to &lt;SPAN 
+ class=searchlite&gt;w3route&lt;/SPAN&gt; via LAN but the external clients to connect via external IP:&lt;BR&gt;
+     &lt;!--c1--&gt;
+-      &lt;/p&gt;
++  &lt;/p&gt;
+   &lt;DIV class=codetop&gt;
+     &lt;pre&gt;0.0.0.0:6200 &nbsp;192.168.0.1:6200 NONE &nbsp; &nbsp;192.168.0.0/24
+ 0.0.0.0:6200 &nbsp;internetip:6200 &nbsp;NONE &nbsp; &nbsp;ANY
+@@ -475,7 +534,20 @@
+ #w3routeaddr = &quot;internetip:6200&quot;
+ w3routeaddr = &quot;0.0.0.0:6200&quot;&lt;/pre&gt;
+ &lt;p&gt;Where an internetip address of 0.0.0.0 means that w3routeaddr is not configured. Replace 0.0.0.0. with your external ip address and restart the PvPGN server software. &lt;/p&gt;
+-&lt;p&gt;&nbsp; &lt;/p&gt;
++&lt;p&gt;&lt;strong&gt;Tips&lt;/strong&gt;&lt;/p&gt;
++&lt;table width=&quot;661&quot; border=&quot;0&quot;&gt;
++  &lt;tr&gt;
++    &lt;td width=&quot;129&quot; valign=&quot;top&quot;&gt;&lt;span class=&quot;style6&quot;&gt;User Comment &lt;/span&gt;&lt;/td&gt;
++    &lt;td width=&quot;522&quot;&gt;There are lots of uses of 0.0.0.0 in the configuration but my server never worked right until I used an actual IP instead of 0.0.0.0. And at times I could get some clients to connect &lt;/td&gt;
++  &lt;/tr&gt;
++  &lt;tr&gt;
++    &lt;td valign=&quot;top&quot;&gt;&lt;span class=&quot;style6&quot;&gt;Developer Comment &lt;/span&gt;&lt;/td&gt;
++    &lt;td&gt;&lt;p&gt;For some time now (most likely since version 1.7.0) address 0.0.0.0 for w3route is converted by the server before being sent to the client - the local end point of that client bnet connection.&lt;/p&gt;
++      &lt;p&gt;This means that in the usual case it works. &lt;/p&gt;
++      &lt;p&gt;Where it does not work is for example when the sevver is inside the LAN and the client is external. In that case it will send the LAN IP address because that is what it sees as the local endpoint of the bnet connection of that client. &lt;/p&gt;&lt;/td&gt;
++  &lt;/tr&gt;
++&lt;/table&gt;
++&lt;p&gt;&nbsp;&lt;/p&gt;
+ &lt;/blockquote&gt;
+ &lt;p&gt;&lt;strong&gt;          Setting up a Diablo II closed realm from behind a router&lt;a name=&quot;diablorouter&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;blockquote&gt;
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000021.html">[pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.2,1.3 NATFirewall.html,1.2,1.3
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#22">[ date ]</a>
+              <a href="thread.html#22">[ thread ]</a>
+              <a href="subject.html#22">[ subject ]</a>
+              <a href="author.html#22">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/pvpgndocs-cvs">More information about the pvpgndocs-cvs
+mailing list</a><br>
+</body></html>

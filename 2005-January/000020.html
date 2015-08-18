@@ -1,0 +1,743 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.1.1.1,1.2
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/pvpgndocs-cvs/2005-January/index.html" >
+   <LINK REL="made" HREF="mailto:pvpgndocs-cvs%40lists.berlios.de?Subject=Re%3A%20%5Bpvpgndocs-cvs%5D%20pvpgndocs/in-progress%20diablo.html%2C1.1.1.1%2C1.2&In-Reply-To=%3C200501300202.j0U221N09463%40bat.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000019.html">
+   <LINK REL="Next"  HREF="000021.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.1.1.1,1.2</H1>
+    <B>dgwilson65</B> 
+    <A HREF="mailto:pvpgndocs-cvs%40lists.berlios.de?Subject=Re%3A%20%5Bpvpgndocs-cvs%5D%20pvpgndocs/in-progress%20diablo.html%2C1.1.1.1%2C1.2&In-Reply-To=%3C200501300202.j0U221N09463%40bat.berlios.de%3E"
+       TITLE="[pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.1.1.1,1.2">nobody at sheep.berlios.de
+       </A><BR>
+    <I>Sun Jan 30 03:02:01 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000019.html">[pvpgndocs-cvs] pvpgndocs/in-progress tracker.html,1.1,1.2
+</A></li>
+        <LI>Next message: <A HREF="000021.html">[pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.2,1.3 NATFirewall.html,1.2,1.3
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#20">[ date ]</a>
+              <a href="thread.html#20">[ thread ]</a>
+              <a href="subject.html#20">[ subject ]</a>
+              <a href="author.html#20">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Update of /cvsroot/pvpgndocs/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv20143
+
+Modified Files:
+	diablo.html 
+Log Message:
+Applied some updates ready for putting online.
+
+Index: diablo.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/diablo.html,v
+retrieving revision 1.1.1.1
+retrieving revision 1.2
+diff -u -d -r1.1.1.1 -r1.2
+--- diablo.html	27 Oct 2004 09:04:52 -0000	1.1.1.1
++++ diablo.html	30 Jan 2005 02:01:56 -0000	1.2
+@@ -1,5 +1,10 @@
++&lt;style type=&quot;text/css&quot;&gt;
++&lt;!--
++.style1 {font-size: x-small}
++--&gt;
++&lt;/style&gt;
+ &lt;center&gt;
+-    &lt;h2&gt;&lt;a name=&quot;top&quot;&gt;Diablo II Closed Realm &lt;/a&gt;&lt;/h2&gt;
++    &lt;h2&gt;&lt;a name=&quot;top&quot;&gt;Diablo II&lt;/a&gt;&lt;/h2&gt;
+     &lt;p&gt;By dgwilson65 and U-238&lt;/p&gt;
+ &lt;/center&gt;
+ &lt;p&gt;&lt;b&gt;&lt;a name=&quot;contents&quot;&gt;Table of contents&lt;/a&gt;&lt;/b&gt;&lt;/p&gt; 
+@@ -7,150 +12,145 @@
+     &lt;div style=&quot;background-color: #DDDDDD; color: #000000; padding: 4px;&quot;&gt;
+       &lt;ul&gt;
+         &lt;li&gt;&lt;a href=&quot;#intro&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+-        &lt;li&gt;&lt;a href=&quot;#openorclosed&quot;&gt;What is a Diablo II Open Server &amp; Diablo II Closed Server? &lt;/a&gt;&lt;/li&gt;
++        &lt;li&gt;&lt;a href=&quot;#openServer&quot;&gt;What is a Diablo II Open Server?&lt;/a&gt;&lt;/li&gt;
++        &lt;li&gt;&lt;a href=&quot;#openorclosed&quot;&gt;What is a Diablo II Closed Server? &lt;/a&gt;&lt;a href=&quot;#closedServer&quot;&gt;#closedServer&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#whatis&quot;&gt;What is a Diablo II closed realm?&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#windows&quot;&gt;Setting up Diablo II closed realm on Windows &lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#unix&quot;&gt;Setting up Diablo II closed realm on Linux/Mac &lt;/a&gt;&lt;/li&gt;
+-        &lt;li&gt;&lt;a href=&quot;#diablomod&quot;&gt;Setting up a realm for a Diablo 2 mod &lt;/a&gt;&lt;/li&gt;
++        &lt;li&gt;&lt;a href=&quot;#diablomod&quot;&gt;Setting up a realm for a Diablo II mod &lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#morerealms&quot;&gt;Setting up two or more realms &lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#chars&quot;&gt;Editing characters&lt;/a&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+     &lt;/div&gt;
+   &lt;/blockquote&gt;
+ &lt;p&gt;&lt;b&gt;&lt;a name=&quot;intro&quot;&gt;Introduction&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+-&lt;p&gt;  It's great to have server to play on that is your own or used by a group
+-  of friends, you can have your own local competitions, tournaments etc. Having
+-  a server is one thing, getting people to connect to it is another.&lt;br&gt;
+-  &lt;br&gt;
+-&lt;/p&gt;
+-&lt;p&gt;&lt;strong&gt;What is a Diablo II Open Server &amp; Diablo II Closed Server?&lt;a name=&quot;openorclosed&quot;&gt;&lt;/a&gt; &lt;/strong&gt;&lt;/p&gt;
+ &lt;blockquote&gt;
+-      &lt;blockquote&gt;
+-        &lt;p&gt; The answer to this question is overall simple.&lt;/p&gt;
+-        &lt;p&gt; 1. A Diablo II Open Server means that your character is not stored on PvPGN 
+-  like on the real Battle.net (TM). When you play on Battle.net (TM), your player is 
+-  stored on their server. In open Battle.net (TM) game play, your character is 
+-  stored on your local computer instead. This requires D2CS &amp; D2DBS to be 
+-  running in addition to PvPGN on the server side. It has several advantages &amp; 
+-  disadvantages.&lt;/p&gt;
+-        &lt;p&gt;&lt;br&gt;
+-          &lt;strong&gt;Advantages:&lt;/strong&gt;&lt;br&gt;
+-          * Single player character can be used to play on Battle.net (TM).&lt;br&gt;
+-          * Backups can be made of your character in case your character file gets hosed or lost. &lt;/p&gt;
+-        &lt;p&gt;&lt;strong&gt;Disadvantages:&lt;/strong&gt;&lt;br&gt;
++  &lt;p&gt;  This Diablo documentation has been built from contributions that existed in the forums at &lt;a href=&quot;<A HREF="http://forums.pvpgn.org">http://forums.pvpgn.org</A>&quot;&gt;<A HREF="http://forums.pvpgn.org&lt;/a">http://forums.pvpgn.org&lt;/a</A>&gt;. All credit remains with the original authors.    &lt;br&gt;
++  &lt;/p&gt;
++&lt;/blockquote&gt;
++&lt;p&gt;&lt;strong&gt;What is a Diablo II Open Server ?&lt;a name=&quot;openServer&quot;&gt;&lt;/a&gt; &lt;/strong&gt;&lt;/p&gt;
++&lt;blockquote&gt;
++      &lt;p&gt; A Diablo II Open Server means that your character is not stored on PvPGN 
++    like on the real Battle.net (TM). When you play on Battle.net (TM), your player is 
++    stored on their server. In Open Battle.net (TM) game play, your character is 
++    stored on your local computer instead. This requires D2CS &amp; D2DBS to be 
++    running in addition to PvPGN on the server side. It has several advantages &amp; disadvantages.&lt;/p&gt;
++      &lt;p&gt;        &lt;strong&gt;Advantages:&lt;/strong&gt;&lt;br&gt;
++        * Single player character can be used to play on Battle.net (TM).&lt;br&gt;
++        * Backups can be made of your character in case your character file gets hosed or lost. &lt;/p&gt;
++      &lt;p&gt;&lt;strong&gt;Disadvantages:&lt;/strong&gt;&lt;br&gt;
+       * Players can easily cheat.&lt;br&gt;
+       * Trainers maybe used through out game play undetected.&lt;br&gt;
+       * Admin has very little to no control over player's characters.&lt;br&gt;
+       * Players can use hacks on their characters, weapons, armor, etc. to make them extremely powerful. &lt;/p&gt;
+-        &lt;p&gt; To play on an Open Battle.net (TM) Server, simply:&lt;br&gt;
++      &lt;p&gt; To play on an Open Battle.net (TM) Server, simply:&lt;br&gt;
+       * Start Diablo II or Diablo II LOD.&lt;br&gt;
+       * Select the Gateway of the machine you want to connect to.&lt;br&gt;
+       * Click on the Other Multiplayer button.&lt;br&gt;
+       * Click on the Open Battle.net (TM) button. &lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt; 2. A Diablo II Closed Server means that your character is stored on PvPGN 
+-      just like the real Battle.net (TM). This requires D2CS, D2DBS &amp; D2GS to be running 
+-      in addition to PvPGN on the server side. It has several advantages &amp; 
+-      disadvantages as well.&lt;/p&gt;
+-        &lt;p&gt;&lt;br&gt;
+-          &lt;strong&gt;Advantages:&lt;/strong&gt;&lt;br&gt;
+-          * Hacks &amp; trainers are much easier to detect.&lt;br&gt;
+-          * Players have a much harder time trying to cheat.&lt;br&gt;
+-          * The admin of the server has more control over player's characters. &lt;/p&gt;
+-        &lt;p&gt; &lt;strong&gt;Disadvantages:&lt;/strong&gt;&lt;br&gt;
+-      * Single player characters cannot be used.&lt;br&gt;
+-      * Backups can't be made of your character by the player.&lt;br&gt;
+-      * Slow servers or bandwidth can cause lagging or additional wait time.&lt;br&gt;
+-      * Player is at the mercy of the admin, should the admin wish to delete your character.&lt;br&gt;
++  &lt;/p&gt;
++&lt;/blockquote&gt;
++&lt;p&gt;&lt;strong&gt;What is a Diablo II  Closed Server?&lt;/strong&gt; &lt;a name=&quot;closedServer&quot;&gt;&lt;/a&gt;&lt;/p&gt;
++&lt;blockquote&gt;
++      &lt;p&gt;  A Diablo II Closed Server means that your character is stored on PvPGN 
++        just like the real Battle.net (TM). This requires D2CS, D2DBS &amp; D2GS to be running 
++      in addition to PvPGN on the server side. It has several advantages &amp; disadvantages as well.&lt;/p&gt;
++      &lt;p&gt;        &lt;strong&gt;Advantages:&lt;/strong&gt;&lt;br&gt;
++        * Hacks &amp; trainers are much easier to detect.&lt;br&gt;
++        * Players have a much harder time trying to cheat.&lt;br&gt;
++        * The admin of the server has more control over player's characters. &lt;/p&gt;
++      &lt;p&gt; &lt;strong&gt;Disadvantages:&lt;/strong&gt;&lt;br&gt;
++        * Single player characters cannot be used.&lt;br&gt;
++        * Backups can't be made of your character by the player.&lt;br&gt;
++        * Slow servers or bandwidth can cause lagging or additional wait time.&lt;br&gt;
++        * Player is at the mercy of the admin, should the admin wish to delete your character.&lt;br&gt;
+       * If you don't log in frequently, your account could be deleted, along with your character. &lt;/p&gt;
+-        &lt;p&gt; To play on an Closed Battle.net (TM) Server, simply:&lt;br&gt;
+-      * Start Diablo II or Diablo II LOD.&lt;br&gt;
+-      * Select the Gateway of the machine you want to connect to.&lt;br&gt;
+-      * Click on the Battle.net (TM) button. &lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt; 3. You may run both an open &amp; closed server at the same time. 
+-      The player, in such a situation, would then choose which game play they 
+-      would like to use (open or closed).&lt;br&gt;
++      &lt;p&gt; To play on an Closed Battle.net (TM) Server, simply:&lt;br&gt;
++        * Start Diablo II or Diablo II LOD.&lt;br&gt;
++        * Select the Gateway of the machine you want to connect to.&lt;br&gt;
++        * Click on the Battle.net (TM) button. &lt;br&gt;
+         &lt;/p&gt;
+-      &lt;/blockquote&gt;
++      &lt;p&gt;&lt;em&gt; You may run both an open &amp; closed server at the same time. 
++          The player, in such a situation, would then choose which game play they 
++          would like to use (open or closed).&lt;br&gt;
++          &lt;/em&gt;&lt;/p&gt;
+ &lt;/blockquote&gt;
+ &lt;p&gt;&lt;strong&gt;What is a Diablo II closed realm?&lt;a name=&quot;whatis&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;blockquote&gt;
+   &lt;blockquote&gt;
++    &lt;p&gt;&lt;&lt;em&gt;Editors Note: This text yet to be created&lt;/em&gt;&gt; &lt;/p&gt;
+     &lt;p&gt;&nbsp; &lt;/p&gt;
+   &lt;/blockquote&gt;
+ &lt;/blockquote&gt;
+ &lt;p&gt;&lt;strong&gt; Setting up Diablo II closed realm on Windows &lt;a name=&quot;windows&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;blockquote&gt;
+-      &lt;blockquote&gt;
+-        &lt;p&gt; Hopefully this will help you Windows users with the setup of D2Closed support 
+-for Diablo II &amp; LOD v1.10's&lt;/p&gt;
+-        &lt;p&gt;&lt;br&gt;
+-          &lt;br&gt; 
+-          &lt;strong&gt;Recommended&lt;/strong&gt;&lt;/p&gt;
+-        &lt;p&gt;  #1) If you are having trouble with D2GS, don't try to repair your current setup. 
+-  Just redownload and start fresh, and save your &quot;charsave&quot; folder to not lose any 
+-  charactor data.&lt;br&gt;
+-  &lt;br&gt;
+-  #2) If this isn't your first time configuring D2GS, and you are going to start 
+-  fresh, run &quot;regedit&quot; and navigate to&lt;br&gt;
++      &lt;p class=&quot;style1&quot;&gt; Thanks to Gambit642 at forums.pvpgn.org for this howto contribution.&lt;/p&gt;
++      &lt;p&gt;This documentation has been written to Windows users with the set up of D2Closed support 
++    for Diablo II &amp; LOD v1.10's&lt;/p&gt;
++      &lt;p&gt;&lt;br&gt;
++        &lt;br&gt; 
++        &lt;strong&gt;Recommended&lt;/strong&gt;&lt;/p&gt;
++      &lt;p&gt; #1) If you are having trouble with D2GS, don't try to repair your current setup. 
++    Just redownload and start fresh, and save your &quot;charsave&quot; folder to not lose any 
++    charactor data.&lt;br&gt;
++    &lt;br&gt;
++    #2) If this isn't your first time configuring D2GS, and you are going to start 
++    fresh, run &quot;regedit&quot; and navigate to&lt;br&gt;
+ &quot;HKEY_LOCAL_MACHINE\SOFTWARE&quot;&lt;br&gt;
+   and delete the &quot;D2Server&quot; registry key. If this was imported wrong, it could be 
+-  the problem with your server.&lt;br&gt;
+-  &lt;br&gt;
+-  #3) You may also have problems with your registry for PvPGN services, D2CS &amp; D2DBS. 
+-  Run &quot;regedit&quot; and navigate to&lt;br&gt;
++    the problem with your server.&lt;br&gt;
++    &lt;br&gt;
++    #3) You may also have problems with your registry for PvPGN services, D2CS &amp; D2DBS. 
++    Run &quot;regedit&quot; and navigate to&lt;br&gt;
+ &quot;HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\&quot;&lt;br&gt;
+   and delete the &quot;D2CS&quot; &amp; &quot;D2DBS&quot; registry keys. These need to point to the updated 
+-  location of the D2CS and D2DBS EXE's, or they will not launch correctly as services&lt;br&gt;
+-  &lt;br&gt;
+-  #4) Understand that Diablo II Closed Realm support is created from a combination 
+-  of four different servers/services.&lt;/p&gt;
+-      &lt;/blockquote&gt;
+-      &lt;ul&gt;
+-        &lt;li&gt; Player Vs. Player Gaming Network Server (PvPGN)&lt;/li&gt;
+-        &lt;li&gt;          Diablo II Game Server (D2GS)&lt;/li&gt;
+-        &lt;li&gt;Diablo II DataBase Server (D2DBS)&lt;/li&gt;
+-        &lt;li&gt;Diablo II Console Server (D2CS)&lt;br&gt;
+-          &lt;br&gt;
+-          #5) Understand, Diablo II Game Server (D2GS) is only a Windows binary! There is no 
+-          Source for this binary, so it has not been converted to other OS platforms. &quot;DRU&quot; 
+-          (Divels R' Us), writer of D2GS, is a ghost, and has no known contact information. 
+-          If you are hosting PvPGN on a non-Windows machine, you will need either a seprate 
+-          Windows PC to run D2GS, or type of Windows emulation, such as Virtual PC for Mac, or 
+-          WINE for UNIX.&lt;br&gt;
+-          &lt;br&gt;
+-          #6) Understand that D2Closed.exe is dead! It was the single file which ran the Diablo II 
+-          DataBase Server(D2DBS) &amp; Diablo II Console Server(D2CS) services. But fear not, it was 
+-          replaced with the two seprate files, D2DBS.exe &amp; D2CS.exe, included in the PvPGN install, &lt;br&gt;
+-          which do the same thing, only better.&lt;br&gt;
+-          &lt;br&gt;
+-          #7) It's always best to use your computers REAL IP address, not the universal 
+-          loopback (127.0.0.1)&lt;br&gt;
+-          &lt;br&gt;
+-          #8) It is very important to decide whare you want your Executable's and don't move them. 
+-          For services to run properly, the applications need to remain in the same location&lt;br&gt;
+-          &lt;br&gt;
+-          #9) If you are using any type of &quot;No CD&quot; cracks, or game loaders, dont be supprized 
+-          if you are having trouble. A known issue when not using the original game executable's 
+-          is dropping right after a game starts&lt;br&gt;
+-          &lt;br&gt;
+-        #10) These instructions are for Windows 2000/2000 Server/XP/2003 Server&lt;/li&gt;
+-      &lt;/ul&gt;
+-      &lt;blockquote&gt;
+-        &lt;p&gt;&lt;br&gt;
+-          &lt;br&gt;
+-          &lt;strong&gt;Requirements&lt;/strong&gt;&lt;br&gt;
+-          &lt;br&gt;
+-          #1) A already working PvPGN directory (v1.6.3 Recomended) - download here:
+-          PvPGN v1.6.3 Win32&lt;br&gt;
+-          &lt;br&gt;
+-          #2) Diablo 2 Game Server(D2GS) (Beta 6 Required for Daiblo 2 v1.10) - download here:   
+-          D2GS Beta6 Win32 
+-          and use WinRAR to extract to a folder in PvPGN directory, called &quot;D2GS&quot;&lt;br&gt;
+-          &lt;br&gt;
+-        #3) The following files copied into the new PvPGN\D2GS directory&lt;/p&gt;
+-        &lt;pre&gt;           d2data.mpq
++    location of the D2CS and D2DBS EXE's, or they will not launch correctly as services&lt;br&gt;
++    &lt;br&gt;
++    #4) Understand that Diablo II Closed Realm support is created from a combination 
++    of four different servers/services.&lt;/p&gt;
++&lt;/blockquote&gt;
++&lt;ul&gt;
++  &lt;li&gt; Player Vs. Player Gaming Network Server (PvPGN)&lt;/li&gt;
++  &lt;li&gt; Diablo II Game Server (D2GS)&lt;/li&gt;
++  &lt;li&gt;Diablo II DataBase Server (D2DBS)&lt;/li&gt;
++  &lt;li&gt;Diablo II Console Server (D2CS)&lt;br&gt;
++    &lt;br&gt;
++    #5) Understand, Diablo II Game Server (D2GS) is only a Windows binary! There is no 
++    Source for this binary, so it has not been converted to other OS platforms. &quot;DRU&quot; (Divels R' Us), writer of D2GS, is a ghost, and has no known contact information. 
++            If you are hosting PvPGN on a non-Windows machine, you will need either a seprate 
++            Windows PC to run D2GS, or type of Windows emulation, such as Virtual PC for Mac, or 
++            WINE for UNIX.&lt;br&gt;
++    &lt;br&gt;
++    #6) Understand that D2Closed.exe is dead! It was the single file which ran the Diablo II 
++    DataBase Server(D2DBS) &amp; Diablo II Console Server(D2CS) services. But fear not, it was 
++            replaced with the two seprate files, D2DBS.exe &amp; D2CS.exe, included in the PvPGN install, &lt;br&gt;
++    which do the same thing, only better.&lt;br&gt;
++    &lt;br&gt;
++    #7) It's always best to use your computers REAL IP address, not the universal 
++    loopback (127.0.0.1)&lt;br&gt;
++    &lt;br&gt;
++    #8) It is very important to decide whare you want your Executable's and don't move them. 
++    For services to run properly, the applications need to remain in the same location&lt;br&gt;
++    &lt;br&gt;
++    #9) If you are using any type of &quot;No CD&quot; cracks, or game loaders, dont be supprized 
++            if you are having trouble. A known issue when not using the original game executable's 
++            is dropping right after a game starts&lt;br&gt;
++    &lt;br&gt;
++    #10) These instructions are for Windows 2000/2000 Server/XP/2003 Server&lt;/li&gt;
++&lt;/ul&gt;
++&lt;blockquote&gt;
++          &lt;p&gt;&lt;br&gt;
++            &lt;br&gt;
++            &lt;strong&gt;Requirements&lt;/strong&gt;&lt;br&gt;
++            &lt;br&gt;
++            #1) A already working PvPGN directory (v1.6.3 Recomended) - the development team would prefer if you were on the latest software release. This helps assisting people if everyone is on a current release and saves the issues of working through old &amp; resolved bugs. &lt;br&gt;
++            &lt;br&gt;
++            #2) Diablo 2 Game Server(D2GS) (Beta 6 Required for Daiblo 2 v1.10) - download here:   
++            D2GS Beta6 Win32 
++            and use WinRAR to extract to a folder in PvPGN directory, called &quot;D2GS&quot;&lt;br&gt;
++            &lt;br&gt;
++          #3) The following files copied into the new PvPGN\D2GS directory&lt;/p&gt;
++  &lt;pre&gt;           d2data.mpq
+            d2exp.mpq
+            d2sfx.mpq
+            d2speech.mpq
+@@ -168,187 +168,182 @@
+            Fog.dll
+            ijl11.dll
+            Storm.dll&lt;/pre&gt;
+-        &lt;p&gt;&lt;br&gt;
+-          &lt;br&gt;
+-          NOTE:&lt;br&gt;
+-          a. Files must be taken from the installation directory of Diablo II LOD&lt;br&gt;
+-          b. Diablo must have the Lord Of Distruction Expansion installed&lt;br&gt;
+-          c. D2 Must be upgraded to v1.10&lt;br&gt;
+-          d. Missing any of these files will result in D2GS crashing with an error, or just closing silently&lt;br&gt;
+-        e. D2GS.exe, D2GSSVC.exe and d2server.dll are needed and included in the D2GS download&lt;/p&gt;
+-        &lt;p&gt;&lt;strong&gt;D2GS Config&lt;/strong&gt;&lt;br&gt;
+-          &lt;br&gt;
+-          Go to you D2GS folder, RIGHT-CLICK &quot;d2gs.reg&quot;, and left-click &quot;Edit&quot;. 
+-          Find &quot;D2CSIP&quot;=&quot;192.168.1.1&quot; &amp; &quot;D2DBSIP&quot;=&quot;192.168.1.1&quot;, and change the 
+-          preconfigured IP's to the IP of the computer hosting the D2CS &amp; D2DBS 
+-          services. This can be another computer hosting D2CS &amp; D2DBS (MAC, UNIX, WINE, WIN etc). Save and close.&lt;br&gt;
+-          &lt;br&gt;
+-          Run the &quot;install.bat&quot; included with the D2GS download. Click &quot;yes&quot; when prompted 
+-&quot;Are you sure you want to add the information in....to the registry&quot; 
+-(NOTE: D2GS has been registered as a service which will begin automatically, 
+-the next time your computer restarts)&lt;br&gt;
+-      &lt;/p&gt;
+-        &lt;p&gt;&lt;strong&gt;D2GS Config&lt;/strong&gt;&lt;/p&gt;
+-        &lt;p&gt; &lt;br&gt;
+-          Open &quot;d2cs.conf&quot; in a text editor (located in PvPGN\conf folder). Find and change the following lines:&lt;br&gt;
+-          &lt;br&gt;
+-          realmname = D2CS&lt;br&gt;
+-          to&lt;br&gt;
+-          realmname = &quot;[Realm Name You Want]&quot;&lt;br&gt;
+-          (NOTE: ADD quotes!!! Or else you Will have a problem if your realm name has 
+-          any spaces in it)&lt;br&gt;
+-          &lt;br&gt;
+-          Edit these lines to match the IP of your server:&lt;br&gt;
+-          &lt;br&gt;
+-          servaddrs = [IP OF YOUR SERVER]:6113&lt;br&gt;
+-          gameservlist = [IP OF YOUR SERVER]&lt;br&gt;
+-          bnetdaddr = [IP OF YOUR SERVER]:6112&lt;br&gt;
+-          &lt;br&gt;
+-          Save &amp; Close &quot;d2cs.conf&quot;&lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;&lt;strong&gt;D2DBS Config&lt;/strong&gt;&lt;/p&gt;
+-        &lt;p&gt; 
+-          Open &quot;d2dbs.conf&quot; in a text editor (located in PvPGN\conf folder). Edit these lines to match the IP of your server:&lt;br&gt;
+-          &lt;br&gt;
+-          servaddrs = [IP OF YOUR SERVER]:6114&lt;br&gt;
+-          gameservlist = [IP OF YOUR SERVER]&lt;br&gt;
+-          &lt;br&gt;
+-          Save &amp; Close &quot;d2dbs.conf&quot;&lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;&lt;strong&gt;Realm Config&lt;/strong&gt;&lt;/p&gt;
+-        &lt;p&gt;          Open &quot;realm.list&quot; in a text editor (located in PvPGN\conf folder). Find and change 
+-        the following line to match your setup:&lt;/p&gt;
+-        &lt;pre&gt;  [&quot;REALM IN d2cs.conf&quot;] [&quot;REALM DESCRIPTION&quot;] [SERVER IP]:6113 [PUBLIC SERVER IP]:6113&lt;/pre&gt;
+-        &lt;p&gt;          Save &amp; Close &quot;realm.list&quot;&lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;&lt;strong&gt;Starting Services&lt;/strong&gt;&lt;/p&gt;
+-        &lt;p&gt;          #1) Run PvPGN.exe&lt;br&gt;
+-          #2) Run &quot;install.bat&quot; located in PvPGN directory(not the one in D2GS folder), this will install the PvPGN programs as services&lt;br&gt;
+-          #3) Loged in as an Administrator, Go to: &lt;br&gt;
+-          Start Menu -&gt; Settings -&gt; Control Panel -&gt; Administrative Tools, and run &quot;Services&quot;&lt;br&gt;
+-          Find and start &quot;D2DBS&quot;, &quot;D2CS&quot; and &quot;Diablo 2 Closed Server&quot; services. Also, make sure that the services stay started under the &quot;status&quot; column, if not, you fucked up somewhere. You should see some movement on the PvPGN log screen if you have it visible&lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;&lt;strong&gt;Final Step&lt;/strong&gt;&lt;/p&gt;
+-        &lt;p&gt; &lt;br&gt;
+-          Go to:&lt;br&gt;
+-          Start Menu -&gt; Run&lt;br&gt;
+-          type, &quot;cmd&quot; then press enter to get to command promt&lt;br&gt;
+-          &lt;br&gt;
+-        In command promt, type:&lt;/p&gt;
+-        &lt;pre&gt;
++          &lt;p&gt;&lt;br&gt;
++            &lt;br&gt;
++            NOTE:&lt;br&gt;
++            a. Files must be taken from the installation directory of Diablo II LOD&lt;br&gt;
++            b. Diablo must have the Lord Of Distruction Expansion installed&lt;br&gt;
++            c. D2 Must be upgraded to v1.10&lt;br&gt;
++            d. Missing any of these files will result in D2GS crashing with an error, or just closing silently&lt;br&gt;
++          e. D2GS.exe, D2GSSVC.exe and d2server.dll are needed and included in the D2GS download&lt;/p&gt;
++          &lt;p&gt;&lt;strong&gt;D2GS Config&lt;/strong&gt;&lt;br&gt;
++            &lt;br&gt;
++            Go to you D2GS folder, RIGHT-CLICK &quot;d2gs.reg&quot;, and left-click &quot;Edit&quot;. 
++            Find &quot;D2CSIP&quot;=&quot;192.168.1.1&quot; &amp; &quot;D2DBSIP&quot;=&quot;192.168.1.1&quot;, and change the 
++            preconfigured IP's to the IP of the computer hosting the D2CS &amp; D2DBS 
++            services. This can be another computer hosting D2CS &amp; D2DBS (MAC, UNIX, WINE, WIN etc). Save and close.&lt;br&gt;
++            &lt;br&gt;
++            Run the &quot;install.bat&quot; included with the D2GS download. Click &quot;yes&quot; when prompted 
++&quot;Are you sure you want to add the information in....to the registry&quot; (NOTE: D2GS has been registered as a service which will begin automatically, 
++  the next time your computer restarts)&lt;br&gt;
++          &lt;/p&gt;
++          &lt;p&gt;&lt;strong&gt;D2GS Config&lt;/strong&gt;&lt;/p&gt;
++          &lt;p&gt; &lt;br&gt;
++            Open &quot;d2cs.conf&quot; in a text editor (located in PvPGN\conf folder). Find and change the following lines:&lt;br&gt;
++            &lt;br&gt;
++            realmname = D2CS&lt;br&gt;
++            to&lt;br&gt;
++            realmname = &quot;[Realm Name You Want]&quot;&lt;br&gt;
++            (NOTE: ADD quotes!!! Or else you Will have a problem if your realm name has 
++            any spaces in it)&lt;br&gt;
++            &lt;br&gt;
++            Edit these lines to match the IP of your server:&lt;br&gt;
++            &lt;br&gt;
++            servaddrs = [IP OF YOUR SERVER]:6113&lt;br&gt;
++            gameservlist = [IP OF YOUR SERVER]&lt;br&gt;
++            bnetdaddr = [IP OF YOUR SERVER]:6112&lt;br&gt;
++            &lt;br&gt;
++            Save &amp; Close &quot;d2cs.conf&quot;&lt;br&gt;
++          &lt;/p&gt;
++          &lt;p&gt;&lt;strong&gt;D2DBS Config&lt;/strong&gt;&lt;/p&gt;
++          &lt;p&gt; Open &quot;d2dbs.conf&quot; in a text editor (located in PvPGN\conf folder). Edit these lines to match the IP of your server:&lt;br&gt;
++            &lt;br&gt;
++            servaddrs = [IP OF YOUR SERVER]:6114&lt;br&gt;
++            gameservlist = [IP OF YOUR SERVER]&lt;br&gt;
++            &lt;br&gt;
++            Save &amp; Close &quot;d2dbs.conf&quot;&lt;br&gt;
++          &lt;/p&gt;
++          &lt;p&gt;&lt;strong&gt;Realm Config&lt;/strong&gt;&lt;/p&gt;
++          &lt;p&gt; Open &quot;realm.list&quot; in a text editor (located in PvPGN\conf folder). Find and change 
++          the following line to match your setup:&lt;/p&gt;
++  &lt;pre&gt;  [&quot;REALM IN d2cs.conf&quot;] [&quot;REALM DESCRIPTION&quot;] [SERVER IP]:6113 [PUBLIC SERVER IP]:6113&lt;/pre&gt;
++          &lt;p&gt; Save &amp; Close &quot;realm.list&quot;&lt;br&gt;
++          &lt;/p&gt;
++          &lt;p&gt;&lt;strong&gt;Starting Services&lt;/strong&gt;&lt;/p&gt;
++          &lt;p&gt;          #1) Run PvPGN.exe&lt;br&gt;
++            #2) Run &quot;install.bat&quot; located in PvPGN directory(not the one in D2GS folder), this will install the PvPGN programs as services&lt;br&gt;
++            #3) Loged in as an Administrator, Go to: &lt;br&gt;
++            Start Menu -&gt; Settings -&gt; Control Panel -&gt; Administrative Tools, and run &quot;Services&quot;&lt;br&gt;
++            Find and start &quot;D2DBS&quot;, &quot;D2CS&quot; and &quot;Diablo 2 Closed Server&quot; services. Also, make sure that the services stay started under the &quot;status&quot; column, if not, you fucked up somewhere. You should see some movement on the PvPGN log screen if you have it visible&lt;br&gt;
++          &lt;/p&gt;
++          &lt;p&gt;&lt;strong&gt;Final Step&lt;/strong&gt;&lt;/p&gt;
++          &lt;p&gt; &lt;br&gt;
++            Go to:&lt;br&gt;
++            Start Menu -&gt; Run&lt;br&gt;
++            type, &quot;cmd&quot; then press enter to get to command promt&lt;br&gt;
++            &lt;br&gt;
++          In command promt, type:&lt;/p&gt;
++  &lt;pre&gt;
+  &quot;telnet [IP OF D2GS SERVER] 8888&quot;&lt;/pre&gt;
+-        &lt;p&gt;&lt;br&gt;
+-          Return will be:&lt;br&gt;
++          &lt;p&gt;&lt;br&gt;
++            Return will be:&lt;br&gt;
+ &quot;password: _&quot;&lt;br&gt;
+-        &lt;br&gt;
+-        Type, &quot;abcd123&quot; as password&lt;br&gt;
+-        &lt;br&gt;
+-        (NOTE: Once in Administrative Console, you can type &quot;help&quot; for a list of 
+-        commands)&lt;br&gt;
+-        &lt;br&gt;
+-        Type, &quot;passwd&quot; to change the password you just entered to whatever you want&lt;br&gt;
+-        &lt;br&gt;
+-        When finished resetting password, type&lt;br&gt;
+-&quot;maxgame [ANY VALUE HIGHER THAN 0]&lt;br&gt;
+-(example: &quot;maxgame 50&quot;)&lt;br&gt;
+-        &lt;br&gt;
+-        This will allow you to create the specified number of symotanious Diablo games. 
+-        This value is &quot;0&quot; by defualt, meaning, it wont allow the creation of any D2 games untill it is modified.&lt;br&gt;
+-        &lt;br&gt;
+-        All done..&lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;&lt;strong&gt;Trouble Shooting&lt;/strong&gt;&lt;/p&gt;
+-        &lt;p&gt;          Having trouble with D2 Closed? Re-Check the steps above (especially the Registry related info). Make sure that all D2GS support files are in the D2GS directroy (I know you think they are ok, but just re-check). Run Task Manager, and check to make sure the all required processes are running (PvPGN.exe, D2GS.exe, D2DBS.exe, D2CS.exe, if used; MySQL.exe). If a process is not staying in memory, it is closeing iteslf. You will need to check the logs to see what is causing the process to close.&lt;br&gt;
+           &lt;br&gt;
+-          PvPGN ---&gt; PvPGN.LOG&lt;br&gt;
+-          D2CS.exe ---&gt; D2CS.LOG&lt;br&gt;
+-          D2DBS.exe ---&gt; D2DBS.LOG&lt;br&gt;
+-          D2GS.exe ---&gt; D2GS/D2GS.LOG&lt;br&gt;
++          Type, &quot;abcd123&quot; as password&lt;br&gt;
+           &lt;br&gt;
+-          Lastly, the order in which D2 Closed interacts, is another way to determine the problem.&lt;br&gt;
+-          PvPGN ---&gt; D2GS ---&gt; D2CS+D2DBS&lt;br&gt;
++          (NOTE: Once in Administrative Console, you can type &quot;help&quot; for a list of 
++          commands)&lt;br&gt;
+           &lt;br&gt;
+-          Cant connect to you server at all, with any Blizzard game?&lt;br&gt;
+-          Network problems or problem with PvPGN.&lt;br&gt;
++          Type, &quot;passwd&quot; to change the password you just entered to whatever you want&lt;br&gt;
+           &lt;br&gt;
+-          Connect OK with all Blizzard games, D2 Open working, Closed wont work due to &quot;No Realm&quot; or not allowing creation of new games? 
+-          Diablo 2 Game Server (D2GS) takes over at this point, and is having trouble.&lt;br&gt;
++          When finished resetting password, type&lt;br&gt;
++&quot;maxgame [ANY VALUE HIGHER THAN 0]&lt;br&gt;
++  (example: &quot;maxgame 50&quot;)&lt;br&gt;
+           &lt;br&gt;
+-          Connect OK with all games, D2 Closed OR Open connect and start with realm support, but storage problems or crashing?&lt;br&gt;
+-          Possibly D2CS or D2DBS.&lt;br&gt;
++          This will allow you to create the specified number of symotanious Diablo games. 
++          This value is &quot;0&quot; by defualt, meaning, it wont allow the creation of any D2 games untill it is modified.&lt;br&gt;
+           &lt;br&gt;
+-        &lt;/p&gt;
+-      &lt;/blockquote&gt;
++          All done..&lt;br&gt;
++          &lt;/p&gt;
++          &lt;p&gt;&lt;strong&gt;Trouble Shooting&lt;/strong&gt;&lt;/p&gt;
++          &lt;p&gt;          Having trouble with D2 Closed? Re-Check the steps above (especially the Registry related info). Make sure that all D2GS support files are in the D2GS directroy (I know you think they are ok, but just re-check). Run Task Manager, and check to make sure the all required processes are running (PvPGN.exe, D2GS.exe, D2DBS.exe, D2CS.exe, if used; MySQL.exe). If a process is not staying in memory, it is closeing iteslf. You will need to check the logs to see what is causing the process to close.&lt;br&gt;
++            &lt;br&gt;
++            PvPGN ---&gt; PvPGN.LOG&lt;br&gt;
++            D2CS.exe ---&gt; D2CS.LOG&lt;br&gt;
++            D2DBS.exe ---&gt; D2DBS.LOG&lt;br&gt;
++            D2GS.exe ---&gt; D2GS/D2GS.LOG&lt;br&gt;
++            &lt;br&gt;
++            Lastly, the order in which D2 Closed interacts, is another way to determine the problem.&lt;br&gt;
++            PvPGN ---&gt; D2GS ---&gt; D2CS+D2DBS&lt;br&gt;
++            &lt;br&gt;
++            Cant connect to you server at all, with any Blizzard game?&lt;br&gt;
++            Network problems or problem with PvPGN.&lt;br&gt;
++            &lt;br&gt;
++            Connect OK with all Blizzard games, D2 Open working, Closed wont work due to &quot;No Realm&quot; or not allowing creation of new games? 
++            Diablo 2 Game Server (D2GS) takes over at this point, and is having trouble.&lt;br&gt;
++            &lt;br&gt;
++            Connect OK with all games, D2 Closed OR Open connect and start with realm support, but storage problems or crashing?&lt;br&gt;
++            Possibly D2CS or D2DBS.&lt;br&gt;
++            &lt;br&gt;
++          &lt;/p&gt;
+ &lt;/blockquote&gt;
+ &lt;p&gt;&lt;strong&gt;Setting up Diablo II closed realm on Linux/Mac &lt;a name=&quot;unix&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;blockquote&gt;
+-      &lt;blockquote&gt;
+-        &lt;p&gt; How do I setup D2CS &amp; D2DBS on *nix based systems?&lt;br&gt;
+-Make sure that PvPGN works ok on it's own before attempting to run D2CS or D2DBS. D2CS will attempt to connect &amp; create a link between it and PvPGN. D2CS will also attempt to connect to D2DBS for the ladder data. This is why it is so important to have PvPGN working before attempting to load D2CS or D2DBS. Also, I'm not sure whether or not D2CS or D2DBS will run under Windows.&lt;/p&gt;
+-        &lt;p&gt; D2CS &amp; D2DBS must both be installed &amp; loaded in order to host a Diablo II Open Server. What's an Open Server? Click here to find out.&lt;/p&gt;
+-        &lt;p&gt; First lets start out on how to setup D2CS. D2CS is the realm server which handles realm requests. Go to the path where you install PvPGN in the etc sub-directory &amp; edit the d2cs.conf file.&lt;/p&gt;
+-        &lt;p&gt; 1. In the d2cs.conf file, look for the &quot;Server Major Settings&quot; section. Scroll down to the realmname, it should look like this:&lt;/p&gt;
+-        &lt;p&gt; * realmname = D2CS&lt;br&gt;
+-  This is the realm name D2CS will attempt to use when a user connects. Leave this the way it is for now. &lt;/p&gt;
+-        &lt;p&gt; Now go to the servaddrs field &amp; make it look like this:&lt;/p&gt;
+-        &lt;p&gt; * servaddrs = 0.0.0.0:6113&lt;br&gt;
+-  This tells D2CS to listen on port 6113, using the TCP protocol, on all IP addresses. &lt;/p&gt;
+-        &lt;p&gt; Scroll down to gameservlist. This field should be commented out by default via a &quot;#&quot;, which tells D2CS to ignore this line. Unless you plan on using D2GS, which will not be discussed in this section, leave this commented out:&lt;/p&gt;
+-        &lt;p&gt; * #gameservlist = your.gameserver&lt;br&gt;
+-  This has a hash in front of it by default &amp; really should be left that way unless you plan on running a Diablo II Closed Server. Basically, if you are also running D2GS, you would enable this line &amp; change this to the IP address of your D2GS server, which is not discussed in this section. &lt;/p&gt;
+-        &lt;p&gt; Now for the final setting before we can start D2CS. Scroll down again to bnetdaddr. This field is the IP address PvPGN is running on. D2CS attempts to connect to PvPGN &amp; create a link or route. So that when someone connects with Diablo II, PvPGN will route them to the D2CS daemon. This would typically be the exact same IP address &amp; port of the servaddrs in the bnetd.conf file. For now set it like this:&lt;/p&gt;
+-        &lt;p&gt; * bnetdaddr = 0.0.0.0:6112&lt;br&gt;
+-  This tells D2CS to initiate it's connection/hand-shaking procedure to any IP address on your system that is listening on the TCP protocol on port 6112. Which would typically be PvPGN assuming you used the instructions for setting up a PvPGN server above. &lt;/p&gt;
+-        &lt;p&gt; The last setting to that should be changed in the d2cs.conf file are the loglevels located in the &quot;Message Logs&quot; section. Scroll down &amp; change loglevels to:&lt;/p&gt;
+-        &lt;p&gt; * loglevels = fatal,error,warn,info,trace,debug&lt;br&gt;
+-  This tells D2CS to log all possible errors &amp; trace information so we can see who connects to D2CS. &lt;/p&gt;
+-        &lt;p&gt; Save &amp; close your text editor. Leave the rest of the settings alone in the d2cs.conf. D2CS should run file without any other changes.&lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt; 2. Now at least part of D2CS is configured but their still is another file that must be changed before you can move on to configuring D2DBS. The realm list needs to be configured so D2CS knows what IP address the D2CS realm goes to. Edit the realm.list file, also located in the etc sub-directory.&lt;/p&gt;
+-        &lt;p&gt; * For starters, make sure the D2CS realm line isn't hashed (#) out. So basically, make sure their no # in front of the D2CS line. This sample illustrates the CORRECT setup.&lt;/p&gt;
+-        &lt;p&gt;&nbsp;&lt;/p&gt;
+-        &lt;pre&gt;# ------realm name------ --------------description-------------- ----ip:port---- #
++      &lt;p&gt; How do I setup D2CS &amp; D2DBS on *nix based systems?&lt;br&gt;
++        Make sure that PvPGN works ok on it's own before attempting to run D2CS or D2DBS. D2CS will attempt to connect &amp; create a link between it and PvPGN. D2CS will also attempt to connect to D2DBS for the ladder data. This is why it is so important to have PvPGN working before attempting to load D2CS or D2DBS. Also, I'm not sure whether or not D2CS or D2DBS will run under Windows.&lt;/p&gt;
++      &lt;p&gt; D2CS &amp; D2DBS must both be installed &amp; loaded in order to host a Diablo II Open Server. What's an Open Server? Click here to find out.&lt;/p&gt;
++      &lt;p&gt; First lets start out on how to setup D2CS. D2CS is the realm server which handles realm requests. Go to the path where you install PvPGN in the etc sub-directory &amp; edit the d2cs.conf file.&lt;/p&gt;
++      &lt;p&gt; 1. In the d2cs.conf file, look for the &quot;Server Major Settings&quot; section. Scroll down to the realmname, it should look like this:&lt;/p&gt;
++      &lt;p&gt; * realmname = D2CS&lt;br&gt;
++    This is the realm name D2CS will attempt to use when a user connects. Leave this the way it is for now. &lt;/p&gt;
++      &lt;p&gt; Now go to the servaddrs field &amp; make it look like this:&lt;/p&gt;
++      &lt;p&gt; * servaddrs = 0.0.0.0:6113&lt;br&gt;
++    This tells D2CS to listen on port 6113, using the TCP protocol, on all IP addresses. &lt;/p&gt;
++      &lt;p&gt; Scroll down to gameservlist. This field should be commented out by default via a &quot;#&quot;, which tells D2CS to ignore this line. Unless you plan on using D2GS, which will not be discussed in this section, leave this commented out:&lt;/p&gt;
++      &lt;p&gt; * #gameservlist = your.gameserver&lt;br&gt;
++        This has a hash in front of it by default &amp; really should be left that way unless you plan on running a Diablo II Closed Server. Basically, if you are also running D2GS, you would enable this line &amp; change this to the IP address of your D2GS server, which is not discussed in this section. &lt;/p&gt;
++      &lt;p&gt; Now for the final setting before we can start D2CS. Scroll down again to bnetdaddr. This field is the IP address PvPGN is running on. D2CS attempts to connect to PvPGN &amp; create a link or route. So that when someone connects with Diablo II, PvPGN will route them to the D2CS daemon. This would typically be the exact same IP address &amp; port of the servaddrs in the bnetd.conf file. For now set it like this:&lt;/p&gt;
++      &lt;p&gt; * bnetdaddr = 0.0.0.0:6112&lt;br&gt;
++    This tells D2CS to initiate it's connection/hand-shaking procedure to any IP address on your system that is listening on the TCP protocol on port 6112. Which would typically be PvPGN assuming you used the instructions for setting up a PvPGN server above. &lt;/p&gt;
++      &lt;p&gt; The last setting to that should be changed in the d2cs.conf file are the loglevels located in the &quot;Message Logs&quot; section. Scroll down &amp; change loglevels to:&lt;/p&gt;
++      &lt;p&gt; * loglevels = fatal,error,warn,info,trace,debug&lt;br&gt;
++        This tells D2CS to log all possible errors &amp; trace information so we can see who connects to D2CS. &lt;/p&gt;
++      &lt;p&gt; Save &amp; close your text editor. Leave the rest of the settings alone in the d2cs.conf. D2CS should run file without any other changes.&lt;br&gt;
++  &lt;/p&gt;
++      &lt;p&gt; 2. Now at least part of D2CS is configured but their still is another file that must be changed before you can move on to configuring D2DBS. The realm list needs to be configured so D2CS knows what IP address the D2CS realm goes to. Edit the realm.list file, also located in the etc sub-directory.&lt;/p&gt;
++      &lt;p&gt; * For starters, make sure the D2CS realm line isn't hashed (#) out. So basically, make sure their no # in front of the D2CS line. This sample illustrates the CORRECT setup.&lt;/p&gt;
++      &lt;p&gt;&nbsp;&lt;/p&gt;
++  &lt;pre&gt;# ------realm name------ --------------description-------------- ----ip:port---- #
+ # #
+         &quot;D2CS&quot;                      &quot;Divine Knights&quot;             26.135.61.243:6113
+ # #&lt;/pre&gt;
+-        &lt;p&gt;The illustration below is a sample of an INCORRECT setup. Notice the hash in front of the D2CS line.&lt;/p&gt;
+-        &lt;pre&gt;# ------realm name------ --------------description-------------- ----ip:port---- #
++      &lt;p&gt;The illustration below is a sample of an INCORRECT setup. Notice the hash in front of the D2CS line.&lt;/p&gt;
++  &lt;pre&gt;# ------realm name------ --------------description-------------- ----ip:port---- #
+ # #
+ #&quot;D2CS&quot;                             &quot;Divine Knights&quot;             26.135.61.243:6113
+ # #
+          &lt;/pre&gt;
+-        &lt;p&gt;Under the ----ip:port---- section, change this to the exact IP address of the computer that is running D2CS on it, which is illustrated below.&lt;/p&gt;
+-        &lt;p&gt; * X.X.X.X:6113&lt;br&gt;
+-  Replace X.X.X.X with the IP address of the computer that D2CS is running on. This must be specific, 0.0.0.0:6113 won't work. &lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt; Save &amp; close your text editor. Now that you are finished setting up D2CS, D2DBS needs to be setup. Your might notice that setting up D2DBS is almost exactly like setting up D2CS, with a few minor differences, like the port number D2DBS uses.&lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;To setup D2DBS, edit the d2dbs.conf file located in the etc sub-directory. Scroll down to the &quot;Server Major Settings&quot; section &amp; change servaddrs to:&lt;/p&gt;
+-        &lt;p&gt; * servaddrs = 0.0.0.0:6114&lt;br&gt;
+-  This tells D2DBS to listen on port 6114, using the TCP protocol, on all IP addresses. &lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;Scroll down to gameservlist. This field should be commented out by default via a &quot;#&quot;, which tells D2DBS to ignore this line. Unless you plan on using creating different realms (other than the default D2CS realm) which will not be discussed here, leave this commented out:&lt;/p&gt;
+-        &lt;p&gt; * #gameservlist = your.gameserver&lt;br&gt;
+-  This has a hash in front of it by default &amp; really should be left that way unless you plan on running a Diablo II Closed Server. Basically, if you are also running D2GS, you would enable this line &amp; change this to the IP address of your D2GS server, which is not discussed in this section. &lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;The last setting to that should be changed in the d2dbs.conf file are the loglevels located in the &quot;Message Logs&quot; section. Scroll down &amp; change loglevels to:&lt;/p&gt;
+-        &lt;p&gt; * loglevels = fatal,error,warn,info,trace,debug&lt;br&gt;
+-  This tells D2DBS to log all possible errors including ladder loading errors. &lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;Save &amp; close your text editor. Leave the rest of the settings alone in the d2dbs.conf. D2DBS should run file without any other changes.&lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;# Now, make sure port 6113 is open to the world for the TCP protocol. Opening port 6114 to the world isn't necessary. D2CS &amp; D2DBS use these ports to communicate to PvPGN &amp; each other during game initialization. Just make sure that port 6112 is open for both the TCP &amp; UDP protocols &amp; that port 6113 is open for the TCP protocol.&lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;# Now your ready to start D2CS &amp; D2DBS. Make sure you have PvPGN started first &amp; running or D2CS will fail &amp; close itself.&lt;/p&gt;
+-        &lt;p&gt;On *nix based systems type:&lt;/p&gt;
+-        &lt;p&gt; * /usr/local/sbin/d2cs&lt;br&gt;
+-  and&lt;br&gt;
+-  * /usr/local/sbin/d2dbs&lt;br&gt;
+-  If you installed D2CS or D2DBS in a different directory, change the path accordingly. &lt;br&gt;
+-        &lt;/p&gt;
+-        &lt;p&gt;Check your bnetd, d2cs &amp; d2dbs log files. Each log file should look like something this:&lt;/p&gt;
+-        &lt;p&gt;Exert from the bnetd log, look for the bold lines in this illustration&lt;/p&gt;
+-      &lt;/blockquote&gt;
++      &lt;p&gt;Under the ----ip:port---- section, change this to the exact IP address of the computer that is running D2CS on it, which is illustrated below.&lt;/p&gt;
++      &lt;p&gt; * X.X.X.X:6113&lt;br&gt;
++    Replace X.X.X.X with the IP address of the computer that D2CS is running on. This must be specific, 0.0.0.0:6113 won't work. &lt;br&gt;
++  &lt;/p&gt;
++      &lt;p&gt; Save &amp; close your text editor. Now that you are finished setting up D2CS, D2DBS needs to be setup. Your might notice that setting up D2DBS is almost exactly like setting up D2CS, with a few minor differences, like the port number D2DBS uses.&lt;br&gt;
++  &lt;/p&gt;
++      &lt;p&gt;To setup D2DBS, edit the d2dbs.conf file located in the etc sub-directory. Scroll down to the &quot;Server Major Settings&quot; section &amp; change servaddrs to:&lt;/p&gt;
++      &lt;p&gt; * servaddrs = 0.0.0.0:6114&lt;br&gt;
++    This tells D2DBS to listen on port 6114, using the TCP protocol, on all IP addresses. &lt;br&gt;
++  &lt;/p&gt;
++      &lt;p&gt;Scroll down to gameservlist. This field should be commented out by default via a &quot;#&quot;, which tells D2DBS to ignore this line. Unless you plan on using creating different realms (other than the default D2CS realm) which will not be discussed here, leave this commented out:&lt;/p&gt;
++      &lt;p&gt; * #gameservlist = your.gameserver&lt;br&gt;
++        This has a hash in front of it by default &amp; really should be left that way unless you plan on running a Diablo II Closed Server. Basically, if you are also running D2GS, you would enable this line &amp; change this to the IP address of your D2GS server, which is not discussed in this section. &lt;br&gt;
++  &lt;/p&gt;
++      &lt;p&gt;The last setting to that should be changed in the d2dbs.conf file are the loglevels located in the &quot;Message Logs&quot; section. Scroll down &amp; change loglevels to:&lt;/p&gt;
++      &lt;p&gt; * loglevels = fatal,error,warn,info,trace,debug&lt;br&gt;
++    This tells D2DBS to log all possible errors including ladder loading errors. &lt;br&gt;
++  &lt;/p&gt;
++      &lt;p&gt;Save &amp; close your text editor. Leave the rest of the settings alone in the d2dbs.conf. D2DBS should run file without any other changes.&lt;br&gt;
++  &lt;/p&gt;
++      &lt;p&gt;# Now, make sure port 6113 is open to the world for the TCP protocol. Opening port 6114 to the world isn't necessary. D2CS &amp; D2DBS use these ports to communicate to PvPGN &amp; each other during game initialization. Just make sure that port 6112 is open for both the TCP &amp; UDP protocols &amp; that port 6113 is open for the TCP protocol.&lt;br&gt;
++  &lt;/p&gt;
++      &lt;p&gt;# Now your ready to start D2CS &amp; D2DBS. Make sure you have PvPGN started first &amp; running or D2CS will fail &amp; close itself.&lt;/p&gt;
++      &lt;p&gt;On *nix based systems type:&lt;/p&gt;
++      &lt;p&gt; * /usr/local/sbin/d2cs&lt;br&gt;
++    and&lt;br&gt;
++    * /usr/local/sbin/d2dbs&lt;br&gt;
++    If you installed D2CS or D2DBS in a different directory, change the path accordingly. &lt;br&gt;
++  &lt;/p&gt;
++      &lt;p&gt;Check your bnetd, d2cs &amp; d2dbs log files. Each log file should look like something this:&lt;/p&gt;
++      &lt;p&gt;Exert from the bnetd log, look for the bold lines in this illustration&lt;/p&gt;
+ &lt;/blockquote&gt;
+ &lt;pre&gt;Mar 25 22:57:14 [info ] eventlog_startup: logging event levels: fatal,error,warn,info
+ Mar 25 22:57:14 [info ] pvpgn_greeting: PvPGN version BnetD Mod 1.4.4 /w MySQL process 744
+@@ -386,9 +381,7 @@
+ Mar 25 22:58:15 [info ] output_write_to_file: flushing output to disk&lt;/pre&gt;
+ &lt;p&gt;&nbsp;&lt;/p&gt;
+ &lt;blockquote&gt;
+-  &lt;blockquote&gt;
+-    &lt;p&gt;Exert from the d2cs log&lt;/p&gt;
+-  &lt;/blockquote&gt;
++  &lt;p&gt;Exert from the d2cs log&lt;/p&gt;
+ &lt;/blockquote&gt;
+ &lt;pre&gt;Aug 17 22:53:59 main: D2CS Version 0.1.0b4 Built Aug 17 2002
+ Aug 17 22:53:59 d2gs_create: added game server 192.168.0.1 (id: 1) to list
+@@ -408,8 +401,8 @@
+ &lt;blockquote&gt;
+   &lt;blockquote&gt;
+     &lt;p&gt;&nbsp;&lt;/p&gt;
+-    &lt;p&gt;Exert from the d2dbs log&lt;/p&gt;
+   &lt;/blockquote&gt;
++  &lt;p&gt;Exert from the d2dbs log&lt;/p&gt;
+ &lt;/blockquote&gt;
+ &lt;pre&gt;Aug 27 12:48:20 main: D2DBS Version 0.1.0b4 Built Aug 17 2002
+ Aug 27 12:48:20 main: server initialized
+@@ -421,21 +414,19 @@
+ &lt;blockquote&gt;
+   &lt;blockquote&gt;
+     &lt;p&gt;&nbsp;&lt;/p&gt;
+-    &lt;p&gt;All done, have fun!!! &lt;br&gt;
+-    &lt;/p&gt;
+   &lt;/blockquote&gt;
++  &lt;p&gt;All done, have fun!!! &lt;br&gt;
++  &lt;/p&gt;
+ &lt;/blockquote&gt;
+-&lt;p&gt;&lt;strong&gt;Setting up a realm for a Diablo 2 mod &lt;a name=&quot;diablomod&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
++&lt;p&gt;&lt;strong&gt;Setting up a realm for a Diablo II mod &lt;a name=&quot;diablomod&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;blockquote&gt;
+-      &lt;blockquote&gt;
+-        &lt;p&gt;&lt;&lt;em&gt;Editors Note: This text yet to be created&lt;/em&gt;&gt; &lt;/p&gt;
+-      &lt;/blockquote&gt;
++      &lt;p&gt;&lt;&lt;em&gt;Editors Note: This text yet to be created&lt;/em&gt;&gt; &lt;/p&gt;
++      &lt;p&gt;&nbsp;&lt;/p&gt;
+ &lt;/blockquote&gt;
+ &lt;p&gt;&lt;strong&gt;Setting up two or more realms &lt;a name=&quot;morerealms&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;blockquote&gt;
+-      &lt;blockquote&gt;
+-        &lt;p&gt;&lt;&lt;em&gt;Editors Note: This text yet to be created&lt;/em&gt;&gt; &lt;/p&gt;
+-      &lt;/blockquote&gt;
++      &lt;p&gt;&lt;&lt;em&gt;Editors Note: This text yet to be created&lt;/em&gt;&gt; &lt;/p&gt;
++      &lt;p&gt;&nbsp;&lt;/p&gt;
+ &lt;/blockquote&gt;
+ &lt;p&gt;&lt;strong&gt;Editing characters &lt;a name=&quot;chars&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;blockquote&gt;
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000019.html">[pvpgndocs-cvs] pvpgndocs/in-progress tracker.html,1.1,1.2
+</A></li>
+	<LI>Next message: <A HREF="000021.html">[pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.2,1.3 NATFirewall.html,1.2,1.3
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#20">[ date ]</a>
+              <a href="thread.html#20">[ thread ]</a>
+              <a href="subject.html#20">[ subject ]</a>
+              <a href="author.html#20">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/pvpgndocs-cvs">More information about the pvpgndocs-cvs
+mailing list</a><br>
+</body></html>

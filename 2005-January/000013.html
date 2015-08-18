@@ -1,0 +1,728 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [pvpgndocs-cvs] pvpgndocs/in-progress tracker.html,NONE,1.1
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/pvpgndocs-cvs/2005-January/index.html" >
+   <LINK REL="made" HREF="mailto:pvpgndocs-cvs%40lists.berlios.de?Subject=Re%3A%20%5Bpvpgndocs-cvs%5D%20pvpgndocs/in-progress%20tracker.html%2CNONE%2C1.1&In-Reply-To=%3C200501300042.j0U0g1N08002%40bat.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000012.html">
+   <LINK REL="Next"  HREF="000014.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[pvpgndocs-cvs] pvpgndocs/in-progress tracker.html,NONE,1.1</H1>
+    <B>dgwilson65</B> 
+    <A HREF="mailto:pvpgndocs-cvs%40lists.berlios.de?Subject=Re%3A%20%5Bpvpgndocs-cvs%5D%20pvpgndocs/in-progress%20tracker.html%2CNONE%2C1.1&In-Reply-To=%3C200501300042.j0U0g1N08002%40bat.berlios.de%3E"
+       TITLE="[pvpgndocs-cvs] pvpgndocs/in-progress tracker.html,NONE,1.1">nobody at sheep.berlios.de
+       </A><BR>
+    <I>Sun Jan 30 01:42:01 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000012.html">[pvpgndocs-cvs] pvpgndocs/in-progress accesspvpgn.html,1.3,1.4
+</A></li>
+        <LI>Next message: <A HREF="000014.html">[pvpgndocs-cvs] pvpgndocs/in-progress/Images - New directory
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#13">[ date ]</a>
+              <a href="thread.html#13">[ thread ]</a>
+              <a href="subject.html#13">[ subject ]</a>
+              <a href="author.html#13">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Update of /cvsroot/pvpgndocs/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv30913
+
+Added Files:
+	tracker.html 
+Log Message:
+New Doc!
+
+--- NEW FILE: tracker.html ---
+&lt;center&gt;
+    &lt;h2&gt;&lt;a name=&quot;top&quot;&gt;Trackers&lt;/a&gt;&lt;/h2&gt;
+    &lt;p&gt;By dgwilson65 and U-238&lt;/p&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;b&gt;&lt;a name=&quot;contents&quot;&gt;Table of contents&lt;/a&gt;&lt;/b&gt;&lt;/p&gt; 
+  &lt;blockquote&gt;
+    &lt;div style=&quot;background-color: #DDDDDD; color: #000000; padding: 4px;&quot;&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#intro&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#warcraft&quot;&gt;Tracker Set Up&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href=&quot;#games&quot;&gt;Games&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href=&quot;#flags&quot;&gt;Flags&lt;/a&gt;&lt;/li&gt;
+	    &lt;li&gt;&lt;a href=&quot;#final&quot;&gt;Final Touch&lt;/a&gt;&lt;/li&gt;
+	    &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;
+&lt;p&gt;&lt;b&gt;&lt;a name=&quot;intro&quot;&gt;Introduction&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+      &lt;p&gt;Using a tracker is a way of getting your server noticed. You enhance your server configuration to notify a tracking service of your existence. At intervals that you specify, your server will continue to notify the tracking service of your existence. The tracking service usually publishes details of your existence on a web page. For example, have a look here: &lt;a href=&quot;<A HREF="http://pvpgn.mivabe.nl/index.php">http://pvpgn.mivabe.nl/index.php</A>&quot;&gt;<A HREF="http://pvpgn.mivabe.nl/index.php&lt;/a">http://pvpgn.mivabe.nl/index.php&lt;/a</A>&gt;. &lt;/p&gt;
+      &lt;p&gt;Substancial portions of this documentation have been copied from: &lt;a href=&quot;<A HREF="http://pvpgn.mivabe.nl/howto/tracker.php">http://pvpgn.mivabe.nl/howto/tracker.php</A>&quot;&gt;<A HREF="http://pvpgn.mivabe.nl/howto/tracker.php&lt;/a">http://pvpgn.mivabe.nl/howto/tracker.php&lt;/a</A>&gt;.&lt;br&gt;
+        &lt;br&gt;
+  On with the show. Here's how you configure your server.&lt;/p&gt;
+      &lt;p&gt;&nbsp; 
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;b&gt;&lt;a name=&quot;trackersetup&quot;&gt;Tracker Set Up&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+      &lt;p&gt;  Open your bnetd.conf file, and change the line's acording to 
+this&lt;/p&gt;
+      &lt;pre&gt;&lt;B&gt;track = 180&lt;/B&gt;
+&lt;B&gt;trackaddr = &quot;bnet.mivabe.nl&quot;&lt;/B&gt;&lt;/pre&gt;
+      &lt;p&gt;&lt;BR&gt;
+        Save it, then go in your server an restart it (/rehash would do as well)&lt;BR&gt;
+        .&lt;br&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;b&gt;&lt;a name=&quot;games&quot;&gt;Games&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+
+  &lt;p&gt;Almost as importand as putting your server on the tracker is letting people know 
+what thay can play on your server. On the bnet.mivabe.nl tracker this can also be done by using 
+Game Client Icons. Here the list off supported icons and their code:&lt;BR&gt;
+&lt;TABLE cellSpacing=1 cellPadding=2 width=&quot;98%&quot; align=center border=0&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;WC2&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;WC3&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;WCX&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;D1&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;DHR&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;D2&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;LOD&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;SC&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;SBW&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;SSHR&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;SPW&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;CHAT&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;ALL&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;OPE&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;CLO&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;LDR&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/W2BN.jpg">http://pvpgndocs.berlios.de/images/Games/W2BN.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/WAR3.jpg">http://pvpgndocs.berlios.de/images/Games/WAR3.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/WARX.jpg">http://pvpgndocs.berlios.de/images/Games/WARX.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/DRTL.jpg">http://pvpgndocs.berlios.de/images/Games/DRTL.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/D2HR.jpg">http://pvpgndocs.berlios.de/images/Games/D2HR.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/D2DV.jpg">http://pvpgndocs.berlios.de/images/Games/D2DV.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/DXP.jpg">http://pvpgndocs.berlios.de/images/Games/DXP.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/STAR.jpg">http://pvpgndocs.berlios.de/images/Games/STAR.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/SEXP.jpg">http://pvpgndocs.berlios.de/images/Games/SEXP.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/SSHR.jpg">http://pvpgndocs.berlios.de/images/Games/SSHR.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/SPAW.jpg">http://pvpgndocs.berlios.de/images/Games/SPAW.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/CHAT.jpg">http://pvpgndocs.berlios.de/images/Games/CHAT.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/ALLV.jpg">http://pvpgndocs.berlios.de/images/Games/ALLV.jpg</A>&quot;&gt;&lt;/div&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/OPEN.jpg">http://pvpgndocs.berlios.de/images/Games/OPEN.jpg</A>&quot;&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/CLOS.jpg">http://pvpgndocs.berlios.de/images/Games/CLOS.jpg</A>&quot;&gt;&lt;/TD&gt;
+          &lt;TD vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;IMG 
+            src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/LADR.jpg">http://pvpgndocs.berlios.de/images/Games/LADR.jpg</A>&quot;&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Warcraft 
+            II BNE
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Warcraft 
+            III
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Warcraft 
+            III The Frozen Throne
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; 
+            bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Diablo
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Diablo 
+            Shareware
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Diablo 
+            II
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Diablo II 
+            LOD
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; 
+            bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Starcraft
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Starcraft 
+            Expansion Set
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Starcraft 
+            Shareware
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Starcraft 
+            Spawn
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; 
+            bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;Chatclient
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;&lt;div align=&quot;center&quot;&gt;All 
+            Blizzard Games
+            &lt;/TD&gt; 
+          &lt;/div&gt;
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;Open 
+            B.net&lt;/TD&gt; 
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;Closed 
+            B.net&lt;/TD&gt; 
+          &lt;TH vAlign=center align=middle width=&quot;5%&quot; bgColor=#FFFFFF&gt;Full 
+  Ladder&lt;/TD&gt; &lt;/TR&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;BR&gt;
+&lt;P align=&quot;center&quot;&gt;Just open BNETD.CONF and locate the line &lt;B&gt;description =&lt;/B&gt; there you 
+            can add your own server related game client icon's&lt;br&gt;&lt;br&gt;
+  Example : description = &quot;WC2WC3D1D2LODSCSBWCHATOPE&quot;&lt;br&gt;
+  Will show on tracker as&lt;br&gt;
+            &lt;img src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/W2BN.jpg">http://pvpgndocs.berlios.de/images/Games/W2BN.jpg</A>&quot; border=&quot;0&quot; alt=&quot;Warcraft II BNE&quot;&gt; &lt;img src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/WAR3.jpg">http://pvpgndocs.berlios.de/images/Games/WAR3.jpg</A>&quot; border=&quot;0&quot; alt=&quot;Warcraft III&quot;&gt; &lt;img src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/DRTL.jpg">http://pvpgndocs.berlios.de/images/Games/DRTL.jpg</A>&quot; border=&quot;0&quot; alt=&quot;Diablo I&quot;&gt; &lt;img src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/D2DV.jpg">http://pvpgndocs.berlios.de/images/Games/D2DV.jpg</A>&quot; border=&quot;0&quot; alt=&quot;Diablo II&quot;&gt; &lt;img src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/DXP.jpg">http://pvpgndocs.berlios.de/images/Games/DXP.jpg</A>&quot; border=&quot;0&quot; alt=&quot;Diablo II LoD&quot;&gt; &lt;img src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/STAR.jpg">http://pvpgndocs.berlios.de/images/Games/STAR.jpg</A>&quot; border=&quot;0&quot; alt=&quot;Starcraft&quot;&gt; &lt;img src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/SEXP.jpg">http://pvpgndocs.berlios.de/images/Games/SEXP.jpg</A>&quot; border=&quot;0&quot; alt=&quot;Starcraft Expansion Set&quot;&gt; &lt;img src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/CHAT.jpg">http://pvpgndocs.berlios.de/images/Games/CHAT.jpg</A>&quot; border=&quot;0&quot; alt=&quot;Chat Client&quot;&gt; &lt;img src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Games/OPEN.jpg">http://pvpgndocs.berlios.de/images/Games/OPEN.jpg</A>&quot; border=&quot;0&quot; alt=&quot;Open battle.net&quot;&gt;&lt;br&gt;
+  &lt;/P&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;b&gt;&lt;a name=&quot;flags&quot;&gt;Flags&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;You can add a flag to your location by using any of the folowing 
+    code's. A flag code always start's with a :&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;BR&gt;
+&lt;TABLE width=&quot;98%&quot;&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD align=middle&gt;
+            &lt;TABLE width=&quot;100%&quot;&gt;
+              &lt;TBODY&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ad 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ad.png">http://pvpgndocs.berlios.de/images/Flags/ad.png</A>&quot;&gt;&lt;BR&gt;:ad&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ae 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ae.png">http://pvpgndocs.berlios.de/images/Flags/ae.png</A>&quot;&gt;&lt;BR&gt;:ae&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=af 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/af.png">http://pvpgndocs.berlios.de/images/Flags/af.png</A>&quot;&gt;&lt;BR&gt;:af&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ag 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ag.png">http://pvpgndocs.berlios.de/images/Flags/ag.png</A>&quot;&gt;&lt;BR&gt;:ag&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ai 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ai.png">http://pvpgndocs.berlios.de/images/Flags/ai.png</A>&quot;&gt;&lt;BR&gt;:ai&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=al 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/al.png">http://pvpgndocs.berlios.de/images/Flags/al.png</A>&quot;&gt;&lt;BR&gt;:al&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=am 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/am.png">http://pvpgndocs.berlios.de/images/Flags/am.png</A>&quot;&gt;&lt;BR&gt;:am&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=an 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/an.png">http://pvpgndocs.berlios.de/images/Flags/an.png</A>&quot;&gt;&lt;BR&gt;:an&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ao 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ao.png">http://pvpgndocs.berlios.de/images/Flags/ao.png</A>&quot;&gt;&lt;BR&gt;:ao&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=aq 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/aq.png">http://pvpgndocs.berlios.de/images/Flags/aq.png</A>&quot;&gt;&lt;BR&gt;:aq&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ar 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ar.png">http://pvpgndocs.berlios.de/images/Flags/ar.png</A>&quot;&gt;&lt;BR&gt;:ar&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=as 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/as.png">http://pvpgndocs.berlios.de/images/Flags/as.png</A>&quot;&gt;&lt;BR&gt;:as&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=at 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/at.png">http://pvpgndocs.berlios.de/images/Flags/at.png</A>&quot;&gt;&lt;BR&gt;:at&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=au 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/au.png">http://pvpgndocs.berlios.de/images/Flags/au.png</A>&quot;&gt;&lt;BR&gt;:au&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=aw 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/aw.png">http://pvpgndocs.berlios.de/images/Flags/aw.png</A>&quot;&gt;&lt;BR&gt;:aw&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=az 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/az.png">http://pvpgndocs.berlios.de/images/Flags/az.png</A>&quot;&gt;&lt;BR&gt;:az&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ba 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ba.png">http://pvpgndocs.berlios.de/images/Flags/ba.png</A>&quot;&gt;&lt;BR&gt;:ba&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bb 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bb.png">http://pvpgndocs.berlios.de/images/Flags/bb.png</A>&quot;&gt;&lt;BR&gt;:bb&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bd 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bd.png">http://pvpgndocs.berlios.de/images/Flags/bd.png</A>&quot;&gt;&lt;BR&gt;:bd&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=be 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/be.png">http://pvpgndocs.berlios.de/images/Flags/be.png</A>&quot;&gt;&lt;BR&gt;:be&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bf 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bf.png">http://pvpgndocs.berlios.de/images/Flags/bf.png</A>&quot;&gt;&lt;BR&gt;:bf&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bg 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bg.png">http://pvpgndocs.berlios.de/images/Flags/bg.png</A>&quot;&gt;&lt;BR&gt;:bg&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bh 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bh.png">http://pvpgndocs.berlios.de/images/Flags/bh.png</A>&quot;&gt;&lt;BR&gt;:bh&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bi 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bi.png">http://pvpgndocs.berlios.de/images/Flags/bi.png</A>&quot;&gt;&lt;BR&gt;:bi&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bj 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bj.png">http://pvpgndocs.berlios.de/images/Flags/bj.png</A>&quot;&gt;&lt;BR&gt;:bj&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bm 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bm.png">http://pvpgndocs.berlios.de/images/Flags/bm.png</A>&quot;&gt;&lt;BR&gt;:bm&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bn 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bn.png">http://pvpgndocs.berlios.de/images/Flags/bn.png</A>&quot;&gt;&lt;BR&gt;:bn&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bo 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bo.png">http://pvpgndocs.berlios.de/images/Flags/bo.png</A>&quot;&gt;&lt;BR&gt;:bo&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=br 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/br.png">http://pvpgndocs.berlios.de/images/Flags/br.png</A>&quot;&gt;&lt;BR&gt;:br&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bs 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bs.png">http://pvpgndocs.berlios.de/images/Flags/bs.png</A>&quot;&gt;&lt;BR&gt;:bs&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bt 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bt.png">http://pvpgndocs.berlios.de/images/Flags/bt.png</A>&quot;&gt;&lt;BR&gt;:bt&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bv 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bv.png">http://pvpgndocs.berlios.de/images/Flags/bv.png</A>&quot;&gt;&lt;BR&gt;:bv&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bw 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bw.png">http://pvpgndocs.berlios.de/images/Flags/bw.png</A>&quot;&gt;&lt;BR&gt;:bw&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=by 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/by.png">http://pvpgndocs.berlios.de/images/Flags/by.png</A>&quot;&gt;&lt;BR&gt;:by&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=bz 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/bz.png">http://pvpgndocs.berlios.de/images/Flags/bz.png</A>&quot;&gt;&lt;BR&gt;:bz&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ca 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ca.png">http://pvpgndocs.berlios.de/images/Flags/ca.png</A>&quot;&gt;&lt;BR&gt;:ca&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cc 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cc.png">http://pvpgndocs.berlios.de/images/Flags/cc.png</A>&quot;&gt;&lt;BR&gt;:cc&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cd 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cd.png">http://pvpgndocs.berlios.de/images/Flags/cd.png</A>&quot;&gt;&lt;BR&gt;:cd&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cf 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cf.png">http://pvpgndocs.berlios.de/images/Flags/cf.png</A>&quot;&gt;&lt;BR&gt;:cf&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cg 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cg.png">http://pvpgndocs.berlios.de/images/Flags/cg.png</A>&quot;&gt;&lt;BR&gt;:cg&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ch 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ch.png">http://pvpgndocs.berlios.de/images/Flags/ch.png</A>&quot;&gt;&lt;BR&gt;:ch&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ci 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ci.png">http://pvpgndocs.berlios.de/images/Flags/ci.png</A>&quot;&gt;&lt;BR&gt;:ci&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ck 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ck.png">http://pvpgndocs.berlios.de/images/Flags/ck.png</A>&quot;&gt;&lt;BR&gt;:ck&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cl 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cl.png">http://pvpgndocs.berlios.de/images/Flags/cl.png</A>&quot;&gt;&lt;BR&gt;:cl&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cm 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cm.png">http://pvpgndocs.berlios.de/images/Flags/cm.png</A>&quot;&gt;&lt;BR&gt;:cm&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cn 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cn.png">http://pvpgndocs.berlios.de/images/Flags/cn.png</A>&quot;&gt;&lt;BR&gt;:cn&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=co 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/co.png">http://pvpgndocs.berlios.de/images/Flags/co.png</A>&quot;&gt;&lt;BR&gt;:co&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cr 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cr.png">http://pvpgndocs.berlios.de/images/Flags/cr.png</A>&quot;&gt;&lt;BR&gt;:cr&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cs 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cs.png">http://pvpgndocs.berlios.de/images/Flags/cs.png</A>&quot;&gt;&lt;BR&gt;:cs&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cu 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cu.png">http://pvpgndocs.berlios.de/images/Flags/cu.png</A>&quot;&gt;&lt;BR&gt;:cu&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cv 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cv.png">http://pvpgndocs.berlios.de/images/Flags/cv.png</A>&quot;&gt;&lt;BR&gt;:cv&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cx 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cx.png">http://pvpgndocs.berlios.de/images/Flags/cx.png</A>&quot;&gt;&lt;BR&gt;:cx&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cy 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cy.png">http://pvpgndocs.berlios.de/images/Flags/cy.png</A>&quot;&gt;&lt;BR&gt;:cy&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=cz 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/cz.png">http://pvpgndocs.berlios.de/images/Flags/cz.png</A>&quot;&gt;&lt;BR&gt;:cz&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=de 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/de.png">http://pvpgndocs.berlios.de/images/Flags/de.png</A>&quot;&gt;&lt;BR&gt;:de&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=dj 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/dj.png">http://pvpgndocs.berlios.de/images/Flags/dj.png</A>&quot;&gt;&lt;BR&gt;:dj&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=dk 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/dk.png">http://pvpgndocs.berlios.de/images/Flags/dk.png</A>&quot;&gt;&lt;BR&gt;:dk&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=dm 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/dm.png">http://pvpgndocs.berlios.de/images/Flags/dm.png</A>&quot;&gt;&lt;BR&gt;:dm&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=do 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/do.png">http://pvpgndocs.berlios.de/images/Flags/do.png</A>&quot;&gt;&lt;BR&gt;:do&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=dz 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/dz.png">http://pvpgndocs.berlios.de/images/Flags/dz.png</A>&quot;&gt;&lt;BR&gt;:dz&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ec 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ec.png">http://pvpgndocs.berlios.de/images/Flags/ec.png</A>&quot;&gt;&lt;BR&gt;:ec&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ee 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ee.png">http://pvpgndocs.berlios.de/images/Flags/ee.png</A>&quot;&gt;&lt;BR&gt;:ee&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=eg 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/eg.png">http://pvpgndocs.berlios.de/images/Flags/eg.png</A>&quot;&gt;&lt;BR&gt;:eg&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=eh 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/eh.png">http://pvpgndocs.berlios.de/images/Flags/eh.png</A>&quot;&gt;&lt;BR&gt;:eh&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=en 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/en.png">http://pvpgndocs.berlios.de/images/Flags/en.png</A>&quot;&gt;&lt;BR&gt;:en&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=er 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/er.png">http://pvpgndocs.berlios.de/images/Flags/er.png</A>&quot;&gt;&lt;BR&gt;:er&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=es 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/es.png">http://pvpgndocs.berlios.de/images/Flags/es.png</A>&quot;&gt;&lt;BR&gt;:es&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=et 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/et.png">http://pvpgndocs.berlios.de/images/Flags/et.png</A>&quot;&gt;&lt;BR&gt;:et&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=fi 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/fi.png">http://pvpgndocs.berlios.de/images/Flags/fi.png</A>&quot;&gt;&lt;BR&gt;:fi&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=fj 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/fj.png">http://pvpgndocs.berlios.de/images/Flags/fj.png</A>&quot;&gt;&lt;BR&gt;:fj&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=fk 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/fk.png">http://pvpgndocs.berlios.de/images/Flags/fk.png</A>&quot;&gt;&lt;BR&gt;:fk&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=fm 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/fm.png">http://pvpgndocs.berlios.de/images/Flags/fm.png</A>&quot;&gt;&lt;BR&gt;:fm&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=fo 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/fo.png">http://pvpgndocs.berlios.de/images/Flags/fo.png</A>&quot;&gt;&lt;BR&gt;:fo&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=fr 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/fr.png">http://pvpgndocs.berlios.de/images/Flags/fr.png</A>&quot;&gt;&lt;BR&gt;:fr&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=fx 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/fx.png">http://pvpgndocs.berlios.de/images/Flags/fx.png</A>&quot;&gt;&lt;BR&gt;:fx&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ga 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ga.png">http://pvpgndocs.berlios.de/images/Flags/ga.png</A>&quot;&gt;&lt;BR&gt;:ga&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gb 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gb.png">http://pvpgndocs.berlios.de/images/Flags/gb.png</A>&quot;&gt;&lt;BR&gt;:gb&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gd 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gd.png">http://pvpgndocs.berlios.de/images/Flags/gd.png</A>&quot;&gt;&lt;BR&gt;:gd&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ge 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ge.png">http://pvpgndocs.berlios.de/images/Flags/ge.png</A>&quot;&gt;&lt;BR&gt;:ge&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gf 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gf.png">http://pvpgndocs.berlios.de/images/Flags/gf.png</A>&quot;&gt;&lt;BR&gt;:gf&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gh 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gh.png">http://pvpgndocs.berlios.de/images/Flags/gh.png</A>&quot;&gt;&lt;BR&gt;:gh&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gi 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gi.png">http://pvpgndocs.berlios.de/images/Flags/gi.png</A>&quot;&gt;&lt;BR&gt;:gi&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gl 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gl.png">http://pvpgndocs.berlios.de/images/Flags/gl.png</A>&quot;&gt;&lt;BR&gt;:gl&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gm 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gm.png">http://pvpgndocs.berlios.de/images/Flags/gm.png</A>&quot;&gt;&lt;BR&gt;:gm&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gn 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gn.png">http://pvpgndocs.berlios.de/images/Flags/gn.png</A>&quot;&gt;&lt;BR&gt;:gn&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gp 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gp.png">http://pvpgndocs.berlios.de/images/Flags/gp.png</A>&quot;&gt;&lt;BR&gt;:gp&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gq 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gq.png">http://pvpgndocs.berlios.de/images/Flags/gq.png</A>&quot;&gt;&lt;BR&gt;:gq&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gr 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gr.png">http://pvpgndocs.berlios.de/images/Flags/gr.png</A>&quot;&gt;&lt;BR&gt;:gr&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gs 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gs.png">http://pvpgndocs.berlios.de/images/Flags/gs.png</A>&quot;&gt;&lt;BR&gt;:gs&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gt 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gt.png">http://pvpgndocs.berlios.de/images/Flags/gt.png</A>&quot;&gt;&lt;BR&gt;:gt&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gu 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gu.png">http://pvpgndocs.berlios.de/images/Flags/gu.png</A>&quot;&gt;&lt;BR&gt;:gu&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gw 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gw.png">http://pvpgndocs.berlios.de/images/Flags/gw.png</A>&quot;&gt;&lt;BR&gt;:gw&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=gy 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/gy.png">http://pvpgndocs.berlios.de/images/Flags/gy.png</A>&quot;&gt;&lt;BR&gt;:gy&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=hk 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/hk.png">http://pvpgndocs.berlios.de/images/Flags/hk.png</A>&quot;&gt;&lt;BR&gt;:hk&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=hm 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/hm.png">http://pvpgndocs.berlios.de/images/Flags/hm.png</A>&quot;&gt;&lt;BR&gt;:hm&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=hn 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/hn.png">http://pvpgndocs.berlios.de/images/Flags/hn.png</A>&quot;&gt;&lt;BR&gt;:hn&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=hr 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/hr.png">http://pvpgndocs.berlios.de/images/Flags/hr.png</A>&quot;&gt;&lt;BR&gt;:hr&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ht 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ht.png">http://pvpgndocs.berlios.de/images/Flags/ht.png</A>&quot;&gt;&lt;BR&gt;:ht&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=hu 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/hu.png">http://pvpgndocs.berlios.de/images/Flags/hu.png</A>&quot;&gt;&lt;BR&gt;:hu&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=id 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/id.png">http://pvpgndocs.berlios.de/images/Flags/id.png</A>&quot;&gt;&lt;BR&gt;:id&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ie 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ie.png">http://pvpgndocs.berlios.de/images/Flags/ie.png</A>&quot;&gt;&lt;BR&gt;:ie&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=il 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/il.png">http://pvpgndocs.berlios.de/images/Flags/il.png</A>&quot;&gt;&lt;BR&gt;:il&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=in 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/in.png">http://pvpgndocs.berlios.de/images/Flags/in.png</A>&quot;&gt;&lt;BR&gt;:in&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=io 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/io.png">http://pvpgndocs.berlios.de/images/Flags/io.png</A>&quot;&gt;&lt;BR&gt;:io&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=iq 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/iq.png">http://pvpgndocs.berlios.de/images/Flags/iq.png</A>&quot;&gt;&lt;BR&gt;:iq&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ir 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ir.png">http://pvpgndocs.berlios.de/images/Flags/ir.png</A>&quot;&gt;&lt;BR&gt;:ir&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=is 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/is.png">http://pvpgndocs.berlios.de/images/Flags/is.png</A>&quot;&gt;&lt;BR&gt;:is&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=it 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/it.png">http://pvpgndocs.berlios.de/images/Flags/it.png</A>&quot;&gt;&lt;BR&gt;:it&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=jm 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/jm.png">http://pvpgndocs.berlios.de/images/Flags/jm.png</A>&quot;&gt;&lt;BR&gt;:jm&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=jo 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/jo.png">http://pvpgndocs.berlios.de/images/Flags/jo.png</A>&quot;&gt;&lt;BR&gt;:jo&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=jp 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/jp.png">http://pvpgndocs.berlios.de/images/Flags/jp.png</A>&quot;&gt;&lt;BR&gt;:jp&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ke 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ke.png">http://pvpgndocs.berlios.de/images/Flags/ke.png</A>&quot;&gt;&lt;BR&gt;:ke&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=kg 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/kg.png">http://pvpgndocs.berlios.de/images/Flags/kg.png</A>&quot;&gt;&lt;BR&gt;:kg&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=kh 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/kh.png">http://pvpgndocs.berlios.de/images/Flags/kh.png</A>&quot;&gt;&lt;BR&gt;:kh&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ki 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ki.png">http://pvpgndocs.berlios.de/images/Flags/ki.png</A>&quot;&gt;&lt;BR&gt;:ki&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=km 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/km.png">http://pvpgndocs.berlios.de/images/Flags/km.png</A>&quot;&gt;&lt;BR&gt;:km&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=kn 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/kn.png">http://pvpgndocs.berlios.de/images/Flags/kn.png</A>&quot;&gt;&lt;BR&gt;:kn&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=kp 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/kp.png">http://pvpgndocs.berlios.de/images/Flags/kp.png</A>&quot;&gt;&lt;BR&gt;:kp&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=kr 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/kr.png">http://pvpgndocs.berlios.de/images/Flags/kr.png</A>&quot;&gt;&lt;BR&gt;:kr&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=kw 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/kw.png">http://pvpgndocs.berlios.de/images/Flags/kw.png</A>&quot;&gt;&lt;BR&gt;:kw&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ky 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ky.png">http://pvpgndocs.berlios.de/images/Flags/ky.png</A>&quot;&gt;&lt;BR&gt;:ky&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=kz 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/kz.png">http://pvpgndocs.berlios.de/images/Flags/kz.png</A>&quot;&gt;&lt;BR&gt;:kz&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=la 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/la.png">http://pvpgndocs.berlios.de/images/Flags/la.png</A>&quot;&gt;&lt;BR&gt;:la&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=lb 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/lb.png">http://pvpgndocs.berlios.de/images/Flags/lb.png</A>&quot;&gt;&lt;BR&gt;:lb&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=lc 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/lc.png">http://pvpgndocs.berlios.de/images/Flags/lc.png</A>&quot;&gt;&lt;BR&gt;:lc&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=li 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/li.png">http://pvpgndocs.berlios.de/images/Flags/li.png</A>&quot;&gt;&lt;BR&gt;:li&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=lk 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/lk.png">http://pvpgndocs.berlios.de/images/Flags/lk.png</A>&quot;&gt;&lt;BR&gt;:lk&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=lr 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/lr.png">http://pvpgndocs.berlios.de/images/Flags/lr.png</A>&quot;&gt;&lt;BR&gt;:lr&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ls 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ls.png">http://pvpgndocs.berlios.de/images/Flags/ls.png</A>&quot;&gt;&lt;BR&gt;:ls&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=lt 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/lt.png">http://pvpgndocs.berlios.de/images/Flags/lt.png</A>&quot;&gt;&lt;BR&gt;:lt&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=lu 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/lu.png">http://pvpgndocs.berlios.de/images/Flags/lu.png</A>&quot;&gt;&lt;BR&gt;:lu&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=lv 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/lv.png">http://pvpgndocs.berlios.de/images/Flags/lv.png</A>&quot;&gt;&lt;BR&gt;:lv&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ly 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ly.png">http://pvpgndocs.berlios.de/images/Flags/ly.png</A>&quot;&gt;&lt;BR&gt;:ly&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ma 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ma.png">http://pvpgndocs.berlios.de/images/Flags/ma.png</A>&quot;&gt;&lt;BR&gt;:ma&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mc 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mc.png">http://pvpgndocs.berlios.de/images/Flags/mc.png</A>&quot;&gt;&lt;BR&gt;:mc&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=md 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/md.png">http://pvpgndocs.berlios.de/images/Flags/md.png</A>&quot;&gt;&lt;BR&gt;:md&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mg 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mg.png">http://pvpgndocs.berlios.de/images/Flags/mg.png</A>&quot;&gt;&lt;BR&gt;:mg&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mk 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mk.png">http://pvpgndocs.berlios.de/images/Flags/mk.png</A>&quot;&gt;&lt;BR&gt;:mk&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mn 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mn.png">http://pvpgndocs.berlios.de/images/Flags/mn.png</A>&quot;&gt;&lt;BR&gt;:mn&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mo 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mo.png">http://pvpgndocs.berlios.de/images/Flags/mo.png</A>&quot;&gt;&lt;BR&gt;:mo&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mq 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mq.png">http://pvpgndocs.berlios.de/images/Flags/mq.png</A>&quot;&gt;&lt;BR&gt;:mq&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mr 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mr.png">http://pvpgndocs.berlios.de/images/Flags/mr.png</A>&quot;&gt;&lt;BR&gt;:mr&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mt 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mt.png">http://pvpgndocs.berlios.de/images/Flags/mt.png</A>&quot;&gt;&lt;BR&gt;:mt&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mu 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mu.png">http://pvpgndocs.berlios.de/images/Flags/mu.png</A>&quot;&gt;&lt;BR&gt;:mu&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mv 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mv.png">http://pvpgndocs.berlios.de/images/Flags/mv.png</A>&quot;&gt;&lt;BR&gt;:mv&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=mx 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/mx.png">http://pvpgndocs.berlios.de/images/Flags/mx.png</A>&quot;&gt;&lt;BR&gt;:mx&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=my 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/my.png">http://pvpgndocs.berlios.de/images/Flags/my.png</A>&quot;&gt;&lt;BR&gt;:my&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=na 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/na.png">http://pvpgndocs.berlios.de/images/Flags/na.png</A>&quot;&gt;&lt;BR&gt;:na&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=nc 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/nc.png">http://pvpgndocs.berlios.de/images/Flags/nc.png</A>&quot;&gt;&lt;BR&gt;:nc&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ne 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ne.png">http://pvpgndocs.berlios.de/images/Flags/ne.png</A>&quot;&gt;&lt;BR&gt;:ne&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ng 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ng.png">http://pvpgndocs.berlios.de/images/Flags/ng.png</A>&quot;&gt;&lt;BR&gt;:ng&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ni 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ni.png">http://pvpgndocs.berlios.de/images/Flags/ni.png</A>&quot;&gt;&lt;BR&gt;:ni&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=nl 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/nl.png">http://pvpgndocs.berlios.de/images/Flags/nl.png</A>&quot;&gt;&lt;BR&gt;:nl&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=no 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/no.png">http://pvpgndocs.berlios.de/images/Flags/no.png</A>&quot;&gt;&lt;BR&gt;:no&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=np 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/np.png">http://pvpgndocs.berlios.de/images/Flags/np.png</A>&quot;&gt;&lt;BR&gt;:np&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=nu 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/nu.png">http://pvpgndocs.berlios.de/images/Flags/nu.png</A>&quot;&gt;&lt;BR&gt;:nu&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=nz 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/nz.png">http://pvpgndocs.berlios.de/images/Flags/nz.png</A>&quot;&gt;&lt;BR&gt;:nz&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=om 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/om.png">http://pvpgndocs.berlios.de/images/Flags/om.png</A>&quot;&gt;&lt;BR&gt;:om&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=pa 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/pa.png">http://pvpgndocs.berlios.de/images/Flags/pa.png</A>&quot;&gt;&lt;BR&gt;:pa&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=pe 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/pe.png">http://pvpgndocs.berlios.de/images/Flags/pe.png</A>&quot;&gt;&lt;BR&gt;:pe&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=pf 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/pf.png">http://pvpgndocs.berlios.de/images/Flags/pf.png</A>&quot;&gt;&lt;BR&gt;:pf&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=pg 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/pg.png">http://pvpgndocs.berlios.de/images/Flags/pg.png</A>&quot;&gt;&lt;BR&gt;:pg&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ph 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ph.png">http://pvpgndocs.berlios.de/images/Flags/ph.png</A>&quot;&gt;&lt;BR&gt;:ph&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=pk 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/pk.png">http://pvpgndocs.berlios.de/images/Flags/pk.png</A>&quot;&gt;&lt;BR&gt;:pk&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=pl 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/pl.png">http://pvpgndocs.berlios.de/images/Flags/pl.png</A>&quot;&gt;&lt;BR&gt;:pl&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=pt 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/pt.png">http://pvpgndocs.berlios.de/images/Flags/pt.png</A>&quot;&gt;&lt;BR&gt;:pt&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=py 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/py.png">http://pvpgndocs.berlios.de/images/Flags/py.png</A>&quot;&gt;&lt;BR&gt;:py&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=qa 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/qa.png">http://pvpgndocs.berlios.de/images/Flags/qa.png</A>&quot;&gt;&lt;BR&gt;:qa&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ro 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ro.png">http://pvpgndocs.berlios.de/images/Flags/ro.png</A>&quot;&gt;&lt;BR&gt;:ro&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ru 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ru.png">http://pvpgndocs.berlios.de/images/Flags/ru.png</A>&quot;&gt;&lt;BR&gt;:ru&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=rw 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/rw.png">http://pvpgndocs.berlios.de/images/Flags/rw.png</A>&quot;&gt;&lt;BR&gt;:rw&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=sa 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/sa.png">http://pvpgndocs.berlios.de/images/Flags/sa.png</A>&quot;&gt;&lt;BR&gt;:sa&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=sb 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/sb.png">http://pvpgndocs.berlios.de/images/Flags/sb.png</A>&quot;&gt;&lt;BR&gt;:sb&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=se 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/se.png">http://pvpgndocs.berlios.de/images/Flags/se.png</A>&quot;&gt;&lt;BR&gt;:se&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=sg 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/sg.png">http://pvpgndocs.berlios.de/images/Flags/sg.png</A>&quot;&gt;&lt;BR&gt;:sg&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=si 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/si.png">http://pvpgndocs.berlios.de/images/Flags/si.png</A>&quot;&gt;&lt;BR&gt;:si&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=sk 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/sk.png">http://pvpgndocs.berlios.de/images/Flags/sk.png</A>&quot;&gt;&lt;BR&gt;:sk&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=sm 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/sm.png">http://pvpgndocs.berlios.de/images/Flags/sm.png</A>&quot;&gt;&lt;BR&gt;:sm&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=sn 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/sn.png">http://pvpgndocs.berlios.de/images/Flags/sn.png</A>&quot;&gt;&lt;BR&gt;:sn&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=su 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/su.png">http://pvpgndocs.berlios.de/images/Flags/su.png</A>&quot;&gt;&lt;BR&gt;:su&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=sv 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/sv.png">http://pvpgndocs.berlios.de/images/Flags/sv.png</A>&quot;&gt;&lt;BR&gt;:sv&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=sy 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/sy.png">http://pvpgndocs.berlios.de/images/Flags/sy.png</A>&quot;&gt;&lt;BR&gt;:sy&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=sz 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/sz.png">http://pvpgndocs.berlios.de/images/Flags/sz.png</A>&quot;&gt;&lt;BR&gt;:sz&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tc 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tc.png">http://pvpgndocs.berlios.de/images/Flags/tc.png</A>&quot;&gt;&lt;BR&gt;:tc&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=td 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/td.png">http://pvpgndocs.berlios.de/images/Flags/td.png</A>&quot;&gt;&lt;BR&gt;:td&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tf 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tf.png">http://pvpgndocs.berlios.de/images/Flags/tf.png</A>&quot;&gt;&lt;BR&gt;:tf&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tg 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tg.png">http://pvpgndocs.berlios.de/images/Flags/tg.png</A>&quot;&gt;&lt;BR&gt;:tg&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=th 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/th.png">http://pvpgndocs.berlios.de/images/Flags/th.png</A>&quot;&gt;&lt;BR&gt;:th&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tk 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tk.png">http://pvpgndocs.berlios.de/images/Flags/tk.png</A>&quot;&gt;&lt;BR&gt;:tk&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tm 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tm.png">http://pvpgndocs.berlios.de/images/Flags/tm.png</A>&quot;&gt;&lt;BR&gt;:tm&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tn 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tn.png">http://pvpgndocs.berlios.de/images/Flags/tn.png</A>&quot;&gt;&lt;BR&gt;:tn&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=to 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/to.png">http://pvpgndocs.berlios.de/images/Flags/to.png</A>&quot;&gt;&lt;BR&gt;:to&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tr 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tr.png">http://pvpgndocs.berlios.de/images/Flags/tr.png</A>&quot;&gt;&lt;BR&gt;:tr&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tt 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tt.png">http://pvpgndocs.berlios.de/images/Flags/tt.png</A>&quot;&gt;&lt;BR&gt;:tt&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tv 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tv.png">http://pvpgndocs.berlios.de/images/Flags/tv.png</A>&quot;&gt;&lt;BR&gt;:tv&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tw 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tw.png">http://pvpgndocs.berlios.de/images/Flags/tw.png</A>&quot;&gt;&lt;BR&gt;:tw&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=tz 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/tz.png">http://pvpgndocs.berlios.de/images/Flags/tz.png</A>&quot;&gt;&lt;BR&gt;:tz&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ua 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ua.png">http://pvpgndocs.berlios.de/images/Flags/ua.png</A>&quot;&gt;&lt;BR&gt;:ua&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ug 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ug.png">http://pvpgndocs.berlios.de/images/Flags/ug.png</A>&quot;&gt;&lt;BR&gt;:ug&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=uk 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/uk.png">http://pvpgndocs.berlios.de/images/Flags/uk.png</A>&quot;&gt;&lt;BR&gt;:uk&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=um 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/um.png">http://pvpgndocs.berlios.de/images/Flags/um.png</A>&quot;&gt;&lt;BR&gt;:um&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=us 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/us.png">http://pvpgndocs.berlios.de/images/Flags/us.png</A>&quot;&gt;&lt;BR&gt;:us&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=uy 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/uy.png">http://pvpgndocs.berlios.de/images/Flags/uy.png</A>&quot;&gt;&lt;BR&gt;:uy&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=uz 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/uz.png">http://pvpgndocs.berlios.de/images/Flags/uz.png</A>&quot;&gt;&lt;BR&gt;:uz&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=va 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/va.png">http://pvpgndocs.berlios.de/images/Flags/va.png</A>&quot;&gt;&lt;BR&gt;:va&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=vc 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/vc.png">http://pvpgndocs.berlios.de/images/Flags/vc.png</A>&quot;&gt;&lt;BR&gt;:vc&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ve 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ve.png">http://pvpgndocs.berlios.de/images/Flags/ve.png</A>&quot;&gt;&lt;BR&gt;:ve&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=vg 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/vg.png">http://pvpgndocs.berlios.de/images/Flags/vg.png</A>&quot;&gt;&lt;BR&gt;:vg&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=vi 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/vi.png">http://pvpgndocs.berlios.de/images/Flags/vi.png</A>&quot;&gt;&lt;BR&gt;:vi&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=vn 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/vn.png">http://pvpgndocs.berlios.de/images/Flags/vn.png</A>&quot;&gt;&lt;BR&gt;:vn&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=vu 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/vu.png">http://pvpgndocs.berlios.de/images/Flags/vu.png</A>&quot;&gt;&lt;BR&gt;:vu&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=wf 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/wf.png">http://pvpgndocs.berlios.de/images/Flags/wf.png</A>&quot;&gt;&lt;BR&gt;:wf&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ws 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ws.png">http://pvpgndocs.berlios.de/images/Flags/ws.png</A>&quot;&gt;&lt;BR&gt;:ws&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ye 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ye.png">http://pvpgndocs.berlios.de/images/Flags/ye.png</A>&quot;&gt;&lt;BR&gt;:ye&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=yt 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/yt.png">http://pvpgndocs.berlios.de/images/Flags/yt.png</A>&quot;&gt;&lt;BR&gt;:yt&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=yu 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/yu.png">http://pvpgndocs.berlios.de/images/Flags/yu.png</A>&quot;&gt;&lt;BR&gt;:yu&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=za 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/za.png">http://pvpgndocs.berlios.de/images/Flags/za.png</A>&quot;&gt;&lt;BR&gt;:za&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=ze 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/ze.png">http://pvpgndocs.berlios.de/images/Flags/ze.png</A>&quot;&gt;&lt;BR&gt;:ze&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=zm 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/zm.png">http://pvpgndocs.berlios.de/images/Flags/zm.png</A>&quot;&gt;&lt;BR&gt;:zm&lt;/TD&gt;
+                &lt;TD vAlign=bottom align=middle bgColor=#FFFFFF&gt;&lt;IMG alt=zw 
+                  src=&quot;<A HREF="http://pvpgndocs.berlios.de/images/Flags/zw.png">http://pvpgndocs.berlios.de/images/Flags/zw.png</A>&quot;&gt;&lt;BR&gt;:zw&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Open BNETD.CONF and locate the line &quot;&lt;B&gt;location =&lt;/B&gt;&quot; there you can add your own flag code to match server country. It is recommended to place it as first image then the info and only go for one icon.&lt;BR&gt;
+    &lt;/p&gt;
+
+&lt;/blockquote&gt;
+        &lt;p&gt;&lt;b&gt;&lt;a name=&quot;final&quot;&gt;Final Touch&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;/p&gt;Rember when you change somting, the bnet.mivabe.nl tracker only update's efry 15 mins, 
+so you problerbly wont see it right away just wait a few minutes&lt;BR&gt;
+      &lt;p&gt;A full / complete example of a server set is as follows:&lt;/p&gt;
+      &lt;pre&gt;track = 180
+trackaddrs = &quot;bnet.mivabe.nl&quot;
+location = &quot;:bs Earth&quot;
+description = &quot;SCSBW 1.11b OPE - xxx&quot;
+url = &quot;<A HREF="http://www.yourplace.org&amp;quot;">http://www.yourplace.org&quot;</A>
+contact_name = &quot;dgwilson65 &amp; U-238 &quot;
+contact_email = &quot;<A HREF="https://lists.berlios.de/mailman/listinfo/pvpgndocs-cvs">someonespecial at nospam.org</A>&quot;&lt;/pre&gt;
+      &lt;p&gt;&nbsp; &lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;<A HREF="http://pvpgndocs.berlios.de/http://pvpgndocs.berlios.de/images/MacBNetGatewayEditor/01.jpg">http://pvpgndocs.berlios.de/http://pvpgndocs.berlios.de/images/MacBNetGatewayEditor/01.jpg</A>&quot; width=&quot;10&quot; height=&quot;10&quot;&gt;&lt;/p&gt;
+  &lt;p&gt;&nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Legal&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Battle.net and Blizzard Entertainment are trademarks or registered trademarks of Blizzard Entertainment in the U.S. and/or other countries. Usage of the PvPGN software is free under the GNU public license. While every attempt has been made to ensure that the software functions as intended and that the documentation provided is accurate, the PvPGN community of developers and contributors cannot be held responsible for any issues arrising from having or running the software. &lt;/p&gt;
+  &lt;p&gt;&nbsp;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&nbsp;&lt;/blockquote&gt;
+        
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000012.html">[pvpgndocs-cvs] pvpgndocs/in-progress accesspvpgn.html,1.3,1.4
+</A></li>
+	<LI>Next message: <A HREF="000014.html">[pvpgndocs-cvs] pvpgndocs/in-progress/Images - New directory
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#13">[ date ]</a>
+              <a href="thread.html#13">[ thread ]</a>
+              <a href="subject.html#13">[ subject ]</a>
+              <a href="author.html#13">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/pvpgndocs-cvs">More information about the pvpgndocs-cvs
+mailing list</a><br>
+</body></html>

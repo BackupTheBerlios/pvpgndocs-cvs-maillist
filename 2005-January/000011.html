@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [pvpgndocs-cvs] Initial import of DocBook files
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/pvpgndocs-cvs/2005-January/index.html" >
+   <LINK REL="made" HREF="mailto:pvpgndocs-cvs%40lists.berlios.de?Subject=Re%3A%20%5Bpvpgndocs-cvs%5D%20Initial%20import%20of%20DocBook%20files&In-Reply-To=%3C99E0CAAE-6F85-11D9-AE20-000A956688C4%40darkterrorsdomain.cjb.net%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000010.html">
+   <LINK REL="Next"  HREF="000012.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[pvpgndocs-cvs] Initial import of DocBook files</H1>
+    <B>U-238</B> 
+    <A HREF="mailto:pvpgndocs-cvs%40lists.berlios.de?Subject=Re%3A%20%5Bpvpgndocs-cvs%5D%20Initial%20import%20of%20DocBook%20files&In-Reply-To=%3C99E0CAAE-6F85-11D9-AE20-000A956688C4%40darkterrorsdomain.cjb.net%3E"
+       TITLE="[pvpgndocs-cvs] Initial import of DocBook files">mark at darkterrorsdomain.cjb.net
+       </A><BR>
+    <I>Wed Jan 26 11:32:38 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000010.html">[pvpgndocs-cvs] pvpgndocs/docbook doc1.sgm,NONE,1.1 doc10.sgm,NONE,1.1 doc11.sgm,NONE,1.1 doc12.sgm,NONE,1.1 doc13.sgm,NONE,1.1 doc14.sgm,NONE,1.1 doc15.sgm,NONE,1.1 doc16.sgm,NONE,1.1 doc17.sgm,NONE,1.1 doc18.sgm,NONE,1.1 doc19.sgm,NONE,1.1 doc2.sgm,NONE,1.1 doc20.sgm,NONE,1.1 doc21.sgm,NONE,1.1 doc22.sgm,NONE,1.1 doc23.sgm,NONE,1.1 doc24.sgm,NONE,1.1 doc25.sgm,NONE,1.1 doc26.sgm,NONE,1.1 doc27.sgm,NONE,1.1 doc28.sgm,NONE,1.1 doc29.sgm,NONE,1.1 doc3.sgm,NONE,1.1 doc30.sgm,NONE,1.1 doc31.sgm,NONE,1.1 doc4.sgm,NONE,1.1 doc5.sgm,NONE,1.1 doc6.sgm,NONE,1.1 doc7.sgm,NONE,1.1 doc8.sgm,NONE,1.1 doc9.sgm,NONE,1.1 glossary.sgm,NONE,1.1 part1.sgm,NONE,1.1 part2.sgm,NONE,1.1 part3.sgm,NONE,1.1 preface.sgm,NONE,1.1 pvpgndocs.sgm,NONE,1.1
+</A></li>
+        <LI>Next message: <A HREF="000012.html">[pvpgndocs-cvs] pvpgndocs/in-progress accesspvpgn.html,1.3,1.4
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#11">[ date ]</a>
+              <a href="thread.html#11">[ thread ]</a>
+              <a href="subject.html#11">[ subject ]</a>
+              <a href="author.html#11">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Sorry about the big email you just recieved, hehe
+
+Files of most interest are:
+- pvpgndocs.sgm - This is the root of the DocBook &quot;book&quot;.
+- part1.sgm, part2.sgm, part3.sgm - These are where the chapters are 
+defined
+- preface.sgm - the preface
+- glossary.sgm - the glossary
+- doc1.sgm - The only file with content as of yet.
+
+&quot;DocBook: the definitive guide&quot; is the official documentation for 
+DocBook.
+   View online here:
+   <A HREF="http://docbook.org/tdg/en/html/docbook.html">http://docbook.org/tdg/en/html/docbook.html</A>
+
+   or, download the HTML files in an archive here:
+   <A HREF="http://docbook.org/tdg/en/tdg-en-html-2.0.10.zip">http://docbook.org/tdg/en/tdg-en-html-2.0.10.zip</A>
+   note that the front page of the book is docbook.html not index.html
+
+The PvPGN docs are using DocBook V4.3
+
+
+Here is a basic structure of the docs that i have put together, please 
+tell me if I've missed anything:
+
+---------
+   part1 - Server Admin's Guide
+
+     ch1 - Introduction to PvPGN
+       doc1 - Introduction to PvPGN
+
+     ch2 - Installing PvPGN
+       doc2 - Installation on Unix-based systems
+       doc3 - Installation on Win32
+       doc4 - Installation on Mac OS X
+
+     ch3 - Server configuration / customization
+       doc5 - Storage configuration
+       doc6 - Getting listed on the server list
+       doc7 - Message of the Day and News
+       doc8 - Ad banners
+       doc9 - Chat channels
+       doc10 - Maintaining your versioncheck file
+       doc11 - Setting up autoupdate
+
+     ch4 - Server Administration
+       doc12 - Introduction
+       doc13 - Modifing user accounts
+       doc14 - Channel operator commands
+       doc15 - Admin commands
+       doc16 - Detecting cheaters
+
+     ch5 - Diablo II closed realms
+       doc17 - What is a Diablo II closed realm?
+       doc18 - Configuring D2CS and D2DBS on Unix/Linux
+       doc19 - Configuring D2CS and D2DBS on Win32
+       doc20 - Setting up D2GS
+
+     ch6 - NAT / Firewall issues
+       doc21 - Introduction
+       doc22 - Setting up address translation
+
+     ch7 - Website Integration
+       doc23 - Displaying server status on a webpage
+       doc24 - Displaying ladders / user profiles on a webpage
+       doc25 - Web registration for PvPGN
+
+   part2 - Gamer's Guide
+     ch8 - Setting up the game
+       doc26 - Setup for Warcraft III
+       doc27 - Setup for Starcraft / Diablo II
+
+     ch9 - NAT / Firewall issues
+       doc28 - Introduction
+       doc29 - Changing the game data port
+
+     ch10 - Troubleshooting
+       doc30 - Why can't I see any games?
+       doc31 - Why can't I host any games?
+
+   part3 - Developer's Guide
+       Not too sure what goes in here
+
+   Glossary
+---------
+
+
+- Mark
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: text/enriched
+Size: 2633 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/pvpgndocs-cvs/attachments/20050126/87643ad1/attachment.bin">https://lists.berlios.de/pipermail/pvpgndocs-cvs/attachments/20050126/87643ad1/attachment.bin</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000010.html">[pvpgndocs-cvs] pvpgndocs/docbook doc1.sgm,NONE,1.1 doc10.sgm,NONE,1.1 doc11.sgm,NONE,1.1 doc12.sgm,NONE,1.1 doc13.sgm,NONE,1.1 doc14.sgm,NONE,1.1 doc15.sgm,NONE,1.1 doc16.sgm,NONE,1.1 doc17.sgm,NONE,1.1 doc18.sgm,NONE,1.1 doc19.sgm,NONE,1.1 doc2.sgm,NONE,1.1 doc20.sgm,NONE,1.1 doc21.sgm,NONE,1.1 doc22.sgm,NONE,1.1 doc23.sgm,NONE,1.1 doc24.sgm,NONE,1.1 doc25.sgm,NONE,1.1 doc26.sgm,NONE,1.1 doc27.sgm,NONE,1.1 doc28.sgm,NONE,1.1 doc29.sgm,NONE,1.1 doc3.sgm,NONE,1.1 doc30.sgm,NONE,1.1 doc31.sgm,NONE,1.1 doc4.sgm,NONE,1.1 doc5.sgm,NONE,1.1 doc6.sgm,NONE,1.1 doc7.sgm,NONE,1.1 doc8.sgm,NONE,1.1 doc9.sgm,NONE,1.1 glossary.sgm,NONE,1.1 part1.sgm,NONE,1.1 part2.sgm,NONE,1.1 part3.sgm,NONE,1.1 preface.sgm,NONE,1.1 pvpgndocs.sgm,NONE,1.1
+</A></li>
+	<LI>Next message: <A HREF="000012.html">[pvpgndocs-cvs] pvpgndocs/in-progress accesspvpgn.html,1.3,1.4
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#11">[ date ]</a>
+              <a href="thread.html#11">[ thread ]</a>
+              <a href="subject.html#11">[ subject ]</a>
+              <a href="author.html#11">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/pvpgndocs-cvs">More information about the pvpgndocs-cvs
+mailing list</a><br>
+</body></html>

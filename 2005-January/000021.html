@@ -1,0 +1,543 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.2,1.3 NATFirewall.html,1.2,1.3
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/pvpgndocs-cvs/2005-January/index.html" >
+   <LINK REL="made" HREF="mailto:pvpgndocs-cvs%40lists.berlios.de?Subject=Re%3A%20%5Bpvpgndocs-cvs%5D%20pvpgndocs/in-progress%20diablo.html%2C1.2%2C1.3%20NATFirewall.html%2C1.2%2C1.3&In-Reply-To=%3C200501300845.j0U8jrN17344%40bat.berlios.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000020.html">
+   <LINK REL="Next"  HREF="000022.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.2,1.3 NATFirewall.html,1.2,1.3</H1>
+    <B>dgwilson65</B> 
+    <A HREF="mailto:pvpgndocs-cvs%40lists.berlios.de?Subject=Re%3A%20%5Bpvpgndocs-cvs%5D%20pvpgndocs/in-progress%20diablo.html%2C1.2%2C1.3%20NATFirewall.html%2C1.2%2C1.3&In-Reply-To=%3C200501300845.j0U8jrN17344%40bat.berlios.de%3E"
+       TITLE="[pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.2,1.3 NATFirewall.html,1.2,1.3">nobody at sheep.berlios.de
+       </A><BR>
+    <I>Sun Jan 30 09:45:53 CET 2005</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000020.html">[pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.1.1.1,1.2
+</A></li>
+        <LI>Next message: <A HREF="000022.html">[pvpgndocs-cvs] pvpgndocs/in-progress NATFirewall.html,1.3,1.4
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#21">[ date ]</a>
+              <a href="thread.html#21">[ thread ]</a>
+              <a href="subject.html#21">[ subject ]</a>
+              <a href="author.html#21">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Update of /cvsroot/pvpgndocs/pvpgndocs/in-progress
+In directory sheep:/tmp/cvs-serv5670
+
+Modified Files:
+	diablo.html NATFirewall.html 
+Log Message:
+Added details about War 3 config support in PvPgn, Starcraft LAG issues and workaround. Diablo II doc updated.
+All doc is online accessable c/- the PvPGN project doc.
+
+Index: diablo.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/diablo.html,v
+retrieving revision 1.2
+retrieving revision 1.3
+diff -u -d -r1.2 -r1.3
+--- diablo.html	30 Jan 2005 02:01:56 -0000	1.2
++++ diablo.html	30 Jan 2005 08:45:50 -0000	1.3
+@@ -4,7 +4,7 @@
+ --&gt;
+ &lt;/style&gt;
+ &lt;center&gt;
+-    &lt;h2&gt;&lt;a name=&quot;top&quot;&gt;Diablo II&lt;/a&gt;&lt;/h2&gt;
++    &lt;h2&gt;&lt;a name=&quot;top&quot;&gt;How to set up a Diablo II Realm&lt;/a&gt;&lt;/h2&gt;
+     &lt;p&gt;By dgwilson65 and U-238&lt;/p&gt;
+ &lt;/center&gt;
+ &lt;p&gt;&lt;b&gt;&lt;a name=&quot;contents&quot;&gt;Table of contents&lt;/a&gt;&lt;/b&gt;&lt;/p&gt; 
+
+Index: NATFirewall.html
+===================================================================
+RCS file: /cvsroot/pvpgndocs/pvpgndocs/in-progress/NATFirewall.html,v
+retrieving revision 1.2
+retrieving revision 1.3
+diff -u -d -r1.2 -r1.3
+--- NATFirewall.html	27 Oct 2004 10:30:05 -0000	1.2
++++ NATFirewall.html	30 Jan 2005 08:45:50 -0000	1.3
+@@ -1,3 +1,10 @@
++&lt;style type=&quot;text/css&quot;&gt;
++&lt;!--
++.style1 {font-size: x-small}
++.style3 {font-size: xx-small; font-family: &quot;Courier New&quot;, Courier, mono; }
++.style4 {font-size: x-small; font-style: italic; }
++--&gt;
++&lt;/style&gt;
+ &lt;center&gt;
+     &lt;h2&gt;&lt;a name=&quot;top&quot;&gt;NAT / Firewall and PvPGN &lt;/a&gt;&lt;/h2&gt;
+     &lt;p&gt;By dgwilson65 and U-238&lt;/p&gt;
+@@ -10,7 +17,9 @@
+         &lt;li&gt;&lt;a href=&quot;#ports&quot;&gt; What ports does PvPGN use?&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#portforwarding&quot;&gt; Setting up port forwarding&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#translation&quot;&gt; Setting up address_translation (formerly gametrans&lt;/a&gt;)&lt;/li&gt;
+-        &lt;li&gt;&lt;a href=&quot;#diablorouter&quot;&gt; Setting up a Diablo 2 closed realm from behind a router &lt;/a&gt;&lt;/li&gt;
++        &lt;li&gt;&lt;a href=&quot;#Starctaftlag&quot;&gt;Starcraft and LAG&lt;/a&gt;&lt;/li&gt;
++        &lt;li&gt;&lt;a href=&quot;#w3route&quot;&gt;Configuring PvPGN for WarCraft III &lt;/a&gt;&lt;/li&gt;
++        &lt;li&gt;&lt;a href=&quot;#diablorouter&quot;&gt; Setting up a Diablo II closed realm from behind a router &lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#firewallissues&quot;&gt; Diagnosing Router/Firewall issues&lt;/a&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+     &lt;/div&gt;
+@@ -136,10 +145,10 @@
+   of game players a,b,c,d and you need to provide that. &lt;/p&gt;
+     &lt;p&gt; The address_translation.conf entries to support the above example would look
+   like the table below to support StarCraft gameplay.&lt;/p&gt;
+-    &lt;pre&gt;       192.168.10.100:6112      201.201.20.201:16100      192.168.10.0/24,192.168.20.0/24      ANY
+-       192.168.10.101:6112      201.201.20.201:16101      192.168.10.0/24,192.168.20.0/24      ANY
+-       192.168.10.102:6112      201.201.20.201:16102      192.168.10.0/24,192.168.20.0/24      ANY
+-       192.168.20.150:6112      202.202.20.202:16150      192.168.10.0/24,192.168.20.0/24      ANY&lt;/pre&gt;
++    &lt;pre&gt;192.168.10.100:6112      201.201.20.201:16100      192.168.10.0/24,192.168.20.0/24      ANY
++192.168.10.101:6112      201.201.20.201:16101      192.168.10.0/24,192.168.20.0/24      ANY
++192.168.10.102:6112      201.201.20.201:16102      192.168.10.0/24,192.168.20.0/24      ANY
++192.168.20.150:6112      202.202.20.202:16150      192.168.10.0/24,192.168.20.0/24      ANY&lt;/pre&gt;
+     &lt;p&gt; To describe the first entry in tis table, game player a on 192.168.10.100 and
+       port 6112 (Starcraft) is externally mapped to 202.201.20.201 and port 16100.
+       Notice how ip address *.*.*.100 is mapped to port 16100. This is just a convention
+@@ -167,108 +176,308 @@
+     &lt;p&gt; Make sure you read the comments within the file as they contain more detailed
+       information on the setup. They may also be more accurate than the documentation.&lt;br&gt;
+       &lt;br&gt;
+-      &lt;em&gt;&lt;Editors note: Documentation requires expansion for w3route, Diablo II &gt; &lt;/em&gt;&lt;/p&gt;
+-    &lt;pre&gt;         ########################################################################################################
+-         #------------------------------------------------------------------------------------------------------#
+-         # Address Translation table #
+-         #------------------------------------------------------------------------------------------------------#
+-         # #
+-         # This is a list of ip:port addresses that get translated #
+-         # #
+-         # The entries are broken into four parts: #
+-         # #
+-         # * the IP address w/port to be translated #
+-         # * the output IP address w/port #
+-         # * comma delimited list of networks to be excluded from translation #
+-         # * comma delimited list of networks to be included in translation #
+-         # #
+-         # Each line must contain all four parts or the entire entry will be rejected #
+-         # There are no default ports, make sure input and output includes the port number #
+-         # #
+-         # The entries are searched in the order listed in this file #
+-         # Exclude networks are searched before include networks #
+-         # Only the first matching line is used #
+-         # Lines begining with '#' are ignored #
+-         # #
+-         # If no match is found, the input ip will be returned. #
+-         # #
+-         # NONE = There are no neworks to exclude/include (just a place holder, no entries will be added) #
+-         # ANY = All networks will be excluded/included (same as 0.0.0.0/0) #
+-         # #
+-         ########################################################################################################&lt;/pre&gt;
+-    &lt;pre&gt;         ########################################################################################################
+-         # w3route server ip (removed from w3trans.conf) (Port 6200) #
+-         # #
+-         # Set input address the same as the w3routeaddr setting in the bnetd.conf #
+-         # Set output address to the address to be sent to war3 clients #
+-         # Set exclude to the range of clients you want to recieve the input address #
+-         # instead of the output address #
+-         # Set include to the range of clients you want to recieve the output address #
+-         # #
+-         # input (ip:port) output (ip:port) exclude (ip/netmask) include (ip/netmask) #
+-         #--------------------- ---------------------- ---------------------------- -------------------------#
+-         #0.0.0.0:6200 192.168.1.100:6200 NONE 192.168.1.0/24
+-         0.0.0.0:6200 internetip:6200 NONE ANY&lt;/pre&gt;
+-    &lt;pre&gt;         ########################################################################################################
+-         # Game Translations for clients (removed from gametrans.conf) (client data ports) #
+-         # #
+-         # Set input address to the client to be translated #
+-         # Set output address to the address to be sent to the other clients #
+-         # Set exclude to the range of clients you want to recieve the input address #
+-         # instead of the output address #
+-         # Set include to the range of clients you want to recieve the output address #
+-         # #
+-         # input (ip:port) output (ip:port) exclude (ip/netmask) include (ip/netmask) #
+-         #--------------------- ---------------------- ---------------------------- -------------------------#&lt;/pre&gt;
+-    &lt;pre&gt;         #192.168.1.1:6119 internetip:6119 192.168.1.0/24,10.0.0.0/8 ANY
+-         #192.168.1.2:6118 internetip:6118 192.168.1.0/24 ANY&lt;/pre&gt;
+-    &lt;pre&gt;         ########################################################################################################
+-         # Diablo II Charactar Server (d2cs) - (removed from realm.conf) (Port 6113) #
+-         # #
+-         # Set input address to the ip of d2cs (same as the ip in the realm.conf) #
+-         # Set output address to the address to be sent to the clients #
+-         # Set exclude to the range of clients you want to recieve the input address #
+-         # instead of the output address #
+-         # Set include to the range of client you want to recieve the output address #
+-         # #
+-         # input (ip:port) output (ip:port) exclude (ip/netmask) include (ip/netmask) #
+-         #--------------------- ---------------------- ---------------------------- -------------------------#
+-         #192.168.1.100:6113 internetip:6113 192.168.1.0/24 ANY&lt;/pre&gt;
+-    &lt;pre&gt;         ########################################################################################################
+-         # Diablo II Game Server (d2gs) - (removed from d2gstrans.conf) (Port 4000) #
+-         # #
+-         # Set input address to the ip of d2gs (same as the gameservlist in d2cs.conf) #
+-         # Set output address to the address to be sent to the clients #
+-         # Set exclude to the range of clients you want to recieve the input address #
+-         # instead of the output address #
+-         # Set include to the range of client you want to recieve the output address #
+-         # #
+-         # input (ip:port) output (ip:port) exclude (ip/netmask) include (ip/netmask) #
+-         #--------------------- ---------------------- ---------------------------- -------------------------#
+-         #192.168.1.100:4000 internetip:4000 192.168.1.0/24 ANY&lt;/pre&gt;
+-    &lt;pre&gt;&nbsp;&lt;/pre&gt;
+-    &lt;p&gt; Comment:&lt;br&gt;
+-      This is a personal comment (dgwilon65) &lt;br&gt;
+-      As of PvPGN 1.6.3, it is my belief that the gametrans file does not _fully_ 
+-      work for StarCraft/Broodwar. You can test this by starting a game on the same
+-      LAN as your PvPGN server and getting an external user to connect. If your 
+-      Gametrans.conf file and firewall rules are setup correctly, it should work. 
+-      (full speed). Repeat this test using another computer on your internal LAN 
+-      (not the PvPGN server). Next try running two computers on your internal LAN 
+-      and one external user. Game speeed should drop and become unplayable.
+-      --&gt; I'm guessing, but the external user has been told how to communicate with
+-      the game host (i.e. the machine that initiated the game). The external
+-      user DOES NOT know how to communicate with the other LAN user or all
+-      communication is routed through the game host. If the game host quits
+-      or gets killed off then the game ends for everyone.&lt;br&gt;
+-      &lt;br&gt;
+-      Don't know.&lt;br&gt;
+-      The Gametrans file is always read in order and will stop at the first matching
+-      rule. So if you want two different rules for the same client, you will need 
+-      to make sure that each rule is unique.
++      &lt;em&gt;&lt;Editors note: Documentation requires expansion for Diablo II &gt; &lt;/em&gt;&lt;/p&gt;
++&lt;/blockquote&gt;
++&lt;pre&gt;    ########################################################################################################
++    #------------------------------------------------------------------------------------------------------#
++    # Address Translation table #
++    #------------------------------------------------------------------------------------------------------#
++    # #
++    # This is a list of ip:port addresses that get translated #
++    # #
++    # The entries are broken into four parts: #
++    # #
++    # * the IP address w/port to be translated #
++    # * the output IP address w/port #
++    # * comma delimited list of networks to be excluded from translation #
++    # * comma delimited list of networks to be included in translation #
++    # #
++    # Each line must contain all four parts or the entire entry will be rejected #
++    # There are no default ports, make sure input and output includes the port number #
++    # #
++    # The entries are searched in the order listed in this file #
++    # Exclude networks are searched before include networks #
++    # Only the first matching line is used #
++    # Lines begining with '#' are ignored #
++    # #
++    # If no match is found, the input ip will be returned. #
++    # #
++    # NONE = There are no neworks to exclude/include (just a place holder, no entries will be added) #
++    # ANY = All networks will be excluded/included (same as 0.0.0.0/0) #
++    # #
++    ########################################################################################################&lt;/pre&gt;
++&lt;pre&gt;    ########################################################################################################
++    # w3route server ip (removed from w3trans.conf) (Port 6200) #
++    # #
++    # Set input address the same as the w3routeaddr setting in the bnetd.conf #
++    # Set output address to the address to be sent to war3 clients #
++    # Set exclude to the range of clients you want to recieve the input address #
++    # instead of the output address #
++    # Set include to the range of clients you want to recieve the output address #
++    # #
++    # input (ip:port) output (ip:port) exclude (ip/netmask) include (ip/netmask) #
++    #--------------------- ---------------------- ---------------------------- -------------------------#
++    #0.0.0.0:6200 192.168.1.100:6200 NONE 192.168.1.0/24
++    0.0.0.0:6200 internetip:6200 NONE ANY&lt;/pre&gt;
++&lt;pre&gt;    ########################################################################################################
++    # Game Translations for clients (removed from gametrans.conf) (client data ports) #
++    # #
++    # Set input address to the client to be translated #
++    # Set output address to the address to be sent to the other clients #
++    # Set exclude to the range of clients you want to recieve the input address #
++    # instead of the output address #
++    # Set include to the range of clients you want to recieve the output address #
++    # #
++    # input (ip:port) output (ip:port) exclude (ip/netmask) include (ip/netmask) #
++    #--------------------- ---------------------- ---------------------------- -------------------------#&lt;/pre&gt;
++&lt;pre&gt;    #192.168.1.1:6119 internetip:6119 192.168.1.0/24,10.0.0.0/8 ANY
++    #192.168.1.2:6118 internetip:6118 192.168.1.0/24 ANY&lt;/pre&gt;
++&lt;pre&gt;    ########################################################################################################
++    # Diablo II Charactar Server (d2cs) - (removed from realm.conf) (Port 6113) #
++    # #
++    # Set input address to the ip of d2cs (same as the ip in the realm.conf) #
++    # Set output address to the address to be sent to the clients #
++    # Set exclude to the range of clients you want to recieve the input address #
++    # instead of the output address #
++    # Set include to the range of client you want to recieve the output address #
++    # #
++    # input (ip:port) output (ip:port) exclude (ip/netmask) include (ip/netmask) #
++    #--------------------- ---------------------- ---------------------------- -------------------------#
++    #192.168.1.100:6113 internetip:6113 192.168.1.0/24 ANY&lt;/pre&gt;
++&lt;pre&gt;    ########################################################################################################
++    # Diablo II Game Server (d2gs) - (removed from d2gstrans.conf) (Port 4000) #
++    # #
++    # Set input address to the ip of d2gs (same as the gameservlist in d2cs.conf) #
++    # Set output address to the address to be sent to the clients #
++    # Set exclude to the range of clients you want to recieve the input address #
++    # instead of the output address #
++    # Set include to the range of client you want to recieve the output address #
++    # #
++    # input (ip:port) output (ip:port) exclude (ip/netmask) include (ip/netmask) #
++    #--------------------- ---------------------- ---------------------------- -------------------------#
++    #192.168.1.100:4000 internetip:4000 192.168.1.0/24 ANY&lt;/pre&gt;
++&lt;p&gt;The Gametrans file is always read in order and will stop at the first matching rule. So if you want two different rules for the same client, you will need     
++      to make sure that each rule is unique. &lt;/p&gt;
++&lt;p&gt;&lt;strong&gt; StarCraft and LAG&lt;a name=&quot;Starctaftlag&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
++&lt;blockquote&gt;
++  &lt;p&gt;There is a situation where StarCraft can become unplayable. It requires a set up with a Local Area Network within which the PvPGN server exists and more than one player within that LAN. Additionally it requires an internet connection with one or more players - the external network or WAN. There are a couple more things to understand:&lt;/p&gt;
++  &lt;p&gt;The starcraft game is played by the client computers, the server has nothing to do with the actual running of the game. Thus if an event occurs on the external network and one of the client computers needs to send a message to all of the other players, he needs direct access to the client computers on the LAN as well. This is probably best described as a peer-to-peer game. When there is no connection between clients, the game is looping, changing the &quot;game creator/owner&quot; from WAN to LAN client, so that' why it looks like a LAG&lt;/p&gt;
++  &lt;p&gt;The PvPGN forums has had many discussions on this subject over time &lt;a href=&quot;<A HREF="http://forums.pvpgn.org">http://forums.pvpgn.org</A>&quot;&gt;<A HREF="http://forums.pvpgn.org.&lt;/a">http://forums.pvpgn.org.&lt;/a</A>&gt;. Forums participants and the PvPGN developers indicate that this is not a bug in StarCraft. It's probably more related to the age of the product. If you're reading this, you are most likely interested in how to work around this challenge. &lt;/p&gt;
++  &lt;p&gt;What do I have to do?&lt;/p&gt;
++  &lt;p&gt;You need complete control of your environment, PvPGN server, Client computers, StarCraft configuration, and your Firewall. You must have control or be able to influence the set up on these components before you proceed.&lt;/p&gt;
++  &lt;p&gt;What you are trying to do is provide direct communications paths between all game players and the TCP/IP port level. Here's the solution.&lt;/p&gt;
++  &lt;ol&gt;
++    &lt;li&gt;Open ports 6112-6119 on your firewall - these should be forwarded to your server&lt;/li&gt;
++    &lt;li&gt;Identify the IP addresses of your StarCraft players on your internal LAN (if you are using DHCP, you might need to enforce some allocation by MAC address so that you retain some control) &lt;/li&gt;
++    &lt;li&gt;Select a range of ports for your players, 18101 through to 18112 for example. It's usually easier if you tie the last three digits of the port numbers to the last 3 digits of the IP address. &lt;/li&gt;
++    &lt;li&gt;Port forwarding rules need to be established on your firewall for these ports and IP addresses&lt;/li&gt;
++    &lt;li&gt;Each StartCraft player on the LAN must have a Windows Registry setting (or equivallent on Mac) that declares the Game Data Port.&lt;/li&gt;
++    &lt;li&gt;Finally configure PvPGN and the address_translation.conf file&lt;/li&gt;
++  &lt;/ol&gt;
++  &lt;p&gt;If you've managed to get this far, are still keen to proceed, and understand what we've covered so far, then lets get into it. &lt;/p&gt;
++  &lt;p&gt;The following shell script makes the changes we require to the firewall. Your firewall may allow you to make these changes, or you will need some manual way to effect the change. Basically it associates the IP address and port numbers on LAN. &lt;/p&gt;
++  &lt;pre&gt;# by TRex
++# IPTABLES path
++# The number below depends on your system configuration
++#IPT=`whereis iptables | awk ' {print &Acirc;&nbsp;$2}'`
++IPT=&quot;iptables&quot;
++echo &quot;script underway...&quot;&lt;/pre&gt;
++  &lt;pre&gt;#---------------------------------------
++PORT=&quot;16185&quot;
++EXT_IP=&quot;245.012.10.1&quot;
++BATTLE_HOST=&quot;192.168.10.185 192.168.10.186 192.168.10.187 192.168.10.188 192.168.10.189 
++192.168.10.190 192.168.10.191 192.168.10.192 192.168.10.193 192.168.10.194 192.168.10.195 
++192.168.10.196 192.168.10.197 192.168.10.98 192.168.10.199 192.168.10.200&quot; 
++#---------------------------------------&lt;/pre&gt;
++  &lt;pre&gt;usage()
++   {
++   echo &quot;Usage: $0 {start|stop}&quot;
++   }
++   case &quot;$1&quot; in&lt;/pre&gt;
++  &lt;pre&gt;start)&lt;/pre&gt;
++  &lt;pre&gt;echo &quot;received START&quot;
++     PORT_II=$PORT&lt;/pre&gt;
++  &lt;pre&gt;for HOST in $BATTLE_HOST; do
++   PORT_I=$PORT_II
++   $IPT -t nat -A PREROUTING -p udp -d $EXT_IP --dport $PORT_II -j DNAT --to-destination $HOST:$PORT_II
++   $IPT -t nat -A POSTROUTING -p udp -s $HOST --sport $PORT_II -j SNAT --to-source $EXT_IP:$PORT_II
++   PORT_II=$[PORT_I + 1]
++   done&lt;/pre&gt;
++  &lt;pre&gt;$IPT -L -v -t nat |grep &quot;udp spt:16&quot;
++     $IPT -L -v -t nat |grep &quot;udp dpt:16&quot;&lt;/pre&gt;
++  &lt;pre&gt;echo &quot;Battle - START - OK&quot;
++     ;;&lt;/pre&gt;
++  &lt;pre&gt;stop)&lt;/pre&gt;
++  &lt;pre&gt;PORT_II=$PORT&lt;/pre&gt;
++  &lt;pre&gt;for HOST in $BATTLE_HOST; do
++   PORT_I=$PORT_II
++   $IPT -t nat -D PREROUTING -p udp -d $EXT_IP --dport $PORT_II -j DNAT --to-destination $HOST:$PORT_II
++   $IPT -t nat -D POSTROUTING -p udp -s $HOST --sport $PORT_II -j SNAT --to-source $EXT_IP:$PORT_II
++   PORT_II=$[PORT_I + 1]
++   done&lt;/pre&gt;
++  &lt;pre&gt;$IPT -L -v -t nat |grep &quot;udp spt:16&quot;
++$IPT -L -v -t nat |grep &quot;udp dpt:16&quot;&lt;/pre&gt;
++  &lt;pre&gt;echo &quot;Battle - STOP - OK&quot;
++;;
++*)
++     usage
++;;
++esac&lt;/pre&gt;
++  &lt;p&gt;Running this script produces the following output:&lt;/p&gt;
++  &lt;pre&gt;. ./startcraft_iptables.sh stop
++script underway...
++received START
++ 0 0 SNAT udp -- any any 192.168.10.185 anywhere udp spt:16185 to:245.012.10.1:16185 
++ 0 0 SNAT udp -- any any 192.168.10.186 anywhere udp spt:16186 to:245.012.10.1:16186 
++ 0 0 SNAT udp -- any any 192.168.10.187 anywhere udp spt:16187 to:245.012.10.1:16187 
++ 0 0 SNAT udp -- any any 192.168.10.188 anywhere udp spt:16188 to:245.012.10.1:16188 
++ 0 0 SNAT udp -- any any 192.168.10.189 anywhere udp spt:16189 to:245.012.10.1:16189 
++ 0 0 SNAT udp -- any any 192.168.10.190 anywhere udp spt:16190 to:245.012.10.1:16190 
++ 0 0 SNAT udp -- any any 192.168.10.191 anywhere udp spt:16191 to:245.012.10.1:16191 
++ 0 0 SNAT udp -- any any 192.168.10.192 anywhere udp spt:16192 to:245.012.10.1:16192 
++ 0 0 SNAT udp -- any any 192.168.10.193 anywhere udp spt:16193 to:245.012.10.1:16193 
++ 0 0 SNAT udp -- any any 192.168.10.194 anywhere udp spt:16194 to:245.012.10.1:16194 
++ 0 0 SNAT udp -- any any 192.168.10.195 anywhere udp spt:16195 to:245.012.10.1:16195 
++ 0 0 SNAT udp -- any any lisa anywhere udp spt:16196 to:245.012.10.1:16196 
++ 0 0 SNAT udp -- any any grant anywhere udp spt:16197 to:245.012.10.1:16197 
++ 0 0 SNAT udp -- any any 192.168.10.98 anywhere udp spt:16198 to:245.012.10.1:16198 
++ 0 0 SNAT udp -- any any 192.168.10.199 anywhere udp spt:16199 to:245.012.10.1:16199 
++ 0 0 SNAT udp -- any any david anywhere udp spt:16200 to:245.012.10.1:16200 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16185 to:192.168.10.185:16185 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16186 to:192.168.10.186:16186 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16187 to:192.168.10.187:16187 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16188 to:192.168.10.188:16188 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16189 to:192.168.10.189:16189 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16190 to:192.168.10.190:16190 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16191 to:192.168.10.191:16191 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16192 to:192.168.10.192:16192 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16193 to:192.168.10.193:16193 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16194 to:192.168.10.194:16194 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16195 to:192.168.10.195:16195 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16196 to:192.168.10.196:16196 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16197 to:192.168.10.197:16197 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16198 to:192.168.10.98:16198 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16199 to:192.168.10.199:16199 
++ 0 0 DNAT udp -- any any anywhere 245-012-10-1.cable.hawaii.net.usudp dpt:16200 to:192.168.10.200:16200 
++ Battle - START - OK &lt;/pre&gt;
++  &lt;p&gt;Similarily the reverse:&lt;/p&gt;
++  &lt;pre&gt;. ./startcraft_iptables.sh stop 
++script underway...
++Battle - STOP - OK &lt;/pre&gt;
++  &lt;p&gt;&nbsp;&lt;/p&gt;
++  &lt;p&gt;The address_translation.conf entries are thus:&lt;/p&gt;
++  &lt;pre&gt;192.168.10.200:16200 245.012.10.1:16200 192.168.10.0/24,10.1.1.0/24 ANY
++192.168.10.199:16199 245.012.10.1:16199 192.168.10.0/24 ANY
++192.168.10.197:16197 245.012.10.1:16197 192.168.10.0/24 ANY
++192.168.10.196:16196 245.012.10.1:16196 192.168.10.0/24 ANY
++192.168.10.195:16195 245.012.10.1:16195 192.168.10.0/24 ANY
++192.168.10.194:16194 245.012.10.1:16194 192.168.10.0/24 ANY
++192.168.10.193:16193 245.012.10.1:16193 192.168.10.0/24 ANY
++192.168.10.192:16192 245.012.10.1:16192 192.168.10.0/24 ANY
++192.168.10.191:16191 245.012.10.1:16191 192.168.10.0/24 ANY
++192.168.10.190:16190 245.012.10.1:16190 192.168.10.0/24 ANY
++192.168.10.189:16189 245.012.10.1:16189 192.168.10.0/24 ANY
++192.168.10.188:16188 245.012.10.1:16188 192.168.10.0/24 ANY
++192.168.10.187:16187 245.012.10.1:16187 192.168.10.0/24 ANY
++192.168.10.186:16186 245.012.10.1:16186 192.168.10.0/24 ANY
++192.168.10.185:16185 245.012.10.1:16185 192.168.10.0/24 ANY
++192.168.10.184:16184 245.012.10.1:16184 192.168.10.0/24 ANY &lt;/pre&gt;
++  &lt;p&gt;&nbsp;&lt;/p&gt;
++  &lt;p&gt;Setting the Windows Registry for the port number can be done with the following&lt;/p&gt;
++  &lt;pre&gt;Windows Registry Editor Version 5.00
++ 
++ [HKEY_LOCAL_MACHINE\SOFTWARE\Battle.net]
++ 
++ [HKEY_LOCAL_MACHINE\SOFTWARE\Battle.net\Configuration]
++ &quot;Game Data Port&quot;=dword:000017e8 &lt;/pre&gt;
++  &lt;p&gt;Where &quot;dword:000017e8&quot; is the port number in hex. Mac users can use the MacBNetGatewayEdttor version 0.4.2 or higher and make this change through the graphical user interface. &lt;/p&gt;
++  &lt;p&gt;&nbsp; &lt;/p&gt;
++  &lt;p&gt;background details on this is available at &lt;a href=&quot;<A HREF="http://forums.pvpgn.org/index.php?showtopic=2899&amp;st=0&amp;p=10798&amp;#entry10798">http://forums.pvpgn.org/index.php?showtopic=2899&amp;st=0&amp;p=10798&amp;#entry10798</A>&quot;&gt;<A HREF="http://forums.pvpgn.org/index.php?showtopic=2899&amp;st=0&amp;p=10798&amp;#entry10798&lt;/a">http://forums.pvpgn.org/index.php?showtopic=2899&amp;st=0&amp;p=10798&amp;#entry10798&lt;/a</A>&gt;&lt;/p&gt;
++  &lt;p&gt;&nbsp; 
+   &lt;/p&gt;
+ &lt;/blockquote&gt;
+-&lt;p&gt;&lt;strong&gt;          Setting up a Diablo 2 closed realm from behind a router&lt;a name=&quot;diablorouter&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
++&lt;p&gt;&lt;strong&gt;Configuring PvPGN for WarCraft III&lt;a name=&quot;w3route&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
++&lt;blockquote&gt;
++  &lt;p class=&quot;style1&quot;&gt;This documentation supports version 1.7.0 of the PvPGN software and higher. &lt;/p&gt;
++  &lt;p&gt;All WarCraft III play happens  peer-to-peer so the game clients need to directly connect to each other.&lt;BR&gt;
++External clients connect to your server reporting their external IP and your local clients get told by the server to connect to these external IP addresses.&lt;/p&gt;
++  &lt;p&gt;    You local clients connect to your server via the local IP address and this local IP address is reported to the external clients to connect to. Too bad they presume this local IP address is  in &lt;B&gt;their&lt;/B&gt; local network, not the servers local network. This means that the external clients could never find the server again.&lt;/p&gt;
++  &lt;p&gt;This challenge is addressed as follows:&lt;/p&gt;
++&lt;/blockquote&gt;
++&lt;ol&gt;
++  &lt;li&gt;On all your local PCs that want to play WAR3 (including the server PC if you want to play WAR3 on that one) start up WAR3 and enter the Options menu and the suboption gameplay. Now change the port to be used to a so far unused port (one unique port for each PC in your LAN)&lt;/li&gt;
++  &lt;li&gt;Configure port forewarding on your server PC so each port you just had chosen on your LAN PCs WAR3 installation gets forewarded to the respective PC (obvisiously not needed for the WAR3 client on the server PC)&lt;/li&gt;
++  &lt;li&gt;Modify address_translation.conf so your LAN IPs appear as external IPs for all clients not within you LAN &lt;/li&gt;
++  &lt;li&gt;Finally modify bnetd.conf and configure w3route parameter.&lt;/li&gt;
++&lt;/ol&gt;
++&lt;blockquote&gt;
++  &lt;p&gt;&nbsp;&lt;/p&gt;
++  &lt;p&gt;&lt;strong&gt;Detailed scenario&lt;/strong&gt;&lt;/p&gt;
++  &lt;p&gt;Let's presume you have two WAR3 clients on your LAN, one at 192.168.0.10 (later on called LAN-IP-A) and the other at 192.168.0.11 (later on called LAN-IP-B)
++    &lt;!--emo&amp;B)--&gt;
++    &lt;!--endemo--&gt;
++    &lt;BR&gt;
++    &lt;BR&gt;
++  Now on the WAR3 client at LAN-IP-A you chose gameport 16801, for the WAR3 client at LAN-IP-B you choose gameport 16802.&lt;/p&gt;
++  &lt;p&gt;    Next thing for you to do is change some setting within the properties of your internet connection sharing. Choose the settings button and add two new &quot;services&quot;. Call the first one &quot;WAR3 at LAN-IP-A&quot;, set the IP address to LAN-IP-A and as external and internal port choose 16801. (According to my sample for LAN-IP-A also add a rule for LAN-IP-B and port 16802).&lt;BR&gt;
++    &lt;BR&gt;
++    So far, with all those settings made you should be able to play fine on battle.net with your LAN clients, even if battle.net falls back into peer-to-peer mode (which can rarely happen)&lt;BR&gt;
++    &lt;BR&gt;
++    Now add a few lines to your address_translation.conf. You should basically need two blocks of translational rules. One for the &lt;SPAN 
++class=searchlite&gt;w3route&lt;/SPAN&gt; and one for your LAN clients.&lt;BR&gt;
++  &lt;/p&gt;
++  &lt;p class=&quot;style4&quot;&gt;[Editors Note begins : While creating this documentation I became slightly confused between the contents of the address_translation.conf file and the remainder of the documentation. I think that the documentation is good but that the comments at the beginning of the w3route section could be slightly miss leading or confusing. Going by the documentation the first 2 lines in this w3route section shoudl be uncommented and configured.] &lt;/p&gt;
++  &lt;p class=&quot;style3&quot;&gt;address_translation.conf&lt;br&gt;
++    ########################################################################################################&lt;br&gt;
++    # w3route server ip (removed from w3trans.conf) (Port 6200) #&lt;br&gt;
++    # #&lt;br&gt;
++    # Set input address the same as the w3routeaddr setting in the bnetd.conf #&lt;br&gt;
++    # Set output address to the address to be sent to war3 clients #&lt;br&gt;
++    # Set exclude to the range of clients you want to recieve the input address #&lt;br&gt;
++    # instead of the output address #&lt;br&gt;
++    # Set include to the range of clients you want to recieve the output address #&lt;br&gt;
++    # #&lt;br&gt;
++    # input (ip:port) output (ip:port) exclude (ip/netmask) include (ip/netmask) #&lt;br&gt;
++  #--------------------- ---------------------- ---------------------------- -------------------------&lt;/p&gt;
++  &lt;p class=&quot;style3&quot;&gt;#0.0.0.0:6200 192.168.1.100:6200 NONE 192.168.1.0/24&lt;br&gt;
++    #0.0.0.0:6200 internetip:6200 NONE ANY&lt;/p&gt;
++  &lt;p&gt;&lt;span class=&quot;style4&quot;&gt;[Editors Note begins : ends ]&lt;/span&gt;&lt;/p&gt;
++  &lt;p&gt;&lt;BR&gt;
++    The first ruleset is ment to let your LAN clients connect to &lt;SPAN 
++class=searchlite&gt;w3route&lt;/SPAN&gt; via LAN but the external clients to connect via external IP:&lt;BR&gt;
++    &lt;!--c1--&gt;
++      &lt;/p&gt;
++  &lt;DIV class=codetop&gt;
++    &lt;pre&gt;0.0.0.0:6200 &nbsp;192.168.0.1:6200 NONE &nbsp; &nbsp;192.168.0.0/24
++0.0.0.0:6200 &nbsp;internetip:6200 &nbsp;NONE &nbsp; &nbsp;ANY
++&lt;/pre&gt;
++  &lt;/DIV&gt;
++  (substitute internetip with your internet IP)&lt;BR&gt;
++  &lt;BR&gt;
++The other ruleset we'll add is neeed to make external clients connect to your local clients via your external IP address and the forewarding rules we added earlier&lt;BR&gt;
++&lt;!--c1--&gt;
++&lt;DIV class=codetop&gt;  
++    &lt;pre&gt;LAN-IP-A:16801 internetip:16801 &nbsp;192.168.1.0/24 &nbsp; ANY
++LAN-IP-B:16802 internetip:16802 &nbsp;192.168.1.0/24 &nbsp; ANY
++&lt;/pre&gt;
++&lt;/DIV&gt;
++(substitute LAN-IP-A, LAN-IP-B and internet IP with the correct IPs)&lt;BR&gt;
++&lt;BR&gt;
++So in case you wonder what those rules mean, I'll try to give a quick explaination:&lt;BR&gt;
++LAN-IP-A:16801 internetip:16801 192.168.1.0/24 ANY&lt;BR&gt;
++translates to something like:&lt;BR&gt;
++If &lt;B&gt;ANY&lt;/B&gt;one asks for LAN-IP-A:16801 &lt;B&gt;translate it&lt;/B&gt; to internetip:16801 &lt;B&gt;unless&lt;/B&gt; the requestor is located within 192.xxx.xxx.xxx (which will then receive untranslated IP)
++&lt;p&gt;&nbsp;&lt;/p&gt;
++&lt;p&gt;Changes to the bnetd.conf file are as follows: &lt;/p&gt;
++&lt;pre&gt;# W3 Play Game router address. Just put your server address in here
++# or use 0.0.0.0:6200 for server to bind to all interfaces,
++# but make sure you set up w3trans if you do.
++#w3routeaddr = &quot;internetip:6200&quot;
++w3routeaddr = &quot;0.0.0.0:6200&quot;&lt;/pre&gt;
++&lt;p&gt;Where an internetip address of 0.0.0.0 means that w3routeaddr is not configured. Replace 0.0.0.0. with your external ip address and restart the PvPGN server software. &lt;/p&gt;
++&lt;p&gt;&nbsp; &lt;/p&gt;
++&lt;/blockquote&gt;
++&lt;p&gt;&lt;strong&gt;          Setting up a Diablo II closed realm from behind a router&lt;a name=&quot;diablorouter&quot;&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+ &lt;blockquote&gt;
+     &lt;p&gt;&lt;&lt;em&gt;Editors note: Documentation required&lt;/em&gt;&gt;&lt;/p&gt;
+     &lt;p&gt;&nbsp;&lt;/p&gt;
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000020.html">[pvpgndocs-cvs] pvpgndocs/in-progress diablo.html,1.1.1.1,1.2
+</A></li>
+	<LI>Next message: <A HREF="000022.html">[pvpgndocs-cvs] pvpgndocs/in-progress NATFirewall.html,1.3,1.4
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#21">[ date ]</a>
+              <a href="thread.html#21">[ thread ]</a>
+              <a href="subject.html#21">[ subject ]</a>
+              <a href="author.html#21">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/pvpgndocs-cvs">More information about the pvpgndocs-cvs
+mailing list</a><br>
+</body></html>
